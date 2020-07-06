@@ -36,11 +36,14 @@ a {
 }
 
 header {
-  height: 200px;
+  height: 150px;
 }
 
 header img {
-  width: 200px;
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 55%;
 }
 
 .center {

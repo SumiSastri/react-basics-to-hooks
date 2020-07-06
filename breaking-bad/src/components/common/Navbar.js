@@ -1,10 +1,15 @@
 import React from "react";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div>
-      <h1>I am a navbar</h1>
-    </div>
+    <header className="center">
+      <img src={logo} alt="logo" />
+      <div>
+        {" "}
+        <h3>Breaking Bad App with React Hooks</h3>
+      </div>
+    </header>
   );
 };
 
