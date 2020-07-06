@@ -19,3 +19,4 @@ Clean up
 - index.css
 - serviceWorker.js - and commented out text at the bottom
 - In App.js remove everything in the header section and keep wrapping div
+- In public folder go to the favicon: create your own icons here [https://icoconvert.com/]
