@@ -32,7 +32,8 @@ Clean up
     -- card-list/ card (parent-child for show-one/ show all)
   - api-calls (external data calls)
 
-Step 1: API-calls use the `useState` and `useEffect` hooks - create component and import into main-card component check rendering of data in console.
+**Step 1:**
+API-calls use the `useState` and `useEffect` hooks - create component and import into main-card component check rendering of data in console.
 
 ```
 import React, { useState, useEffect } from "react";
@@ -46,7 +47,7 @@ const CharactersApi = () => {
       const result = await axios.get(
         `https://www.breakingbadapi.com/api/characters`
       );
-      console.log(result.data);
+      <!-- console.log(result.data); -->
     };
     fetchCharacters();
   }, []);
@@ -61,4 +62,51 @@ const CharactersApi = () => {
 export default CharactersApi;
 ```
 
-(front-end view of data in console)[breaking-bad/src/assets/checks-api-data.png]
+(front-end view of data in console)[!breaking-bad/src/assets/checks-api-data.png]
+
+**Step 2:**
+
+In the parent-component (the API call) import the component that will display all the characters and set 2 props
+
+```
+ <DisplayCharacterGrid isLoading={isLoading} characters={characters} />
+```
+
+import the props into the child component and set up the ternery operator
+
+```
+import React from "react";
+
+const DisplayCharacterGrid = ({ characters, isLoading }) => {
+  return ( isLoading? (<section></section>) : (<section></section>)
+
+  );
+};
+
+export default DisplayCharacterGrid;
+```
+
+You can now write your map function in the child component, it will be rendered in the parent component where the API is being called.
+
+```
+import React from "react";
+import CharactersApi from "../../api-calls/CharactersApi";
+
+const DisplayCharacterGrid = ({ characters, isLoading }) => {
+  return isLoading ? (
+    <section>
+      <p>Loading</p>
+    </section>
+  ) : (
+    <section className="cards">
+      {characters.map((character) => (
+        <li key={character.char_id}>{character.name}</li>
+      ))}
+    </section>
+  );
+};
+
+export default DisplayCharacterGrid;
+```
+
+(child component maps and renders data from api)[!breaking-bad/src/assets/child-component-maps-renders-data.png]
