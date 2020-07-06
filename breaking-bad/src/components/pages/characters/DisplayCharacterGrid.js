@@ -1,11 +1,12 @@
 import React from "react";
 
 import DisplayCharacter from "../characters/DisplayCharacter";
+import Loading from "../../common/Loading";
 
 const DisplayCharacterGrid = ({ characters, isLoading }) => {
   return isLoading ? (
     <section>
-      <p>Loading</p>
+      <Loading></Loading>
     </section>
   ) : (
     <section className="cards">

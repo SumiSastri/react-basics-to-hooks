@@ -4,9 +4,11 @@ Install
 - npx create-react-app 'breaking-bad'
 - npm install axios
 - npm install react-icons --save
+- npm install --save react-spinners + npm install @emotion/core
 
 Libraries
 Icons - react-icons [https://github.com/react-icons/react-icons]
+Loading - works with emotion CSS documentation react-spinners [https://www.npmjs.com/package/react-spinners][https://github.com/davidhu2000/react-spinners]
 
 Clean up:-
 
@@ -110,7 +112,7 @@ export default DisplayCharacterGrid;
 
 (child component maps and renders data from api)[!breaking-bad/src/assets/child-component-maps-renders-data.png]
 
-**Step 3:** Create nested child components passing props down
+**Step 3:** Create nested grand-child component passing props down from grandparent-parent-grandchild
 
 In the parent component import the newly created child component so that it can receive props to render. Replace the list tag with the newly created child component tags.
 
@@ -133,3 +135,24 @@ becomes the enclosing tags of the child component and the props become the key a
 ```
 
 The child component now takes on the props passed down from the parent, passed down from the grandparent that is calling the API. I have added a class called test in the child component to see how we can change the styling only of the component before it is rendered.
+
+**Step 4:** Experiment with the loading library
+
+Replace the loading JSX with a child component and import into the parent, pass the prop isLoading into the child component.
+
+```
+<Loading></Loading>
+```
+
+Use react-spinner library to style the component and use props provided by the library.
+
+```
+import React from "react";
+import { BounceLoader, BarLoader, BeatLoader } from "react-spinners";
+import { css } from "@emotion/core";
+
+const loaderCSS = css`
+  margin-top: 25px;
+  padding: 5px;
+
+```
