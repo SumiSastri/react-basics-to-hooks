@@ -1,5 +1,6 @@
 import React from "react";
-import CharactersApi from "../../api-calls/CharactersApi";
+
+import DisplayCharacter from "../characters/DisplayCharacter";
 
 const DisplayCharacterGrid = ({ characters, isLoading }) => {
   return isLoading ? (
@@ -9,7 +10,10 @@ const DisplayCharacterGrid = ({ characters, isLoading }) => {
   ) : (
     <section className="cards">
       {characters.map((character) => (
-        <li key={character.char_id}>{character.name}</li>
+        <DisplayCharacter
+          key={character.char_id}
+          character={character}
+        ></DisplayCharacter>
       ))}
     </section>
   );

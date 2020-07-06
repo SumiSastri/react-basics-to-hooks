@@ -1,3 +1,4 @@
+**Scaffolding:**
 Install
 
 - npx create-react-app 'breaking-bad'
@@ -7,32 +8,30 @@ Install
 Libraries
 Icons - react-icons [https://github.com/react-icons/react-icons]
 
-Clean up
+Clean up:-
 
 - Remove files
-- serviceWorker.js
 - setUpTests.js
 - logo.svg
 - index.css
 - app.test.js
-- Remove imports in index.js
 - index.css
-- serviceWorker.js - and commented out text at the bottom
+- serviceWorker.js (then remove imports in index.js serviceWorker.js - and commented out text at the bottom)
 - In App.js remove everything in the header section and keep wrapping div
 - In public folder
-
   - go to the favicon: create your own icons here [https://icoconvert.com/]\
   - go to index.html and write your app title
 
-  Folder structure
+**Planning:**
+Think through folder structure
 
-  - common (navbars, buttons and other re-usable components)
-  - app-pages (keypages to be routed later)
-    -- main-card (holds all the app information that will be exported to app.js)
-    -- card-list/ card (parent-child for show-one/ show all)
-  - api-calls (external data calls)
+- common (navbars, buttons and other re-usable components)
+- app-pages (keypages to be routed later)
+  -- main-card (holds all the app information that will be exported to app.js)
+  -- card-list/ card (parent-child for show-one/ show all)
+- api-calls (external data calls)
 
-**Step 1:**
+**Step 1:** Set up the API call and check that data-flows into the console
 API-calls use the `useState` and `useEffect` hooks - create component and import into main-card component check rendering of data in console.
 
 ```
@@ -64,9 +63,9 @@ export default CharactersApi;
 
 (front-end view of data in console)[!breaking-bad/src/assets/checks-api-data.png]
 
-**Step 2:**
+**Step 2:** Create child components to render the data from the API
 
-In the parent-component (the API call) import the component that will display all the characters and set 2 props
+In the parent-component (the API call) import the component that will display all the characters and set 2 props like so:-
 
 ```
  <DisplayCharacterGrid isLoading={isLoading} characters={characters} />
@@ -110,3 +109,27 @@ export default DisplayCharacterGrid;
 ```
 
 (child component maps and renders data from api)[!breaking-bad/src/assets/child-component-maps-renders-data.png]
+
+**Step 3:** Create nested child components passing props down
+
+In the parent component import the newly created child component so that it can receive props to render. Replace the list tag with the newly created child component tags.
+
+```
+<li key={character.char_id}>{character.name}</li>
+```
+
+becomes the enclosing tags of the child component and the props become the key and the character prop we pass to the child from the parent.
+
+```
+<section className="cards">
+      {characters.map((character) => (
+        <DisplayCharacter
+          key={character.char_id}
+          character={character}
+        ></DisplayCharacter>
+      ))}
+    </section>
+
+```
+
+The child component now takes on the props passed down from the parent, passed down from the grandparent that is calling the API. I have added a class called test in the child component to see how we can change the styling only of the component before it is rendered.
