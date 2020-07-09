@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function TableOfContentsBar() {
   return (
-    <div className="table-of-contents">
+    <div className="card">
       <Link to="/" className="toc-item">
         <h6>Home</h6>
       </Link>
@@ -12,16 +12,13 @@ export default function TableOfContentsBar() {
           <li>What is a component in React?</li>
         </Link>
         <Link to="/functional-components" className="toc-item">
-          <li>What is a functional component and when should you use it?</li>
+          <li>What is a functional component?</li>
         </Link>
         <Link to="/class-components" className="toc-item">
-          <li>
-            What is a class component and how is it different from functional
-            components?
-          </li>
+          <li>What are class components? (Demos with examples)</li>
         </Link>
         <Link to="/counter-demo" className="toc-item">
-          <li>What are ansync calls with state and props? (Counter demo)</li>
+          <li>What are async calls? (Counter demo)</li>
         </Link>
         <Link to="/event-handling" className="toc-item">
           <li>How does event-handling work in React?</li>
@@ -30,7 +27,7 @@ export default function TableOfContentsBar() {
           <li>What are the four ways you can render JSX conditionally?</li>
         </Link>
         <Link to="/map-and-render" className="toc-item">
-          <li>How to map and render data in JSX?</li>
+          <li>How do you map and render list data?</li>
         </Link>
         <Link to="/forms" className="toc-item">
           <li>How do React forms differ from HTML forms?</li>

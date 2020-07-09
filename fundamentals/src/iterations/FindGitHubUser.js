@@ -41,8 +41,8 @@ export class FindGitHubUser extends Component {
       <div className="container">
         <br></br>
         <p>
-          Example 3B 1: Uses <em>array.find</em> rather than map method - finds
-          a single user and displays user.
+          <strong>Example 3B (2):</strong> Uses <em>array.find</em> rather than
+          map method - finds a single user and displays user.
         </p>
         <br></br>
         <div style={gitHubUserStyles}>

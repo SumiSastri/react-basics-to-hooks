@@ -14,29 +14,51 @@ export class ClassComponentsWithPropsAsMethods extends Component {
 
   calculateSalary = (param1FromChild, param2FromChild) => {
     alert(
-      `Your salary is ${this.state.salary * 12} ${
+      ` This method is written in the parent class component and rendered as an alert. Your salary is ${
+        this.state.salary * 12
+      } ${
         this.state.currency
-      } per annum (method written in parent multiplies salary by 12) ${param1FromChild} (The note on tax is the first param passed from child to parent) ${param2FromChild} (This is the second param)`
+      } per annum  ${param1FromChild} (The note on tax is the first param passed from child to parent) ${param2FromChild} (This is the second param passed from child to parent)`
     );
   };
 
   render() {
     return (
       <div>
-        <h4>Example 5: Parent Component for Props passed as methods</h4>
+        <h4>
+          Example 5 Parent component: defines state and the method, gets args
+          from child
+        </h4>
         <p>
-          Class components can also pass props from one component to another
-          like a functional component. In both class and functional components,
-          props can also be methods. Here is an example of a prop which has a
-          function written in that calculates the salary and passes this to a
-          child component. This is the parent component that holds the function
-          to calculate salary and will be displayed by the child component on a
-          click event.
-        </p>
-        <p>
-          The child component is now imported into the parent and the key word{" "}
-          <em>this.calculateSalary</em>is passed as the value of the prop
-          attribute displaySalary{" "}
+          Passing props in class components follow the same steps - define props
+          in the parent component and pass them to the child as an attribute.
+          <li>
+            Step 1 - child component created to render a displaySalary method
+          </li>
+          <li>
+            Step 2 - parent component created, this is the parent with state
+            data that will be used to calculate salary
+          </li>
+          <li>
+            Step 3 - the child component imported into the parent component
+          </li>
+          <li>
+            Step 4 - the child component args imported into the parent component
+            as props in the constructor method for the calculateSalary method
+            that will be written in the parentComponent
+          </li>
+          <li>
+            Step 5 - calculateSalary method using the <em>this</em> key word to
+            bind the method to the class component it points to, is passed as
+            the attribute value of the attribute key (which is a method) called
+            displaySalary.
+          </li>
+          <li>
+            Step 6 - displaySalary method now can be used by importing them as
+            props, in the functional component's args from the parent. To render
+            the method in JSX, the keyword props.displaySalary is used in the
+            button JSX's event-handler.
+          </li>
         </p>
         <ChildOfClassWithPropMethods displaySalary={this.calculateSalary} />
       </div>

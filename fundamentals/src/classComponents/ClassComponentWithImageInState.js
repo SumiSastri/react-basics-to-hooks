@@ -16,19 +16,23 @@ export class ClassComponentWithImageInState extends Component {
   //   }
 
   render() {
-    const { avatar_url } = this.state;
+    const { avatar_url, id, login } = this.state;
     return (
       <div className="card text-center">
         <p>
-          This is also a class component with a string in state - this string
-          contains a URL to GitHub users API and renders an image.
+          In <strong>Example 2B</strong> state contains an image of GitHub user{" "}
+          {""}
+          {login}, with the id: {id}. These are rendered in this component
+          without the requirement of the constructor and super methods.
         </p>
-        <img
-          src={avatar_url}
-          className="round-img"
-          style={{ width: "80px" }}
-          alt="wycats"
-        ></img>
+        <div className="container">
+          <img
+            src={avatar_url}
+            className="round-img"
+            style={{ width: "80px" }}
+            alt="wycats"
+          ></img>
+        </div>
       </div>
     );
   }

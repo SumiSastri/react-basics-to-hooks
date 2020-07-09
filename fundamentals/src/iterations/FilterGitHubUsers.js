@@ -50,10 +50,11 @@ export class FilterGitHubUsers extends Component {
       <div className="container">
         <br></br>
         <p>
-          Example 3B 2: Filtering data out involves chaining. First you write
-          your filter logic and the conditions by which you wish to filter the
-          data. Then you map through the filtered data and render this in a map
-          method. Here we have filtered out the users who have ids below 34.
+          <strong>Example 3B (3):</strong> Filtering data out involves chaining.
+          First you write your filter logic and the conditions by which you wish
+          to filter the data. Then you map through the filtered data and render
+          this in a map method. Here we have filtered out the users who have ids
+          below 34.
         </p>
         <br></br>
         <div style={gitHubUserStyles}>{filteredUsers}</div>

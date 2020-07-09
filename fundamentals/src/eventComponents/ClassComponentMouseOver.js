@@ -21,7 +21,11 @@ class ClassComponentMouseOver extends Component {
   render() {
     return (
       <div>
-        <h4>Event to log Mouse Postion</h4>
+        <h4>Example 3</h4>
+        <p>
+          This is a mouse event that logs the mouse position on the X and Y axis
+          every time you move the mouse
+        </p>
         Mouse Postion X Axis - {this.state.x} Mouse Postiion Y Axis -{" "}
         {this.state.y}
       </div>

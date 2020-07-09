@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import SetAndClearIntervals from "./SetAndClearIntervals";
 class ComponentWillUnmount extends Component {
   constructor(props) {
     super(props);
@@ -25,8 +26,25 @@ class ComponentWillUnmount extends Component {
   render() {
     return (
       <div>
-        Component Will Unmount Mouse Position X - {this.state.x} Mouse Position
-        Y - {this.state.y}
+        <h4>DEMO: Unmounting Phase</h4>
+        <li>
+          componentWillUnmount()
+          <em>
+            Only one method available invoked when you click away from current
+            page
+          </em>
+        </li>
+        <p>
+          This is a rarely used method. It is involed for clearing setIntervals
+          and other tidy-up functions before the component is unmounted and the
+          life-cycle methods cease. Only one method is available in this phase.
+        </p>
+        <SetAndClearIntervals />
+        <div>
+          {" "}
+          Component Will Unmount Mouse Position X - {this.state.x} Mouse
+          Position Y - {this.state.y}
+        </div>
       </div>
     );
   }

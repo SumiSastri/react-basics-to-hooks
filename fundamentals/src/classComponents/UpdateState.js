@@ -5,31 +5,33 @@ export class UpdateState extends Component {
     super();
 
     this.state = {
-      data: "INITIAL STATE DATA",
+      data: "Placeholder: This is the initial state data",
     };
   }
 
   updateData() {
     this.setState({
-      data: "SET STATE SUCCESSFUL",
+      data: "Updating state: with the updateData method to setState ",
     });
   }
 
   render() {
     return (
       <div>
-        <h4>Example 7: </h4>
+        <h4>Example 7: setState to update data in the state object </h4>
         <p>
-          In this class component we are updating state using the{" "}
-          <em>setState</em> method. Intial state reads: {""} {this.state.data}
+          State is immutable and should not be updated in the constructor
+          method. Click the button below to update the data in state.
+        </p>
+        <p>
+          State: <strong>{this.state.data}</strong>
         </p>
         <button onClick={() => this.updateData()}>
-          Click event handler updates intial state with the setState() method
+          Click to demo state data updating with the setState method
         </button>
         <p>
           The <em>setState</em>method has been written as a factory function and
-          passed into the onClick handler to udpate the data in state. If you
-          click the button the text in the inital state reads will change.
+          passed into the onClick handler to udpate the data in state.
         </p>
       </div>
     );

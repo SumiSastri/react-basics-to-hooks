@@ -156,3 +156,20 @@ const loaderCSS = css`
   padding: 5px;
 
 ```
+
+```
+  return (
+    <div className="search">
+      <input
+        type="text"
+        value={text}
+        className="form-control"
+        placeholder="Search for your favourite character"
+        autoFocus
+        onChange={(event) => setText(event.target.value)}
+      />
+    </div>
+  );
+};
+export default SearchInput;
+```

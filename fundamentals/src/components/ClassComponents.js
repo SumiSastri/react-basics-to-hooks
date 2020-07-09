@@ -13,60 +13,48 @@ import ComponentWillUnmount from "../classComponents/lifecycleMethods/ComponentW
 
 export default function ClassComponents() {
   return (
-    <div>
-      <h4>What is a Class Component and when should you use it?</h4>
+    <div className="card">
+      <h4>What is a Class component?</h4>
       <p>
-        Class, Container, Stateful or Smart Components Class components use
-        JavaScript ES-6 Classes to extend the the life-cycle methods in the
-        React Component Library.{" "}
-        <strong>
-          Each component is a JavaScript class and has a has a constructor and a
-          super method.
-        </strong>
+        Class, container, smart or stateful components are classes with
+        predefined methods to access state.Render is the only mandatory
+        life-cycle method. Without the render method, the function gets executed
+        in the console but will not be rendered to the DOM.
       </p>
-      <br></br>
       <p>
-        Super calls upon the constructor method to access the pre-built methods
-        in the React Component Library. Components render the data from props or
-        in component state.{""}
-        <em>Render is the only mandatory life-cycle method.</em> Without the
-        render method, the function gets executed in the console but will not be
-        rendered to the DOM.
+        As it is a JavaScript class, each component can set up a constructor
+        method to hold state, or the underlying data of the component in an
+        object. The only place where state should be referred to as{" "}
+        <em>this.state</em> is in the constructor method, after the super method
+        is called.
       </p>
-      <br></br>
+      <h4>What are the life-cycle methods in a class component?</h4>
       <p>
-        The constructor method holds the components state, or the underlying
-        data of the component in an object. The only place where state should be
-        referred to as <em>this.state</em> is in the constructor method after
-        the super method is called.
+        The key lifecycle methods of class components in the order they are
+        invoked are:- 1. constructor 2. super 3. static getDerivedStateFromProps
+        4. render 5. componentDidMount{" "}
       </p>
-      <br></br>
       <p>
-        The other life-cycle methods hold complex logic allowing for data to be
-        accessed via 3rd party API's and for the data in state to be updated.
-        The <em>componentDidMount()</em> method takes a call-back{" "}
-        <em>setState({})</em> method which takes as an argument a new object
-        that represents how state has been changed.{" "}
-      </p>
-      <br></br>
-      <p>
-        To handle changes in the JSX elements that are being rendered, factory
-        functions are written to handle events such as clicks, submit buttons,
-        etc.{" "}
-      </p>
-      <hr></hr>
-      <p> Here are some examples of class components and how they are used</p>
-      <ClassComponentExample />
-      <ClassComponentWithState />
-      <ClassComponentWithImageInState />
-      <ClassComponentWithProps name="class-component-props" />
-      <ClassComponentsWithPropsAsMethods />
-      <DestructuringPropsAndState />
-      <UpdateState />
-      <p>LifeCycle methods in class components: Demo</p>
-      <ComponentMountMethods />
-      <ComponentUpdateMethods />
-      <ComponentWillUnmount />
+        If a component updates static getDerivedStateFromProps is called again
+        and then 6. shouldComponentUpdate 7. getSnapshotBeforeUpdate 8. render
+        9. componentDidUpdate
+      </p>{" "}
+      <p>Once you navigate off a page 10. componentWillUnmount</p>
+      <div className="card">
+        <h4> Examples of class components and how they are used</h4>
+        <ClassComponentExample />
+        <ClassComponentWithState />
+        <ClassComponentWithImageInState />
+        <ClassComponentWithProps description="Props are imported from a parent component and  rendered in child components in React" />
+        <ClassComponentsWithPropsAsMethods />
+        <DestructuringPropsAndState />
+        <UpdateState />
+      </div>
+      <div className="card">
+        <ComponentMountMethods />
+        <ComponentUpdateMethods />
+        <ComponentWillUnmount />
+      </div>
     </div>
   );
 }

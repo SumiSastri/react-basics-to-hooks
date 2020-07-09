@@ -32,7 +32,7 @@ export default class FourWaysToConditionallyRender extends Component {
     const loading = false;
     const loadingMessage = "Please wait this page is still loading...";
     return (
-      <div>
+      <div className="card">
         <h4>There are four ways to conditionally render JSX elements</h4>
         <h4>1. Using Element Variables & the if-else conditional logic</h4>
         {button}

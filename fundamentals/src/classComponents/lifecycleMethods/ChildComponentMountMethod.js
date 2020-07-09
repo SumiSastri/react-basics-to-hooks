@@ -37,11 +37,18 @@ export class ChildComponentMountMethod extends Component {
     console.log(`CHILD render 3`);
     return (
       <div>
-        <h5>
-          This is the associated CHILD component of the life-cycle methods - it
-          is exactly the same as the first component BUT is rendered as a prop
-          in the parent component.
-        </h5>{" "}
+        <h4>DEMO: Child component mounting, updating, unmounting methods</h4>
+        <p>
+          This is a replica component to demo the call stack order between
+          parent and child method invocation. Mounting happens when an instance
+          is created and inserted into the DOM. The child component is inserted
+          into the DOM (mounts) AFTER the parent. The update pattern is
+          different from the mounting pattern, the parent updates first then the
+          children follow and are updated later EXCEPT for the
+          getSnapshotBeforeUpdate method and componentDidUpdate, where the child
+          invokes these methods first then the parent. The unmounting, the
+          parent is removed (unmounts) from the DOM first, then the child.
+        </p>
       </div>
     );
   }

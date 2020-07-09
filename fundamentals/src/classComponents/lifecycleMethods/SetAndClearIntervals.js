@@ -24,7 +24,21 @@ export class SetAndClearIntervals extends Component {
   }
 
   render() {
-    return <div>Seconds passed -{this.state.count}</div>;
+    return (
+      <div>
+        <h4>Example 1: Setting and clearing intervals</h4>
+        <li>
+          componentDidMount() Here is where we have set the interval, the timer
+          will update every 1 second
+        </li>
+        <li>
+          componentWillUnmount()Here we clear the interval, when you move off
+          the page the timer also stops.
+        </li>
+        SECONDS PASSED SINCE YOU STARTED READING THIS PAGE: {""}
+        <strong>{this.state.count}</strong>
+      </div>
+    );
   }
 }
 

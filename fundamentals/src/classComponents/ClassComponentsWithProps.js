@@ -10,35 +10,31 @@ export class ClassComponentWithProps extends Component {
   constructor(props) {
     super();
     this.state = {
-      data: "INITIAL STATE DATA",
+      data: "Placeholder: Change-me",
     };
   }
   render() {
     return (
       <div>
-        <h4>Example 3:</h4>
+        <h4>
+          Example 3: Rendering props with class components using the key word{" "}
+          <em>this</em>
+        </h4>
         <p>
-          This JSX tag renders the class component's prop. The prop name for
-          this component has been set in the FunctionalComponent. This
-          component's props will not be rendered in this class component but
-          will be rendered in the Functional component where the value has been
-          set.
+          Props follow the same pattern where the child component renders the
+          props set by the parent component. This class component is the child
+          component and props have been imported as a parameter of the
+          constructor method. The prop imported has an attribute description
+          with the string:
+          <strong>{this.props.description}</strong>
         </p>
+        <h4>Example 4: Static Props defined in class components</h4>
         <p>
-          This is the text in the prop with the attribute name:{" "}
-          <strong>{this.props.name}</strong>
+          In class components, props can be defined in the parent as static
+          default props and passed to the child. This prop is defined before the
+          constructor method and then can be imported into child components.
+          {this.props.name}
         </p>
-        <h4>Example 4:</h4>
-        <p>
-          The data has been defined in the constructor method of this component.
-          It can also be passed to other components like a prop but is bound to
-          the object it points to in the constructor method. Therefore when
-          passed it must use the <em>this</em> key word and is referred to as{" "}
-          <em>this.props</em>
-        </p>
-        <strong>This JSX tag renders data in state: </strong>
-        {""}
-        {this.state.data}
       </div>
     );
   }

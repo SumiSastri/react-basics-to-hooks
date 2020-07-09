@@ -10,16 +10,19 @@ import ForEachGitHubUser from "../iterations/ForEachGitHubUser";
 
 function ListOfLists() {
   return (
-    <div>
-      <h3>Iterations - Map & Filter</h3>
-      <MapNames />
-      <MapNumbers />
-      <MockData />
-      <hr></hr>
-      <MapGitHubUsers />
-      <FindGitHubUser />
-      <FilterGitHubUsers />
-      <ForEachGitHubUser />
+    <div className="card">
+      <h3>Rendering lists with map & filter methods</h3>
+      <div className="card">
+        <MapNames />
+        <MapNumbers />
+        <MockData />
+      </div>
+      <div>
+        <MapGitHubUsers />
+        <FindGitHubUser />
+        <FilterGitHubUsers />
+        <ForEachGitHubUser />
+      </div>
     </div>
   );
 }

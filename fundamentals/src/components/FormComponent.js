@@ -32,7 +32,7 @@ class Form extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     alert(
-      `${this.state.textInput} ${this.state.textAreaInput} ${this.state.selectFilter}`
+      `This is the parent component. Functions are written here and passed as props to the child. State now is updated in the child component and bound to the parent component's constructor method. So when you type and submit your input as a user in the child component, they are rendered in this alert which is also in the child submit button component. The default state renders an empty string and the default select filter. Type and select an option to test functionality of this form component.  TEXT-INPUT:${this.state.textInput} TEXT-AREA-INPUT:${this.state.textAreaInput} SELECT-FILTER-OPTION: ${this.state.selectFilter}`
     );
   };
 
@@ -41,23 +41,21 @@ class Form extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <div>
-          <h4> Basic Form Inputs</h4>
+          <h4>Basic Form Inputs</h4>
           <p>
             In HTML, forms hold state therefore the data typed in is immediately
-            submitted on click. However, in React state holds the data not the
-            form input. Renders are first to the virtual DOM then the DOM.
-            Therefore synthetic event handlers are created. In the 3 labels we
-            have text inputs and a select filter. Functions are written for each
-            of these. The initial state is set in the constructor. The synthetic
-            event handler functions are written tto use the <em>setState()</em>{" "}
-            method. State is now set to the <em>event.target.value </em> and
-            passed as an expression into <em>onChange</em> attribute in the JSX
-            that will capture the new values from the from the user text inputs.
-            Finally the onSubmit click event submits the data to an alert
-            message (in this instance - but the information can be submitted
-            back to a server via an API call to a back-end database).
+            submitted on click. However, in React data is held in state, not the
+            form input filed. Data needs to be passed from state to the form
+            components by using factory functions to setState in the event
+            handler of the components <em>onChange, onClick, onSubmit.</em>
           </p>
-          <label>Text Field </label>
+          <p>
+            Child components like text inputs, buttons are created as child
+            components of the stateful form component. In the stateful component
+            the methods to handle the updated state are written and passed as
+            props to the child component.
+          </p>
+          <label>Text Field (in parent component)</label>
           <input
             type="text"
             placeholder="Type text here"
@@ -66,7 +64,7 @@ class Form extends Component {
           />
         </div>
         <div>
-          <label>Text Area</label>
+          <label>Text Area(in parent component)</label>
           <textarea
             type="text"
             placeholder="Type text here"
@@ -75,7 +73,7 @@ class Form extends Component {
           />
         </div>
         <div>
-          <label>Select Filter</label>
+          <label>Select Filter(in parent component)</label>
           <select value={selectFilter} onChange={this.handleSelectFilterChange}>
             <option value="Default">Scroll to select one</option>
             <option value="Option 1">Option 1</option>

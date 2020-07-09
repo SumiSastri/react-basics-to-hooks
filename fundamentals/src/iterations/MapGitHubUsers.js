@@ -50,9 +50,9 @@ export class MapGitHubUsers extends Component {
       <div className="container">
         <br></br>
         <p>
-          Example 3B: The same principles are used to map this data from an
-          object which then renders nested JSX elements and applies in component
-          styling that is assigned to a styling variable.
+          <strong>Example 3B (1):</strong> The same principles are used to map
+          this data from an object which then renders nested JSX elements and
+          applies in component styling that is assigned to a styling variable.
         </p>
         <br></br>
         <div style={gitHubUserStyles}>{mapUsers}</div>

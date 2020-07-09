@@ -26,26 +26,29 @@ export default class ClassComponentClickEvents extends Component {
   render() {
     return (
       <div>
-        <h4>
-          How does event handling work? Demo: Click events with class components
-        </h4>
+        <h4>Click events with Class Components</h4>
         <p>
-          Class components have state so they are more dynamic, information can
-          be changed with a click event. Toggles can be switched on and off by
-          changing the information in the constructor, data can be updated.
+          Class components have state so they are more dynamic. State is
+          intantiated as immuatable. A setState method is called to update the
+          information in state and state is set to the new updated object. The
+          function is passed to the event handler and bound to the constructor
+          method. This ensures that the click responds to the data in the
+          constructor object and that there are no side effects.
         </p>
+        <h4>Example 1</h4>
         <p>
           Click button to {this.state.message}
           <button onClick={() => this.updateData()}>Click me</button>
         </p>
+        <h4>Example 2</h4>
         <p>
-          Toggles can be switched on and off by changing the information in the
-          constructor, data can be updated. If you click the on button it turns
-          off and if you turn the off button it turns on based on boolean logic
-          and a ternery for conditional rendering.
+          The toggle boolean data in state is rendered conditionally in this JSX
+          button element. The logic can be written within the JSX.
         </p>
         <button onClick={() => this.handleToggle()}>
-          {this.state.ToggleOn ? "Toggle On" : "Toggle Off"}
+          {this.state.ToggleOn
+            ? "Default: Toggle On (Click to change to: Toggle Off)"
+            : "Toggle Off: Click to switch back to default behaviour: Toggle On"}
         </button>
       </div>
     );

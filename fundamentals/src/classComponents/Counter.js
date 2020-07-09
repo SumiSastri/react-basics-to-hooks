@@ -34,17 +34,16 @@ export class Counter extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <h4>
-          How do asynchronous calls to the <em>setState</em> method impact the
-          execution of code in a class based component?
+          How do async calls to the <em>setState</em> method impact the
+          execution of code in a class-based components?
         </h4>
         <p>
-          The <em>setState({})</em> method works asynchronously - the function
-          is called first and then rendered. This can lead to code working not
+          The <em>setState({})</em> method works asynchronously. The function is
+          called first and then rendered. This can lead to code working not
           quite as we intend it to. This is clear with the counter demo section
-          as well as the next section which shows life-cycle methods in class
-          components.
+          as well as the life-cycle methods of class-based components.
         </p>
         <p>
           The <em>setState</em> method has two parameters, the state object that
@@ -53,37 +52,40 @@ export class Counter extends Component {
           a counter component, the console value is one less than the rendered
           value.
         </p>
-        <p>
-          Click the three buttons and open the developer console to see the
-          effect.
-        </p>
-        <h4>Volume level {this.state.count}</h4>
-        <button onClick={() => this.incrementVolume()}>
-          Increase volume by 1 decibal
-        </button>
-        <p>
-          Click this button, the console will show 0 while the volume level in
-          the JSX tag goes up one.
-        </p>
-        <button onClick={() => this.incrementbyThree()}>
-          Increase by 3 BUG!
-        </button>
-        <p>
-          Click the this button, there will be 3 renders of the click and 3
-          updates in the developer console but the JSX tag increases only by 1.
-          This is because <em>setState</em> method groups together multiple
-          calls in the call stack to update state in a single update for better
-          performance.
-        </p>
-        <button onClick={() => this.incrementByFive()}>
-          Increase volume by 5 decibals
-        </button>
-        <p>
-          By passing the previous state as a parameter of the call-back
-          function, this bug is fixed and when you click the 3rd button volume
-          increases by 5, the async call-back will be five less than the
-          rendered value in the developer console, just like the first button.
-        </p>
+        <div className="card">
+          <h4>Counter Demo</h4>
+          <p>
+            Click the three buttons and open the developer console to see the
+            effect.
+          </p>
+          <h4>Volume level {this.state.count}</h4>
+          <button onClick={() => this.incrementVolume()}>
+            Increase volume by 1 decibal
+          </button>
+          <p>
+            Click this button, the console will show 0 while the volume level in
+            the JSX tag goes up one.
+          </p>
+          <button onClick={() => this.incrementbyThree()}>
+            Increase by 3 BUG!
+          </button>
+          <p>
+            Click the this button, there will be 3 renders of the click and 3
+            updates in the developer console but the JSX tag increases only by
+            1. This is because <em>setState</em> method groups together multiple
+            calls in the call stack to update state in a single update for
+            better performance.
+          </p>
+          <button onClick={() => this.incrementByFive()}>
+            Increase volume by 5 decibals
+          </button>
+          <p>
+            By passing the previous state as a parameter of the call-back
+            function, this bug is fixed and when you click the 3rd button volume
+            increases by 5, the async call-back will be five less than the
+            rendered value in the developer console, just like the first button.
+          </p>
+        </div>
       </div>
     );
   }

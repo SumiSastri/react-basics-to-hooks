@@ -11,10 +11,11 @@ export class ClassComponentWithState extends Component {
   render() {
     return (
       <div>
-        <h4>Example 2:</h4>
+        <h4>Example 2: Stateful components</h4>
         <p>
-          This is a class based component. In this component, state is defined
-          as a string in the constructor method. The data in state reads:{" "}
+          Here state is defined as a string in the constructor method. The
+          constructor and the super methods are immediately invoked and then
+          rendered. The data in state that is rendered here is:{" "}
           {this.state.data}
         </p>
       </div>
