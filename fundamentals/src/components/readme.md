@@ -86,7 +86,7 @@ It is recommended to use functional components where possible. Functional compon
 
 Especially with the introduction of Hooks, it is recommended to start by using functional component over a class-based component.
 
-##ß What is a Class component and when should you use it?
+## What is a Class component and when should you use it?
 
 Class, Container, Stateful or Smart components contain State. State is an object.It is the underlying data of a user interface, everytime this data changes the component is updated and re-rendered. To get the boiler plate the short code is `rce` React-ClassComponent-Extends ReactComponent. The Class component comes with a single, void method `React.Component.render()` and it renders a JSX element and its props.
 

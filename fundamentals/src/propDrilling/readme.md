@@ -376,7 +376,7 @@ This is the prop from the user provider - User Name 1
 
 This is the recommended way as you can consume several contexts with this method.
 
-13. How do you destructure state and props in React?
+**How do you destructure state and props in React?**
 
 As props are objects, they can either be passed directly as objects in the param of the function or we can reassign the object to a variable as individual values. Similarly arrays can be passed as array-blocks or each individual element can be assigned to a variable. In this way we can choose what we want use from the individual elements of objects and arrays.
 This is known as destructuring. React Hooks uses destructuring of Arrays to access the lifecycle method in state. React also uses Object destructuring for props and state.
