@@ -6,12 +6,12 @@ function RenderPropsComponentTwo() {
       <div className="card">
         <h4>Render Props: Demo</h4>
         <p>
-          Render props are another way of dealing with the challenge of
-          prop-drilling. Render props means passing the render method into a
-          prop so that it renders the prop. In the first example, the prop is
-          rendered with its children in the child toggle component. In the
-          second example, we pass the render function into the component to make
-          it reusable.
+          Render props helps you share code between components and is another
+          way of dealing with the challenge of prop-drilling. A render method is
+          written (that does not conflict with the lifecycle render method) as a
+          prop. It then acts like a mini-functional component and is more
+          extensible. In the first example, the standard-method of rendering
+          props and the children of props is not extensible.
         </p>{" "}
       </div>
     </div>

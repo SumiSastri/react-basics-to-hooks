@@ -17,7 +17,6 @@ export class NavBar extends Component {
         <nav>
           <h1 className="navbar bg-primary">
             <FaReact /> {this.props.title}
-            <FaReact /> React Tutorial: Hooks
           </h1>
         </nav>
       </IconContext.Provider>

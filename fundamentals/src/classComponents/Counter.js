@@ -59,14 +59,20 @@ export class Counter extends Component {
             effect.
           </p>
           <h4>Volume level {this.state.count}</h4>
-          <button onClick={() => this.incrementVolume()}>
+          <button
+            className="btn-success"
+            onClick={() => this.incrementVolume()}
+          >
             Increase volume by 1 decibal
           </button>
           <p>
             Click this button, the console will show 0 while the volume level in
             the JSX tag goes up one.
           </p>
-          <button onClick={() => this.incrementbyThree()}>
+          <button
+            className="btn-danger"
+            onClick={() => this.incrementbyThree()}
+          >
             Increase by 3 BUG!
           </button>
           <p>
@@ -76,7 +82,7 @@ export class Counter extends Component {
             calls in the call stack to update state in a single update for
             better performance.
           </p>
-          <button onClick={() => this.incrementByFive()}>
+          <button className="btn-pink" onClick={() => this.incrementByFive()}>
             Increase volume by 5 decibals
           </button>
           <p>

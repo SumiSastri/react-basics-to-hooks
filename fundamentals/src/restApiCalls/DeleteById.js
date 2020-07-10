@@ -40,7 +40,9 @@ export default class GetAndPostData extends Component {
             value={id}
             onChange={this.handleDeleteIdChange}
           />
-          <button type="delete">Delete</button>
+          <button className="btn-danger" type="delete">
+            Delete
+          </button>
         </form>
       </div>
     );

@@ -63,7 +63,9 @@ export default class UpdateById extends Component {
             value={name}
             onChange={this.handleChangeUpdateUserName}
           />
-          <button type="update">Click to Update</button>
+          <button className="btn-success" type="update">
+            Click to Update
+          </button>
         </form>
       </div>
     );

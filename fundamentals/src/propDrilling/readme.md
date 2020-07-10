@@ -356,7 +356,7 @@ This may be useful if you change data-fetching libraries, for example.
 
 Documentation [https://reactjs.org/docs/higher-order-components.html#:~:text=A%20higher%2Dorder%20component%20(HOC,and%20returns%20a%20new%20component.]
 
-**How to use Render Props & HOCs**
+**How to use Render Props**
 
 When you have an event that is triggered by a change of state, like the toggle button. You can only use that toggle button once, it is not reusable. The function that is linked to the toggle in the `ToggleRenderProps` can only be used once. In the conditional rendering section we see this in action again where one toggle when we try and re-use it, does not work.
 
@@ -396,9 +396,9 @@ However this still means that the props can still be used in the component.
 
 Render props means passing the render method into a prop so that it renders the prop. It now works like a mini-functional component.
 
-Step1. Create the child component
-Step 2. Create the Parent component
-Step 3. Write the render function in the JSX of the imported child component in the parent component
+**Step1** Create the child component
+**Step2** Create the Parent component
+**Step3** Write the render function in the JSX of the imported child component in the parent component
 
 ```
 <ToggleRenderProps
@@ -444,7 +444,7 @@ class ToggleRenderProps extends Component {
 export default ToggleRenderProps;
 ```
 
-Step 5:
+**Step5**
 
 This is where the functionality changes. As this is a mini-functional component, we can pass a param into the render method in the child component. We have access to state data and the handleToggle function, but we can even add other params as required by the functionality of the component.
 
@@ -463,11 +463,10 @@ render() {
 }
 ```
 
-Step 6
-
+**Step6**
 We go back to the parent component and pass the props back into the render method defined there and change the functionality of the mini-functional component to render the toggle conditionally.
 
-Step 7
+**Step7**
 You can now reuse the component with the same functionality of the toggle - show hide and render anything - including importing a completely different component to render.
 
 ```
@@ -482,6 +481,8 @@ You can now reuse the component with the same functionality of the toggle - show
 ```
 
 Documentation [https://reactjs.org/docs/render-props.html]
+
+Excellent examples in LevelUpTuts - Scott [https://www.youtube.com/watch?v=x5oiX93DeHA&list=PLLnpHn493BHGTMs2UmaPUG6Lu3dHrqryY&index=2][https://www.youtube.com/watch?v=3ic-f1aylwu] [https://www.youtube.com/watch?v=NJBzUZW0jcE]
 
 This is a demo of the Context API
 To make the access of props easier the Context API has methods that you can use - wrapping the parent compnent in a provider and the child component in a consumer. The consumer method takes in the prop in the provider as a parameter and renders it as an expression in the appropriate JSX element

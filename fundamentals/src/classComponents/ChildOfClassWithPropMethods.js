@@ -15,6 +15,7 @@ function ChildOfClassWithPropMethods(props) {
         child component.
       </p>
       <button
+        className="btn-pink"
         onClick={() =>
           props.displaySalary("NOTE: TAX HAS NOT BEEN DEDUCTED", "Tax is 40%")
         }

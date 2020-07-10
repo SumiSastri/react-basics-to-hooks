@@ -81,7 +81,9 @@ class Form extends Component {
             <option value="Option 3">Option 3</option>
           </select>
         </div>
-        <button type="submit">Submit</button>
+        <button className="btn-dark" type="submit">
+          Submit
+        </button>
       </form>
     );
   }

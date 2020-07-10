@@ -213,10 +213,36 @@ img {
   color: #333;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
+  margin: 0.5rem;
   border: none;
   cursor: pointer;
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
+  outline: none;
+}
+.btn-pink {
+  display: inline-block;
+  color: grey;
+  background-color: pink;
+  padding: 0.4rem 1.3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+}
+
+.btn-blue {
+  display: inline-block;
+  color: navajowhite;
+  background-color: navy;
+  padding: 0.4rem 1.3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
   outline: none;
 }
 
@@ -261,6 +287,7 @@ img {
 .badge-primary,
 .alert-primary {
   background: var(--primary-color);
+  margin: 0.5rem;
   color: #fff;
 }
 
@@ -269,6 +296,7 @@ img {
 .badge-light,
 .alert-light {
   background: var(--light-color);
+  margin: 0.5rem;
   color: #333;
 }
 
@@ -278,6 +306,7 @@ img {
 .alert-dark {
   background: var(--dark-color);
   color: #fff;
+  margin: 0.5rem;
 }
 
 .btn-danger,
@@ -286,6 +315,7 @@ img {
 .alert-danger {
   background: var(--danger-color);
   color: #fff;
+  margin: 0.5rem;
 }
 
 .btn-success,
@@ -294,6 +324,7 @@ img {
 .alert-success {
   background: var(--success-color);
   color: #fff;
+  margin: 0.5rem;
 }
 
 .btn-white,
@@ -303,6 +334,7 @@ img {
   background: #fff;
   color: #333;
   border: #ccc solid 1px;
+  margin: 0.5rem;
 }
 
 .btn:hover {

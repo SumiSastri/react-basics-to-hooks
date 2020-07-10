@@ -53,7 +53,7 @@ export class ComponentUpdateMethod extends Component {
           calls, the function needs to specify the previous state and the
           current state for the click handler and the call stack to be in sync.
         </p>
-        <button className="btn" onClick={this.handleUpdateCountClick}>
+        <button className="btn-success" onClick={this.handleUpdateCountClick}>
           Click to update title tag
         </button>
         <input
@@ -62,7 +62,7 @@ export class ComponentUpdateMethod extends Component {
           placeholder="Type text here"
           onChange={this.handleInputChange}
         ></input>
-        <button className="btn" onClick={this.handleInputChangeClick}>
+        <button className="btn-dark" onClick={this.handleInputChangeClick}>
           Click to update - this is a standard event handler compared to this
           text input
         </button>

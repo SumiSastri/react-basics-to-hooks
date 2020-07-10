@@ -28,20 +28,21 @@ function PropDrilling() {
         <RenderPropsComponentTwo />
         <ToggleNormalProps>
           <h2 className="text-success">
-            I am a standard PROPS.CHILDREN toggle
+            I am a standard PROPS.CHILDREN toggle - can't be reused
           </h2>
         </ToggleNormalProps>
         <ToggleRenderProps
           render={({ on, handleToggle }) => (
             <div>
-              {on && <h3>I am a renderProps mini-functional component</h3>}
-              <p>
-                The render method is written as a prop of the child component
-                and works like a mini-functional component when imported into
-                the parent component. It follows the methods as props design
-                pattern.
-              </p>
-              <button onClick={handleToggle}>Click to show</button>
+              {on && (
+                <h3>
+                  I am a renderProps, I behave just like a mini-functional
+                  component and can be re-used
+                </h3>
+              )}
+              <button className="btn-dark" onClick={handleToggle}>
+                DEMO: I am a render props button click me!
+              </button>
             </div>
           )}
         />
@@ -54,45 +55,16 @@ function PropDrilling() {
                   <li>About</li>
                 </nav>
               )}
-              <button
-                onClick={handleToggle}
-                style={{
-                  display: "inline-block",
-                  color: "black",
-                  backgroundColor: "pink",
-                  padding: "0.4rem 1.3rem",
-                  margin: "0.5rem",
-                  fontSize: "1rem",
-                  border: "none",
-                  cursor: "pointer",
-                  marginRight: "0.5rem",
-                  transition: "opacity 0.2s ease-in",
-                  outline: "none",
-                }}
-              >
-                I am now a nav button click me
+              <button onClick={handleToggle} className="btn-pink">
+                DEMO: Same component but now I am a nav button click me
               </button>
               <ToggleRenderProps
                 render={({ on, handleToggle }) => (
                   <div>
                     {on && <FindGitHubUser />}
-                    <button
-                      onClick={handleToggle}
-                      style={{
-                        display: "inline-block",
-                        color: "white",
-                        backgroundColor: "blue",
-                        padding: "0.4rem 1.3rem",
-                        margin: "0.5rem",
-                        fontSize: "1rem",
-                        border: "none",
-                        cursor: "pointer",
-                        marginRight: "0.5rem",
-                        transition: "opacity 0.2s ease-in",
-                        outline: "none",
-                      }}
-                    >
-                      I can import another component as well - click to show
+                    <button onClick={handleToggle} className="btn-blue">
+                      DEMO: Same component I can import another component as
+                      well - click me
                     </button>
                   </div>
                 )}

@@ -46,7 +46,9 @@ export default class CreateNewUserAndId extends Component {
             value={name}
             onChange={this.handleTextInputChange}
           />
-          <button type="submit">Submit</button>
+          <button className="btn-dark" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     );

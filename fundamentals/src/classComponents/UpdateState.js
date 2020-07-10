@@ -26,7 +26,7 @@ export class UpdateState extends Component {
         <p>
           State: <strong>{this.state.data}</strong>
         </p>
-        <button onClick={() => this.updateData()}>
+        <button className="btn-light" onClick={() => this.updateData()}>
           Click to demo state data updating with the setState method
         </button>
         <p>

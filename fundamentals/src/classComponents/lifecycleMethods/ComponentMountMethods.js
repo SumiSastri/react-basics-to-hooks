@@ -155,7 +155,10 @@ export class ComponentMountMethods extends Component {
             </strong>
           </li>
         </div>
-        <button onClick={this.changeStateForLifeCycleMethods}>
+        <button
+          className="btn-blue"
+          onClick={this.changeStateForLifeCycleMethods}
+        >
           Click me and check console to see how parent and child component
           lifecycle methods are called in the stack
         </button>
