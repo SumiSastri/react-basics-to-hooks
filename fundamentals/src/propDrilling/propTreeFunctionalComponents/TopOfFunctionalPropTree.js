@@ -7,7 +7,7 @@ import Child3 from "../propTreeFunctionalComponents/Child3";
 function TopOfFunctionalPropTree({ username }) {
   return (
     <div className="card">
-      <h1>Top of Prop Tree - {username}Component A</h1>
+      <h2>Top of Prop Tree - {username}Component A</h2>
       <p>
         Prop drilling demo - props manually passed down from component to
         component

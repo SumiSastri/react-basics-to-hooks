@@ -1,9 +1,9 @@
 import React from "react";
 
-function GrandChild5({ height }) {
+function GrandChild5({ profession }) {
   return (
     <div>
-      <h3>I am GrandChild5 {height}</h3>
+      <h3 className="text-primary">I am GrandChild5 {profession}</h3>
     </div>
   );
 }

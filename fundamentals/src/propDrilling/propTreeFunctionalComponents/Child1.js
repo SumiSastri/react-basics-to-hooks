@@ -7,10 +7,10 @@ import GrandChild6 from "../propTreeFunctionalComponents/GrandChild6";
 function Child1({ name }) {
   return (
     <div>
-      <h2>
+      <h3 className="text-success">
         Child-1
         {name}
-      </h2>
+      </h3>
       <GrandChild3 profession="doctor" />
       <GrandChild4 job="lawyer" />
       <GrandChild6 work="accountant" />

@@ -1,30 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class RenderPropsComponentTwo extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      count: 0,
-    };
-  }
-
-  incrementCount = () => {
-    this.setState((previousState) => {
-      return { count: previousState.count + 1 };
-    });
-  };
-
-  render() {
-    return (
-      <div>
-        <h4>Render props and the challenge of prop-drilling</h4>
-        <button onClick={this.incrementCount}>
-          Clicked {this.state.count} times
-        </button>
+function RenderPropsComponentTwo() {
+  return (
+    <div>
+      <div className="card">
+        <h4>Render Props: Demo</h4>
+        <p>
+          Render props are another way of dealing with the challenge of
+          prop-drilling. Render props means passing the render method into a
+          prop so that it renders the prop. In the first example, the prop is
+          rendered with its children in the child toggle component. In the
+          second example, we pass the render function into the component to make
+          it reusable.
+        </p>{" "}
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default RenderPropsComponentTwo;

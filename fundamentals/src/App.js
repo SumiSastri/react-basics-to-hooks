@@ -12,7 +12,7 @@ import FunctionalComponentClickEvents from "./eventComponents/FunctionComponentC
 import FourWaysToConditionallyRender from "./conditionalRendering/FourWaysToConditionallyRender";
 import ListOfLists from "./listComponents/ListOfLists";
 import Form from "./components/FormComponent";
-import HigherOrderComponents from "./propDrilling/higherOrderComponents/HigherOrderComponents";
+import PropDrilling from "./propDrilling/PropDrilling";
 import GetAndPostData from "./restApiCalls/GetAndPostData";
 import NavBar from "./siteNavs/NavBar";
 
@@ -42,10 +42,7 @@ function App() {
             />
             <Route path="/map-and-render" component={ListOfLists} />
             <Route path="/forms" component={Form} />
-            <Route
-              path="/higher-order-components"
-              component={HigherOrderComponents}
-            />
+            <Route path="/prop-drilling" component={PropDrilling} />
             <Route path="/api-calls-with-axios" component={GetAndPostData} />
           </div>
         </Fragment>

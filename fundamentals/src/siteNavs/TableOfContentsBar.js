@@ -32,7 +32,7 @@ export default function TableOfContentsBar() {
         <Link to="/forms" className="toc-item">
           <li>How do React forms differ from HTML forms?</li>
         </Link>
-        <Link to="/higher-order-components" className="toc-item">
+        <Link to="/prop-drilling" className="toc-item">
           <li>What is prop-drilling?</li>
         </Link>
         <Link to="/api-calls-with-axios" className="toc-item">

@@ -53,7 +53,10 @@ export class ForEachGitHubUser extends Component {
         <br></br>
         <p>
           Example 3B 2: Uses <em>array.forEach</em> has side-effects better to
-          use map
+          use map - the error in the console has been left there intentionally
+          to see the kind of error the method throws. This can be corrected in
+          the code-block, but has not been to demo the challenge with the
+          method.
         </p>
         <br></br>
         <div style={gitHubUserStyles}>{displayUsers}</div>

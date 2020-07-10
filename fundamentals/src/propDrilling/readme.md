@@ -358,6 +358,129 @@ Documentation [https://reactjs.org/docs/higher-order-components.html#:~:text=A%2
 
 **How to use Render Props & HOCs**
 
+When you have an event that is triggered by a change of state, like the toggle button. You can only use that toggle button once, it is not reusable. The function that is linked to the toggle in the `ToggleRenderProps` can only be used once. In the conditional rendering section we see this in action again where one toggle when we try and re-use it, does not work.
+
+We can use the button again if we want to render the children of props.
+
+```
+import React, { Component } from "react";
+
+class ToggleRenderProps extends Component {
+  state = {
+    on: false,
+  };
+
+  handleToggle = () => {
+    this.setState({
+      on: !this.state.on,
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        {this.state.on && <h1>I am a render-props toggle</h1>}
+        {this.state.on && this.props.children}
+        <button onClick={this.handleToggle}>Click to show</button>
+      </div>
+    );
+  }
+}
+
+export default ToggleRenderProps;
+```
+
+However this still means that the props can still be used in the component.
+
+## How does this actually change with renderProps?
+
+Render props means passing the render method into a prop so that it renders the prop. It now works like a mini-functional component.
+
+Step1. Create the child component
+Step 2. Create the Parent component
+Step 3. Write the render function in the JSX of the imported child component in the parent component
+
+```
+<ToggleRenderProps
+          render={() => (
+            <div>
+              <h3>I am a renderProps mini-functional component</h3>
+              <p>
+                The render method is written inside the component and works like
+                a mini-functional component.
+              </p>
+              <button>Click to show</button>
+            </div>
+          )}
+        />
+```
+
+Step 4. Deconstruct render as a prop and pass it into the child component.
+
+```
+import React, { Component } from "react";
+
+class ToggleRenderProps extends Component {
+  state = {
+    on: false,
+  };
+
+  handleToggle = () => {
+    this.setState({
+      on: !this.state.on,
+    });
+  };
+
+  render() {
+    const { render } = this.props;
+    return (
+      <div>
+        <h3> {render()}</h3>
+      </div>
+    );
+  }
+}
+
+export default ToggleRenderProps;
+```
+
+Step 5:
+
+This is where the functionality changes. As this is a mini-functional component, we can pass a param into the render method in the child component. We have access to state data and the handleToggle function, but we can even add other params as required by the functionality of the component.
+
+Having destructured props, we can destructure state and the handleToggle function and pass them as params of the prop attribute `render` like so.
+
+```
+render() {
+    const { render } = this.props;
+    const {on, handleToggle} = this.state
+    return (
+      <div>
+        <h3> {render({on, handleToggle})}</h3>
+      </div>
+    );
+  }
+}
+```
+
+Step 6
+
+We go back to the parent component and pass the props back into the render method defined there and change the functionality of the mini-functional component to render the toggle conditionally.
+
+Step 7
+You can now reuse the component with the same functionality of the toggle - show hide and render anything - including importing a completely different component to render.
+
+```
+<ToggleRenderProps
+          render={({ on, handleToggle }) => (
+            <div>
+              {on && <h3>I am a renderProps mini-functional component</h3>}
+              <button onClick={handleToggle}>Click to show</button>
+            </div>
+          )}
+        />
+```
+
 Documentation [https://reactjs.org/docs/render-props.html]
 
 This is a demo of the Context API
@@ -384,16 +507,19 @@ This is known as destructuring. React Hooks uses destructuring of Arrays to acce
 In a functional component, props are destructured before the return statement.
 
 ```
+
 import React from "react";
 
 export default function HelloWorld(props) {
+
   <!-- console.log(props) -->
-  const { name } = props;
-  return (
-    <div>
-      <h4>Hello World this is a {name}</h4>
-    </div>
-  );
+
+const { name } = props;
+return (
+<div>
+<h4>Hello World this is a {name}</h4>
+</div>
+);
 }
 );
 };
@@ -403,18 +529,23 @@ export default function HelloWorld(props) {
 In a class based component the destructuring of props and state happens in the `render` method
 
 ```
-  render() {
-    const { data } = this.state;
-    const { name } = this.props;
-    return (
-      <div>
-        <h4>
-          Hello World is a class based component state is a string with the
-          text: {data} and imported props: {name}
-        </h4>
-      </div>
-    );
-  }
+
+render() {
+const { data } = this.state;
+const { name } = this.props;
+return (
+<div>
+<h4>
+Hello World is a class based component state is a string with the
+text: {data} and imported props: {name}
+</h4>
+</div>
+);
 }
+}
+
+```
+
+```
 
 ```
