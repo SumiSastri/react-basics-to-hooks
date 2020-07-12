@@ -7,6 +7,7 @@ import ToggleNormalProps from "./renderProps/ToggleNormalProps";
 import ContextComponent from "./contextAPI/ContextComponent";
 import ToggleRenderProps from "./renderProps/ToggleRenderProps";
 import FindGitHubUser from "../iterations/FindGitHubUser";
+import Main from "./contextAPI/context-mini-project/Main";
 
 function PropDrilling() {
   return (
@@ -74,6 +75,7 @@ function PropDrilling() {
         />
       </div>
       <ContextComponent />
+      <Main />
     </div>
   );
 }

@@ -484,22 +484,6 @@ Documentation [https://reactjs.org/docs/render-props.html]
 
 Excellent examples in LevelUpTuts - Scott [https://www.youtube.com/watch?v=x5oiX93DeHA&list=PLLnpHn493BHGTMs2UmaPUG6Lu3dHrqryY&index=2][https://www.youtube.com/watch?v=3ic-f1aylwu] [https://www.youtube.com/watch?v=NJBzUZW0jcE]
 
-This is a demo of the Context API
-To make the access of props easier the Context API has methods that you can use - wrapping the parent compnent in a provider and the child component in a consumer. The consumer method takes in the prop in the provider as a parameter and renders it as an expression in the appropriate JSX element
-
-Component C nests Component E
-There is no need to pass the prop through every intermediate nested component. This is the main advantage of the provider and consumer methods. Only the child prop that needs the prop consumes it.
-
-Component E nests component F
-Another way to pass props is by using the contextType property. This is passed just above the export default of the component or as a static type before the render method. Both options work. This works only with class components. Only one context can be consumed with this method.
-
-The context is rendered here as This is the prop from the user provider - User Name 1
-
-Component F can render props from Component C with Context API:
-This is the prop from the user provider - User Name 1
-
-This is the recommended way as you can consume several contexts with this method.
-
 **How do you destructure state and props in React?**
 
 As props are objects, they can either be passed directly as objects in the param of the function or we can reassign the object to a variable as individual values. Similarly arrays can be passed as array-blocks or each individual element can be assigned to a variable. In this way we can choose what we want use from the individual elements of objects and arrays.
@@ -530,7 +514,6 @@ return (
 In a class based component the destructuring of props and state happens in the `render` method
 
 ```
-
 render() {
 const { data } = this.state;
 const { name } = this.props;
@@ -544,9 +527,5 @@ text: {data} and imported props: {name}
 );
 }
 }
-
-```
-
-```
 
 ```
