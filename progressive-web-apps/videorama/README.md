@@ -215,3 +215,14 @@ Update the manifest-json array with the new sizes - if you use the word logo you
 - open up the Application tab
 - check the icons loading
 - run Lighthouse audit
+
+Change the app name in manifest json - short name char limit 12/ name char limit 45/
+
+```
+"short_name": "Videorama",
+"name": "PWA with React Hooks",
+```
+
+- run a build & serve, check the application name in manifest json
+
+<img src="/progressive-web-apps/videorama/src/assets/manifest-json-check.png" alt="PWA project" height="250"/>
