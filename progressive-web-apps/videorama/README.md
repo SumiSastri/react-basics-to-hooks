@@ -4,6 +4,7 @@
 - Better on web and mobile, makes web apps seem native, good for downloading native apps on any device, device agnostic - users & customers to download the app on any device without app stores
 - works on lower-speed networks and is an application that's like a mobile website.
 - improves loading times across all environments and varying networks
+- PWA's work on the principle of continous build and integration of the build files in the production environment not just the dev environment.
 
 ## PWA check-list
 
@@ -17,9 +18,12 @@ Lighthouse[https://developers.google.com/web/tools/lighthouse]
 
 ## Scaffolding
 
-- `npx create react app` - is a PWA
+- `npx create react app` videorama
 - `run npm i`
 - `npm run start`
+
+Lightweight server - in directory videorama
+`sudo npm install -g, serve` the password prompt is your local laptop access
 
 Clean up:-
 
@@ -121,9 +125,12 @@ Style the elements and pass the data variables. Check the render and styles work
 {ovVideoData.map((video) => (
         <div className="video-container" key={video.video_url}>
           <h2> {video.name}</h2>
-          <video className="videos"></video>
         </div>
       ))}
 ```
 
-Now proceed to add the videos and any other data you want to render from the array and style accordingly.
+Now proceed to add the videos and any other data you want to render from the array and style accordingly. Videos have their own JSX tag `<video className="videos" controls src={video.video_url} />`
+
+### PWA and the continuous build process
+
+So, sudo, npm, install, dash g, serve. So, what serve is going to allow us to do is to basically set up a lightweight server here on my machine so that I can serve up all of the files that have been built. Now, in the next video we're going to actually run that build.

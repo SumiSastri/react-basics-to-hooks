@@ -31,12 +31,21 @@ body {
 .video-container {
   max-width: 1100px;
   margin: auto;
-  padding: 0 20px;
+  padding: 15px 0px 10px 0px;
 }
 .videos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  height: 250px;
+  width: auto;
+  background-color: lightgoldenrodyellow;
+  padding: 15px;
+  border: solid darkgrey 2px;
+  border-radius: 5%;
+  outline: none;
+}
+h2 {
+  font-size: 20px;
+  padding: 2px;
+  color: darkslategrey;
 }
 .App-logo {
   height: 40vmin;

@@ -20,8 +20,8 @@ function App() {
       <header className="header">Videorama</header>
       {ovVideoData.map((video) => (
         <div className="video-container" key={video.video_url}>
+          <video className="videos" controls src={video.video_url} />
           <h2> {video.name}</h2>
-          <video className="videos"></video>
         </div>
       ))}
     </div>
