@@ -187,7 +187,7 @@ Now proceed to add the videos and any other data you want to render from the arr
 - uncheck all boxes and download a video and put it into the src folder of the app
 - make an offline component to render conditionally as part of the error message block
 
-### Manifest JSON - icons of different sizes for different browsers and platform
+### Manifest JSON - icons of different sizes for different browsers and platforms
 
 List of icon sizes
 120x120-ios
@@ -204,9 +204,9 @@ Update the manifest-json array with the new sizes - if you use the word logo you
 
 ```
 {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "videorama120.png",
+      "type": "image/png",
+      "sizes": "120x120"
     },
 ```
 
