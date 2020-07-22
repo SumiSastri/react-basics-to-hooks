@@ -39,7 +39,7 @@ Clean up:-
 }
 ```
 
-Add any default styles here. Header can be changed to 20vh if you want maintain the react styling and move the header to the top of the page
+Add any default styles here. Header can be changed to 20vh if you want maintain the react styling and move the header to the top of the page. Import google fonts, change colors etc.,
 
 You can remove these as well
 
