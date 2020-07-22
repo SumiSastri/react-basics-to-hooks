@@ -9,6 +9,15 @@
   text-align: center;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  margin: 35px;
+  padding: 15px;
+}
 .header {
   background-color: lightseagreen;
   min-height: 20vh;
@@ -19,7 +28,16 @@
   font-size: calc(10px + 2vmin);
   color: lightgoldenrodyellow;
 }
-
+.video-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+.videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

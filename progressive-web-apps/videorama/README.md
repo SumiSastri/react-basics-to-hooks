@@ -54,23 +54,25 @@ You can remove these as well
 
 ## API call with Hooks
 
-API end point [orangevalleycaa.org/api/videos]
+API end point [https://orangevalleycaa.org/api/videos]
 
 - Hooks useState (state management) and useEffect (data-fetching)
+  `import React, { useState, useEffect } from "react";`
 
-- useState sets the initial data as an empty array
+- import the hooks
+- useState is the function declaration, setting the initial data as an empty array. The destructured array holds the `ovVideoData` and the `setVideoData` methods as elements in the array's variable.
 - useEffect is a call back function that runs after the render method.
 - add dependency (in this case) an empty array to prevent the default re-render of the componentDidMount method in the React component lifecyle
 
 ```
- const [videoData, setVideoData] = useState([]);
+const [ovVideoData, setVideoData] = useState([]);;
 
   useEffect(() => {}, []);
 ```
 
 **Fetching data**
 
-- set up the async-await in the native fetchAPI call to wait for the data to load.
+- set up the async-await call to wait for the data to load.
 
 ```
 const fetchVideoData = async(() => {
@@ -78,12 +80,50 @@ const fetchVideoData = async(() => {
     });
 ```
 
-- with the result of the data we can run the async function to set the data to what values we want in the render method.
+- call the API endPoint, using the variable in the state object and the native fetchAPI (use can use axios or any other HTTP runner here)
 
--turning it into a JSON makes loading time faster as JSON is a light on storage.
+- with the result of the data we can run the async function. We call the state objects `setVideoData` method passing the value of the API response call in the function call.
+- we use a `.then(()=>{})` block turning the data we get into a JSON. This makes loading time faster as JSON is a light on storage.
+- Check the response in the developer console to ensure data is flowing.
+
+<img src="/progressive-web-apps/videorama/src/assets/api-call-data-check.png" alt="PWA project" height="250"/>
+
+- Then call the `fetchVideoData()` function before the dependency of the reduce method.
+
+```
+const fetchVideoData = async () => {
+      const ovVideoData = await fetch(
+        "https://orangevalleycaa.org/api/videos"
+      ).then((response) => response.json());
+      setVideoData(ovVideoData);
+        console.log(ovVideoData);
+    };
+    fetchVideoData();
+  }, []);
+
+```
 
 **Rendering data**
 
-- the data that is rendered (the videos) is in JSX so we map the data into the JSX element to render it in providing a key for the key-value pairs.
+- the data that is rendered (the videos) is in JSX so we map the data into the JSX element, passing in a key to identify each key-value pair
 
-So, we'll say, video, give it a height of 200. We'll give it this attribute of controls, meaning that it'll just have the playhead controls. And then we'll say source, video.video_url. And then we'll close this tag. All right. So let's see how we're doing. We're going to open up the browser. Awesome. We should see that we're being able to render these videos. Those are loading as expected. video.id.
+```
+{ovVideoData.map((video) => (
+        <div key={}></div>
+      ))}
+```
+
+Style the elements and pass the data variables. Check the render and styles work on the front end with a text tag first.
+
+<img src="/progressive-web-apps/videorama/src/assets/api-call-render-check.png" alt="PWA project" height="250"/>
+
+```
+{ovVideoData.map((video) => (
+        <div className="video-container" key={video.video_url}>
+          <h2> {video.name}</h2>
+          <video className="videos"></video>
+        </div>
+      ))}
+```
+
+Now proceed to add the videos and any other data you want to render from the array and style accordingly.
