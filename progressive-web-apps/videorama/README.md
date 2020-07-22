@@ -1,68 +1,89 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What are PWAs
 
-## Available Scripts
+- PWA's reduce data use, make apps fast and reliable, less storage space required
+- Better on web and mobile, makes web apps seem native, good for downloading native apps on any device, device agnostic - users & customers to download the app on any device without app stores
+- works on lower-speed networks and is an application that's like a mobile website.
+- improves loading times across all environments and varying networks
 
-In the project directory, you can run:
+## PWA check-list
 
-### `npm start`
+Google [https://developers.google.com/] & [https://developers.google.com/web/ilt/pwa/introduction-to-progressive-web-app-architectures]
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Web dev[https://web.dev/pwa-checklist/]
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Medium [https://medium.com/@samichkhachkhi/pwa-checklist-for-the-googl-341cb0426e]
 
-### `npm test`
+Lighthouse[https://developers.google.com/web/tools/lighthouse]
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Scaffolding
 
-### `npm run build`
+- `npx create react app` - is a PWA
+- `run npm i`
+- `npm run start`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clean up:-
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- FILES & CODE TO REMOVE
+- app.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* remove boiler plate text and set up a `h1` JSX tag with hello world, check that the app is still working.
+* remove the logo import
 
-### `npm run eject`
+- index.css - remove default styling from different browsers
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Add any default styles here. Header can be changed to 20vh if you want maintain the react styling and move the header to the top of the page. Import google fonts, change colors etc.,
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You can remove these as well
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- setUpTests.js
+- logo.svg
+- app.test.js
+- serviceWorker.js (then remove imports in index.js serviceWorker.js - and commented out text at the bottom)
 
-## Learn More
+- In public folder
+  - go to the favicon: create your own icons here [https://icoconvert.com/]\
+  - go to index.html and write your app title
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API call with Hooks
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+API end point [orangevalleycaa.org/api/videos]
 
-### Code Splitting
+- Hooks useState (state management) and useEffect (data-fetching)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- useState sets the initial data as an empty array
+- useEffect is a call back function that runs after the render method.
+- add dependency (in this case) an empty array to prevent the default re-render of the componentDidMount method in the React component lifecyle
 
-### Analyzing the Bundle Size
+```
+ const [videoData, setVideoData] = useState([]);
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+  useEffect(() => {}, []);
+```
 
-### Making a Progressive Web App
+**Fetching data**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- set up the async-await in the native fetchAPI call to wait for the data to load.
 
-### Advanced Configuration
+```
+const fetchVideoData = async(() => {
+      await;
+    });
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- with the result of the data we can run the async function to set the data to what values we want in the render method.
 
-### Deployment
+-turning it into a JSON makes loading time faster as JSON is a light on storage.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+**Rendering data**
 
-### `npm run build` fails to minify
+- the data that is rendered (the videos) is in JSX so we map the data into the JSX element to render it in providing a key for the key-value pairs.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+So, we'll say, video, give it a height of 200. We'll give it this attribute of controls, meaning that it'll just have the playhead controls. And then we'll say source, video.video_url. And then we'll close this tag. All right. So let's see how we're doing. We're going to open up the browser. Awesome. We should see that we're being able to render these videos. Those are loading as expected. video.id.

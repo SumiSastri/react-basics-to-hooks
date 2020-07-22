@@ -4,7 +4,12 @@ import "./App.css";
 function App() {
   const [videoData, setVideoData] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const fetchVideoData = async(() => {
+      await;
+    });
+  }, []);
+
   return (
     <div className="App">
       <header className="header">Videorama</header>
