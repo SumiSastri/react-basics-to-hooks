@@ -45,12 +45,13 @@ Clean up:-
 
 Add any default styles here. Header can be changed to 20vh if you want maintain the react styling and move the header to the top of the page. Import google fonts, change colors etc.,
 
-You can remove these as well
+- serviceWorker.js - we will need to register this later, it is opt-in but do not remove it as with other projects
+- go to index.js and register it
+  `serviceWorker.register();`
 
-- setUpTests.js
-- logo.svg
-- app.test.js
-- serviceWorker.js (then remove imports in index.js serviceWorker.js - and commented out text at the bottom)
+* setUpTests.js
+* logo.svg
+* app.test.js
 
 - In public folder
   - go to the favicon: create your own icons here [https://icoconvert.com/]\
@@ -152,4 +153,6 @@ Now proceed to add the videos and any other data you want to render from the arr
 ### What is a service worker?
 
 - A service worker is a JavaScript that runs in the background and is responsible for caching resources, handling network requests and storing content for offline use. The create-react-app providers `serviceWorker.js` to us
-- Registering the service worker
+- go to localhost:3000 start the app and go to the dev tools, right click to get the Applications tab and see the list of registered and active service workers on this app, you can choose to unregister them
+- Registering the service worker - React's service worker is opt-in in the src file and it needs to be registered in the index.js file. Documentation of React's PWA is here and is worth a read[https://bit.ly/CRA-PWA]
+- Run another `npm run build` and `serve -s build` and go to localhost:5000
