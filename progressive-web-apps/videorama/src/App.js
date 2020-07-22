@@ -10,7 +10,6 @@ function App() {
         "https://orangevalleycaa.org/api/videos"
       ).then((response) => response.json());
       setVideoData(ovVideoData);
-      console.log(ovVideoData, "logs ovVideoData");
     };
     fetchVideoData();
   }, []);

@@ -131,6 +131,25 @@ Style the elements and pass the data variables. Check the render and styles work
 
 Now proceed to add the videos and any other data you want to render from the array and style accordingly. Videos have their own JSX tag `<video className="videos" controls src={video.video_url} />`
 
-### PWA and the continuous build process
+### Building in production and serving to local host
 
-So, sudo, npm, install, dash g, serve. So, what serve is going to allow us to do is to basically set up a lightweight server here on my machine so that I can serve up all of the files that have been built. Now, in the next video we're going to actually run that build.
+`npm instal -g serve`
+`npm run build`
+
+- optimizes the build for the best performance
+- code minified, and chunked
+- once buiild it can be served with a static server
+- run `serve -s build`
+- production build folder is now in the videorama folder
+- in the build folder are the static minified files - html, css, js etc.,
+- there is a manifest.json file as well
+- go to the localHost:5000
+
+### LightHouse audits and reports
+
+- run in guest/ incognito mode for better results on the build file render not the dev mode renders as in the build which is already minified and has better performance. On accessiblity there are key things to look for like alt tags populated, available offline etc., to improve Lighthouse metrics.
+
+### What is a service worker?
+
+- A service worker is a JavaScript that runs in the background and is responsible for caching resources, handling network requests and storing content for offline use. The create-react-app providers `serviceWorker.js` to us
+- Registering the service worker
