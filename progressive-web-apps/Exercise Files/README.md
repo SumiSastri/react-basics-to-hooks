@@ -55,3 +55,14 @@ You can remove these as well
 ## API call with Hooks
 
 API end point [orangevalleycaa.org/api/videos]
+
+- Hooks useState (state management) and useEffect (data-fetching)
+
+- useState sets the initial data as an empty array
+- useEffect is a call back function that runs after the render method. We also use
+  async-await in the fetch function to wait for the data to load. Turning it into a JSON makes loading time faster as JSON is a light on storage.
+- with the result of the data we can run the async function to set the data to what values we want in the render method.
+- add dependency of an empty array to prevent the default re-render of the componentDidMount method in the React component lifecyle
+- the data that is rendered (the videos) is in JSX so we map the data into the JSX element to render it in providing a key for the key-value pairs.
+
+So, we'll say, video, give it a height of 200. We'll give it this attribute of controls, meaning that it'll just have the playhead controls. And then we'll say source, video.video_url. And then we'll close this tag. All right. So let's see how we're doing. We're going to open up the browser. Awesome. We should see that we're being able to render these videos. Those are loading as expected. video.id.

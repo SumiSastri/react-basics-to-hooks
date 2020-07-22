@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-header {
+.header {
   background-color: lightseagreen;
   min-height: 20vh;
   display: flex;
