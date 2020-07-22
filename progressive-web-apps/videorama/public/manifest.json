@@ -8,12 +8,37 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "videorama120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "videorama144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "videorama152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "videorama167.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "videorama180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "videorama192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "videorama512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

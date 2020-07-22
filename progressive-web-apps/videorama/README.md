@@ -49,8 +49,26 @@ Add any default styles here. Header can be changed to 20vh if you want maintain 
 - go to index.js and register it
   `serviceWorker.register();`
 
+* public folder add new logo-icon sizes
+  120x120-ios
+  144x144 -android
+  152x152 -ios
+  167x167 -ios
+  180x180 -
+  192x192 -
+  512x512 -chrome
+
+  In the icons array in the manifest-json file update the icon sizes
+
+  ```
+  {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+  ```
+
 * setUpTests.js
-* logo.svg
 * app.test.js
 
 - In public folder
@@ -156,3 +174,44 @@ Now proceed to add the videos and any other data you want to render from the arr
 - go to localhost:3000 start the app and go to the dev tools, right click to get the Applications tab and see the list of registered and active service workers on this app, you can choose to unregister them
 - Registering the service worker - React's service worker is opt-in in the src file and it needs to be registered in the index.js file. Documentation of React's PWA is here and is worth a read[https://bit.ly/CRA-PWA]
 - Run another `npm run build` and `serve -s build` and go to localhost:5000
+  if you change anything in the app it will not refresh as the service worker caches it. You need to open it in a new window or hard refresh `command+shift+r`
+
+### Gettting the app to work in offline mode - removing the API call
+
+- In developer tools go to network tools - note the code chunks in webbpack
+
+<img src="/progressive-web-apps/videorama/src/assets/network-tab-check.png" alt="PWA project" height="250"/>
+
+- check the work offline check box and refresh
+- if you have checked the cache box then nothing will load, but with the service worker actively caching data you will see some content
+- uncheck all boxes and download a video and put it into the src folder of the app
+- make an offline component to render conditionally as part of the error message block
+
+### Manifest JSON - icons of different sizes for different browsers and platform
+
+List of icon sizes
+120x120-ios
+144x144 -android
+152x152 -ios
+167x167 -ios
+180x180 -
+192x192 -
+512x512 -chrome
+
+Work from chrome backwards as to make a png smaller there is no loss of resolution.
+
+Update the manifest-json array with the new sizes - if you use the word logo you can overwrite the react logos.
+
+```
+{
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+```
+
+- run a build & serve
+- open up a new window
+- open up the Application tab
+- check the icons loading
+- run Lighthouse audit
