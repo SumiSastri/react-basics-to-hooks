@@ -226,3 +226,21 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 - run a build & serve, check the application name in manifest json
 
 <img src="/progressive-web-apps/videorama/src/assets/manifest-json-check.png" alt="PWA project" height="250"/>
+
+## Installing the app on Chrome for testing
+
+- run build and serve
+- Go to chrome in ordinary dev mode not incognito/guest
+- in build mode you will see the pwa to be installed
+- click install
+- open new tab
+- you will see the app installed
+- click and the app should open in its own window
+
+## Installing the app on Ios for testing
+
+- in your index.html file create link for 152x152 for apple-touch
+- run a build and serve
+- use a Apple phone or toablet with the ip address
+- the app will appear in the Safari browser
+- go to the share icon -
