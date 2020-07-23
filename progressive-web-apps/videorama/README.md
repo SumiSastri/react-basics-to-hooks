@@ -243,8 +243,13 @@ Change the app name in manifest json - short name char limit 12/ name char limit
   `<link rel="apple-touch-icon" sizes="152x152" href="videorama152.png" />`
 - put the link under the favicon link
 - run a build and serve
-- use a Apple phone or toablet with the ip address
+- use a Apple phone or toablet with the ip address 192.168.187:49572
 - the app will appear in the Safari browser
-- go to the share icon -
+- go to the share icon
+- select Add to Home Screen
+- the icon and app name appear
+- Click add
+- the app is now installed on IoS - you will see the icon on your device screen
+- click on the icon and it will open the app up
 
 ## Deploy on Netifly
