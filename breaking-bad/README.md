@@ -1,4 +1,13 @@
-**Scaffolding:**
+# Table of Contents
+
+1. [Scaffolding](#Scaffolding)
+2. [API call with Hooks](#API-call-with-Hooks)
+3. [Child components](#Child-components)
+4. [Nested components](#Nested-components)
+5. [Loading library](#Loading library)
+
+#### Scaffolding:
+
 Install
 
 - npx create-react-app 'breaking-bad'
@@ -33,6 +42,10 @@ Think through folder structure
   -- card-list/ card (parent-child for show-one/ show all)
 - api-calls (external data calls)
 
+### API call with Hooks
+
+- [Back to Table of Contents](#Table-of-Contents)]
+
 **Step 1:** Set up the API call and check that data-flows into the console
 API-calls use the `useState` and `useEffect` hooks - create component and import into main-card component check rendering of data in console.
 
@@ -64,6 +77,10 @@ export default CharactersApi;
 ```
 
 (front-end view of data in console)[!breaking-bad/src/assets/checks-api-data.png]
+
+### Child components
+
+- [Back to Table of Contents](#Table-of-Contents)]
 
 **Step 2:** Create child components to render the data from the API
 
@@ -112,6 +129,10 @@ export default DisplayCharacterGrid;
 
 (child component maps and renders data from api)[!breaking-bad/src/assets/child-component-maps-renders-data.png]
 
+### Nested components
+
+- [Back to Table of Contents](#Table-of-Contents)]
+
 **Step 3:** Create nested grand-child component passing props down from grandparent-parent-grandchild
 
 In the parent component import the newly created child component so that it can receive props to render. Replace the list tag with the newly created child component tags.
@@ -135,6 +156,10 @@ becomes the enclosing tags of the child component and the props become the key a
 ```
 
 The child component now takes on the props passed down from the parent, passed down from the grandparent that is calling the API. I have added a class called test in the child component to see how we can change the styling only of the component before it is rendered.
+
+### Loading library
+
+- [Back to Table of Contents](#Table-of-Contents)]
 
 **Step 4:** Experiment with the loading library
 

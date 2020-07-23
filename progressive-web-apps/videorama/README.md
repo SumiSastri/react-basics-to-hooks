@@ -1,35 +1,14 @@
 # Table of Contents
 
-1. [What are PWAs](#What-are-PWAs)
-2. [PWA checklist](#PWA-checklist)
-3. [Scaffolding](#Scaffolding)
-4. [API call with Hooks](#API-call-with-Hooks)
-5. [LightHouse audits and reports](#LightHouse-audits-and-reports)
-6. [What is a service worker](#What-is-a-service-worker)
-7. [Working in offline mode](#Working-in-offline-mode)
-8. [Updating icons in manifest file](#Updating-icons-in-manifest-file)
-9. [Installing on Chrome for testing](#Installing-on-Chrome-for-testing)
-10. [Installing on Ios for testing](#Installing-on-Ios-for-testing)
-
-[Deploy with Netifly](#Deploy-with-Netifly)
-
-## What are PWAs
-
-- PWA's reduce data use, make apps fast and reliable, less storage space required
-- Better on web and mobile, makes web apps seem native, good for downloading native apps on any device, device agnostic - users & customers to download the app on any device without app stores
-- works on lower-speed networks and is an application that's like a mobile website.
-- improves loading times across all environments and varying networks
-- PWA's work on the principle of continous build and integration of the build files in the production environment not just the dev environment.
-
-## PWA checklist
-
-Google [https://developers.google.com/] & [https://developers.google.com/web/ilt/pwa/introduction-to-progressive-web-app-architectures]
-
-Web dev[https://web.dev/pwa-checklist/]
-
-Medium [https://medium.com/@samichkhachkhi/pwa-checklist-for-the-googl-341cb0426e]
-
-Lighthouse[https://developers.google.com/web/tools/lighthouse]
+1. [Scaffolding](#Scaffolding)
+2. [API call with Hooks](#API-call-with-Hooks)
+3. [LightHouse audits and reports](#LightHouse-audits-and-reports)
+4. [What is a service worker](#What-is-a-service-worker)
+5. [Working in offline mode](#Working-in-offline-mode)
+6. [Updating icons in manifest file](#Updating-icons-in-manifest-file)
+7. [Installing on Chrome for testing](#Installing-on-Chrome-for-testing)
+8. [Installing on Ios for testing](#Installing-on-Ios-for-testing)
+9. [Deploy with Netifly](#Deploy-with-Netifly)
 
 ## Scaffolding
 
@@ -91,6 +70,8 @@ Add any default styles here. Header can be changed to 20vh if you want maintain 
   - go to index.html and write your app title
 
 ## API call with Hooks
+
+- [Back to Table of Contents](#Table-of-Contents)]
 
 API end point [https://orangevalleycaa.org/api/videos]
 
@@ -167,8 +148,10 @@ Now proceed to add the videos and any other data you want to render from the arr
 
 ### Building in production and serving to local host
 
-`npm instal -g serve`
-`npm run build`
+- [Back to Table of Contents](#Table-of-Contents)]
+
+  `npm instal -g serve`
+  `npm run build`
 
 - optimizes the build for the best performance
 - code minified, and chunked
@@ -181,9 +164,13 @@ Now proceed to add the videos and any other data you want to render from the arr
 
 ### LightHouse audits and reports
 
+- [Back to Table of Contents](#Table-of-Contents)]
+
 - run in guest/ incognito mode for better results on the build file render not the dev mode renders as in the build which is already minified and has better performance. On accessiblity there are key things to look for like alt tags populated, available offline etc., to improve Lighthouse metrics.
 
 ### What is a service worker?
+
+- [Back to Table of Contents](#Table-of-Contents)]
 
 - A service worker is a JavaScript that runs in the background and is responsible for caching resources, handling network requests and storing content for offline use. The create-react-app providers `serviceWorker.js` to us
 - go to localhost:3000 start the app and go to the dev tools, right click to get the Applications tab and see the list of registered and active service workers on this app, you can choose to unregister them
@@ -192,6 +179,8 @@ Now proceed to add the videos and any other data you want to render from the arr
   if you change anything in the app it will not refresh as the service worker caches it. You need to open it in a new window or hard refresh `command+shift+r`
 
 ### Working in offline mode
+
+- [Back to Table of Contents](#Table-of-Contents)]
 
 - In developer tools go to network tools - note the code chunks in webbpack
 
@@ -244,6 +233,8 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 
 ## Installing on Chrome for testing
 
+- [Back to Table of Contents](#Table-of-Contents)]
+
 - run build and serve
 - Go to chrome in ordinary dev mode not incognito/guest
 - in build mode you will see the pwa to be installed
@@ -253,6 +244,8 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 - click and the app should open in its own window
 
 ## Installing on Ios for testing
+
+- [Back to Table of Contents](#Table-of-Contents)]
 
 - in your index.html file create link for 152x152 for apple-touch
   `<link rel="apple-touch-icon" sizes="152x152" href="videorama152.png" />`
@@ -269,6 +262,8 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 
 ## Deploy with Netifly
 
+- [Back to Table of Contents](#Table-of-Contents)]
+
 A traditional website is actually a program that has to run on a web server at all times. Running sites this way needlessly slows things down, provides way too many opportunities for attack, and is expensive to scale.
 
 Unlike the large legacy apps, Jamstack projects neatly separate the frontend pages and UI from the backend apps and databases. Freed from backend servers, the frontend (static directories) can then be deployed globally, directly to a CDN.
@@ -282,3 +277,5 @@ Improved developer experience - Launch faster with more productive dev & deploym
 
 How to deploy - create an account/ drag your build file from your desktop into Netifly - it deploys in less than 2 minutes - take the url and make a bitly url to share.
 [https://elated-khorana-68d5d8.netlify.app]
+
+- [Back to Table of Contents](#Table-of-Contents)]

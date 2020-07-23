@@ -1,4 +1,4 @@
-Table of Contents
+# Table of Contents
 
 1. [Project goals](#Project-goals)
 2. [Folder structure](#Folder-structure)
@@ -14,13 +14,13 @@ In this project, I explore the documentation of React and React Hooks. It is one
 
 There are 4 folders in this project each with their own readme to document what I have learnt.
 
-1. [Breaking Bad]()
+1. [Breaking Bad](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/breaking-bad)
    Project following You Tube Brad Traversy's tutorial to experiment with Hooks
 
-2. [Fundamentals]()
+2. [Fundamentals](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/fundamentals)
    Tutorials on the fundamentals of React, follows the basic and intermediate documentation with examples and code snippets. This has a front-end which demos many concepts and has a brief explaination of how the code works. There are readme's in each section to drill down into the documentation and simplify it. There is a mini-project on the Context-API following a tutorial from NetNinja as I found the concepts a bit dry in the documentation, the project helped me understand how the documentation could be applied to a real o project.
 
-3. [Hooks]()
+3. [Hooks](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/hooks)
 
 Work in Progress: Tutorials on the fundamentals of Hooks, follows the basic and intermediate documentation with examples and code snippets.
 
