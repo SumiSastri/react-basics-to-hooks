@@ -253,3 +253,5 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 - click on the icon and it will open the app up
 
 ## Deploy on Netifly
+
+http://localhost:49929
