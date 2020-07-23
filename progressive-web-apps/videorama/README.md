@@ -252,6 +252,18 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 - the app is now installed on IoS - you will see the icon on your device screen
 - click on the icon and it will open the app up
 
-## Deploy on Netifly
+## Why the JAM-Stack on Netifly?
 
-http://localhost:49929
+A traditional website is actually a program that has to run on a web server at all times. Running sites this way needlessly slows things down, provides way too many opportunities for attack, and is expensive to scale.
+
+Unlike the large legacy apps, Jamstack projects neatly separate the frontend pages and UI from the backend apps and databases. Freed from backend servers, the frontend (static directories) can then be deployed globally, directly to a CDN.
+
+JAM stacks offer
+Faster websites - A Jamstack deployment doesn’t run on a traditional setup of origin servers. Instead, automated deployments are used to push sites directly to the Edge / CDN with pre-rendering of static files. Rather than building content at runtime for each request, content is prebuilt and optimized during a build setup using a site generator and other build tools.
+
+More secure infrastructure - fewer points of attack
+
+Improved developer experience - Launch faster with more productive dev & deployment cycles. Decoupling the front end from the backend allows for more modular development where we can take advantage of the huge ecosystem of third party tools to provide website functionality.
+
+How to deploy - create an account/ drag your build file from your desktop into Netifly - it deploys in less than 2 minutes - take the url and make a bitly url to share.
+[https://elated-khorana-68d5d8.netlify.app]
