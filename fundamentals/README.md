@@ -14,7 +14,9 @@ It is used because it helps in scaling apps quickly and efficiently. React focus
 
 ## What is the difference between a library and a framework
 
-The key difference between a library and a framework is the amount of control a developer has over features and functionality. With a framework all features, functionality and architecture are pre-determined with limited options to change the control-flow or logic of the framework. It is a skeleton within which you can work. A library is a loose collection of tools that you can pick and mix and offers more control for the developer. The technical term for this limitation of control is called the inversion of control - with a library the flow can be controlled by the developer with a framework the framework controls the developers work flow and coding options. More from Freecodecamp [https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/]
+The key difference between a library and a framework is the amount of control a developer has over features and functionality. With a framework all features, functionality and architecture are pre-determined with limited options to change the control-flow or logic of the framework. It is a skeleton within which you can work. A library is a loose collection of tools that you can pick and mix and offers more control for the developer. The technical term for this limitation of control is called the inversion of control - with a library the flow can be controlled by the developer with a framework the framework controls the developers work flow and coding options. More from Freecodecamp
+
+- [https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/]
 
 ## How do you install React in a project?
 
@@ -34,7 +36,7 @@ Node version manager is a bash script that helps you work with several versions 
 
 Install instructions:
 
-1. Clone [git clone http://github.com/creationix/nvm.git .nvm]OR `[git clone git://github.com/creationix/nvm.git $nvm_target]
+1. Clone [git clone http://github.com/creationix/nvm.git .nvm] OR `[git clone git://github.com/creationix/nvm.git $nvm_target]
 2. Curl [$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh]
 3. Find the file [ls -a | grep .nvm]
 4. Clean up installation [touch ~/.bash_profile]
@@ -43,10 +45,13 @@ Install instructions:
 7. Check if installed [nvm --version]
 
 Documentation: [https://github.com/nvm-sh/nvm]
-Debug: Stackoverflow has excellent suggestions [https://stackoverflow.com/questions/16904658/node-version-manager-install-nvm-command-not-found#comment46581365_16905910]
-Read More: Medium articles (useful background but not useful really for set up and debugging
-[https://medium.com/@isaacjoe/best-way-to-install-and-use-nvm-on-mac-e3a3f6bc494d][https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b]
-Main folder for front-end developers is the source folder - src
+Debug: Stackoverflow has excellent suggestions
+
+- [https://stackoverflow.com/questions/16904658/node-version-manager-install-nvm-command-not-found#comment46581365_16905910]
+  Read More: Medium articles (useful background but not useful really for set up and debugging
+- [https://medium.com/@isaacjoe/best-way-to-install-and-use-nvm-on-mac-e3a3f6bc494d]
+- [https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b]
+  Main folder for front-end developers is the source folder - src
 
 - index.js (sends the app.js files to the HTML root DOM node) this is why it is called a Single Page App (SPA) as all files routed through a single route file and the `ReactDOM.render()`method which takes two arguements, the component page to be rendered and the where you want to render it - the particular node of the HTML file which is the `root` file.
 
@@ -89,5 +94,9 @@ Data can only flow from a parent component to a child component. This top-down d
   Documentation: [https://reactjs.org/docs/conditional-rendering.html]
 
 **Tutorials that are useful to follow**
-You Tube videos on React by Code Evolution - Vishwas [https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=1][https://api.github.com/users]
-LevelUpTuts - Scott [https://www.youtube.com/watch?v=0qqzUXdGGX4&list=PLLnpHn493BHGTMs2UmaPUG6Lu3dHrqryY]
+You Tube videos on React by Code Evolution - Vishwas
+
+- [https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=1]
+- [https://api.github.com/users]
+  LevelUpTuts - Scott
+- [https://www.youtube.com/watch?v=0qqzUXdGGX4&list=PLLnpHn493BHGTMs2UmaPUG6Lu3dHrqryY]
