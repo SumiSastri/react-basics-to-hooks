@@ -1,3 +1,18 @@
+# Table of Contents
+
+1. [What are PWAs](#What-are-PWAs)
+2. [PWA checklist](#PWA-checklist)
+3. [Scaffolding](#Scaffolding)
+4. [API call with Hooks](#API-call-with-Hooks)
+5. [LightHouse audits and reports](#LightHouse-audits-and-reports)
+6. [What is a service worker](#What-is-a-service-worker)
+7. [Working in offline mode](#Working-in-offline-mode)
+8. [Updating icons in manifest file](#Updating-icons-in-manifest-file)
+9. [Installing on Chrome for testing](#Installing-on-Chrome-for-testing)
+10. [Installing on Ios for testing](#Installing-on-Ios-for-testing)
+
+[Deploy with Netifly](#Deploy-with-Netifly)
+
 ## What are PWAs
 
 - PWA's reduce data use, make apps fast and reliable, less storage space required
@@ -6,7 +21,7 @@
 - improves loading times across all environments and varying networks
 - PWA's work on the principle of continous build and integration of the build files in the production environment not just the dev environment.
 
-## PWA check-list
+## PWA checklist
 
 Google [https://developers.google.com/] & [https://developers.google.com/web/ilt/pwa/introduction-to-progressive-web-app-architectures]
 
@@ -176,7 +191,7 @@ Now proceed to add the videos and any other data you want to render from the arr
 - Run another `npm run build` and `serve -s build` and go to localhost:5000
   if you change anything in the app it will not refresh as the service worker caches it. You need to open it in a new window or hard refresh `command+shift+r`
 
-### Gettting the app to work in offline mode - removing the API call
+### Working in offline mode
 
 - In developer tools go to network tools - note the code chunks in webbpack
 
@@ -187,7 +202,7 @@ Now proceed to add the videos and any other data you want to render from the arr
 - uncheck all boxes and download a video and put it into the src folder of the app
 - make an offline component to render conditionally as part of the error message block
 
-### Manifest JSON - icons of different sizes for different browsers and platforms
+### Updating icons in manifest file
 
 List of icon sizes
 120x120-ios
@@ -227,7 +242,7 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 
 <img src="/progressive-web-apps/videorama/src/assets/manifest-json-check.png" alt="PWA project" height="250"/>
 
-## Installing the app on Chrome for testing
+## Installing on Chrome for testing
 
 - run build and serve
 - Go to chrome in ordinary dev mode not incognito/guest
@@ -237,7 +252,7 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 - you will see the app installed
 - click and the app should open in its own window
 
-## Installing the app on IoS for testing
+## Installing on Ios for testing
 
 - in your index.html file create link for 152x152 for apple-touch
   `<link rel="apple-touch-icon" sizes="152x152" href="videorama152.png" />`
@@ -252,7 +267,7 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 - the app is now installed on IoS - you will see the icon on your device screen
 - click on the icon and it will open the app up
 
-## Why the JAM-Stack on Netifly?
+## Deploy with Netifly
 
 A traditional website is actually a program that has to run on a web server at all times. Running sites this way needlessly slows things down, provides way too many opportunities for attack, and is expensive to scale.
 
