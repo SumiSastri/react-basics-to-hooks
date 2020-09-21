@@ -9,7 +9,16 @@ JSX stands for JavaScript XML that is transpiled back into JavaScript in the Rea
 
 JSX superficially ressembles HTML and makes it easy for the developer to create page layouts using JavaScript functions and React methods within the JSX tags. JSX elements are immutable. Once created neither the children nor the attributes of the JSX can be changed.
 
-JSX has tags, tag names, attributes and children. React can be written without JSX but it makes the developers' experience much better as the syntax is easy and familiar.
+JSX has tags, tag names, attributes and children. React can be written without JSX but it makes the developers' experience much better as the syntax is easy and familiar. Under the hood this is what JSX is doing
+
+```
+let location = {
+  city: "Madrid",
+  country: "Spain"
+}
+ReactDOM.render(React.createElement("div", {style: {backgroundColor:red}}, React.createElement("h1", {style: {color:blue}}, {location.city} is located in {location.country})),
+  document.getElementById('root')
+```
 
 JSX must be enclosed in a parent `div` tag else it will throw a compile error. Sometimes, like in a routing component you may not want a `div` tag rendered, that is when you can use a React Fragment. A React Fragment is a Component that allows you to wrap JSX tags so that a `div` tag is not rendered on the DOM. A fragment is like a ghost element that wraps JSX in tags that removes the adjacent JSX need to be wrapped in a parent div error.
 
@@ -25,10 +34,15 @@ Components help developers isolate features and build them independently. While 
 A functional component is a JavaScript function that describe the state of the user interface. They were also known as presentational or dumb components as they do could not access state or lifecycle hooks available in stateful components.
 
 **Props**
-Functional components have additional properties or props to make the rendering the component more dynamic.
 
-Props can be in the form of methods as well as primitive data types (strings, booleans, numbers). With the **Hooks API (2018)**, functional components can
-access state and therefore are no longer considered 'dumb' components. There are no breaking changes and are 100% backwards compatible. Functional components can now use the API and the method `useState` Hook to access state and React LifeCycle methods.
+Props, or properties, is an object in React that contains properties about the component. With props we can display dynamic data within a component.
+`console.log (props)` on any element you will see if it has props or not, it will log an empty object if the element has no properties. As it is an object, we use dot notation to access props if we pass props to another element - `props.location.city` for example.
+
+Props have keys which identify each key-value pair in the object. It returns and array of objects. So if we `console.log(Object.keys)` it is going to return an array of keys from that object.`console.log(Object.keys.props)` is another log we can add to debug.
+
+It's also common to see values from the probs object de-structured for brevity. The props object provides data to a component to be displayed. Think of a React component as a function that takes in data as an argument and then returns React elements to create a user interface.
+
+Props can be in the form of methods as well as primitive data types (strings, booleans, numbers). With the **Hooks API (2018)**, functional components can access state and therefore are no longer considered 'dumb' components. There are no breaking changes and are 100% backwards compatible. Functional components can now use the API and the method `useState` Hook to access state and React LifeCycle methods.
 
 Functional components must return a parent div that nests any other components or jsx tags - this simply returns hello world.
 

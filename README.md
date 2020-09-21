@@ -32,11 +32,26 @@ A fully deployed app on Netifly, following a Linked-In course.
 
 **Install dependencies**
 
-npm install
+npm install -y
 
 **Run React apps**
 
 npm run start
+
+Access project scripts - debugging if you have incompatibility issues with es-lint/
+
+1. Check if node_modules/eslint is outside your project directory - npm has issues with package hoisting - Try running npm ls eslint in your project folder to see where it is - This will tell you which other package (apart from the expected react-scripts) installed eslint.
+
+-The files in these folders are outside the project directory you can
+
+1. Delete package-lock.json
+2. Delete node modules
+3. Remove es-lint from dependencies/ dev-dependencies
+4. run `npm install -y`
+5. You can also try `npm uninstall eslint` and then `npm run start`
+
+Note: If nothing else helps, add SKIP_PREFLIGHT_CHECK=true to an .env file in your project. **I have chosen this option as I am not using this folder to deploy or run a production build.**
+That would permanently disable this preflight check in case you want to proceed anyway.
 
 #### RESOURCES
 

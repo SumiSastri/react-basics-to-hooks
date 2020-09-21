@@ -30,8 +30,20 @@ Clean up:-
 - serviceWorker.js (then remove imports in index.js serviceWorker.js - and commented out text at the bottom)
 - In App.js remove everything in the header section and keep wrapping div
 - In public folder
-  - go to the favicon: create your own icons here [https://icoconvert.com/]\
-  - go to index.html and write your app title
+- go to index.html and write your app title
+- create favicon - go to the favicon: create your own icons here [https://icoconvert.com/] - upload png and convert to .ico
+
+- create browser icons - open .png files, go to tools, adjust size, save each of these versions in public folder - start with largest size and reduce
+  120x120-ios
+  144x144 -android
+  152x152 -ios
+  167x167 -ios
+  180x180 -
+  192x192 -
+  512x512 -chrome
+- go to manifest json and add these files to the array of objects with images
+- Change the app name in manifest json - short name char limit 12/ name char limit 45/
+- `<link rel="apple-touch-icon" sizes="152x152" href="videorama152.png" />`
 
 **Planning:**
 Think through folder structure

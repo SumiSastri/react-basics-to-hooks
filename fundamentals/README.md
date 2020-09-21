@@ -29,30 +29,7 @@ The key difference between a library and a framework is the amount of control a 
 - package-json - scripts object run the app
 - readme
 - react-dom is for web based apps, react-native is for mobile apps
-
-**A note about Node Package Manager vs. Node Version Manager**
-
-Node version manager is a bash script that helps you work with several versions of node depending on the application.
-
-Install instructions:
-
-1. Clone [git clone http://github.com/creationix/nvm.git .nvm] OR `[git clone git://github.com/creationix/nvm.git $nvm_target]
-2. Curl [$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh]
-3. Find the file [ls -a | grep .nvm]
-4. Clean up installation [touch ~/.bash_profile]
-5. Re-run curl [curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash]
-6. Shut down and restart terminal run [source ~/.nvm/nvm.sh]
-7. Check if installed [nvm --version]
-
-Documentation: [https://github.com/nvm-sh/nvm]
-Debug: Stackoverflow has excellent suggestions
-
-- [https://stackoverflow.com/questions/16904658/node-version-manager-install-nvm-command-not-found#comment46581365_16905910]
-  Read More: Medium articles (useful background but not useful really for set up and debugging
-- [https://medium.com/@isaacjoe/best-way-to-install-and-use-nvm-on-mac-e3a3f6bc494d]
-- [https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b]
-  Main folder for front-end developers is the source folder - src
-
+- Main folder for front-end developers is the source folder - src
 - index.js (sends the app.js files to the HTML root DOM node) this is why it is called a Single Page App (SPA) as all files routed through a single route file and the `ReactDOM.render()`method which takes two arguements, the component page to be rendered and the where you want to render it - the particular node of the HTML file which is the `root` file.
 
 ```
@@ -63,6 +40,22 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+- You can create React elements by removing App.js and manually creating each element and its children, this block of code demos
+
+```
+<!-- Syntax
+
+ReactDOM.render(React.createElement(tagName, elementProperties, children),
+  document.getElementById('root')
+); -->
+
+ReactDOM.render(React.createElement("div", {style: {backgroundColor:red}}, React.createElement("h1", {style: {color:blue}}, "Hello World")),
+  document.getElementById('root')
+);
+```
+
+Note that the first arg is a string, the second which is props is an object and the the third is a nested element - a call back function.
 
 - App.js (the file responsible for the single page app's view in the browser)
 - App.css (styling)

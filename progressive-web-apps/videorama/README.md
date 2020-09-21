@@ -66,7 +66,7 @@ Add any default styles here. Header can be changed to 20vh if you want maintain 
 * app.test.js
 
 - In public folder
-  - go to the favicon: create your own icons here [https://icoconvert.com/]\
+  - go to the favicon: create your own icons here [https://icoconvert.com/]
   - go to index.html and write your app title
 
 ## API call with Hooks
@@ -150,7 +150,7 @@ Now proceed to add the videos and any other data you want to render from the arr
 
 - [Back to Table of Contents](#Table-of-Contents)]
 
-  `npm instal -g serve`
+  `npm install -g serve`
   `npm run build`
 
 - optimizes the build for the best performance
