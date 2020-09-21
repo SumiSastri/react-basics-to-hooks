@@ -1,5 +1,7 @@
 # Table of Contents
 
+<img src="/breaking-bad/src/assets/breaking-bad-app-screenshot.png" alt="Breaking-Bad PWA with Hooks" height="350"/>
+
 1. [Scaffolding](#Scaffolding)
 2. [API call with Hooks](#API-call-with-Hooks)
 3. [Child components](#Child-components)
@@ -31,8 +33,7 @@ Clean up:-
 - In App.js remove everything in the header section and keep wrapping div
 - In public folder
 - go to index.html and write your app title
-- create favicon - go to the favicon: create your own icons here [https://icoconvert.com/] - upload png and convert to .ico
-
+- create favicon - go to the favicon: create your own icons here [https://icoconvert.com/] - upload png and convert to .ico - call the file favicon.ico in a create-react-app it will appear automatically as there is already a link in the index.html `<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />`
 - create browser icons - open .png files, go to tools, adjust size, save each of these versions in public folder - start with largest size and reduce
   120x120-ios
   144x144 -android
@@ -43,7 +44,7 @@ Clean up:-
   512x512 -chrome
 - go to manifest json and add these files to the array of objects with images
 - Change the app name in manifest json - short name char limit 12/ name char limit 45/
-- `<link rel="apple-touch-icon" sizes="152x152" href="videorama152.png" />`
+- Under the favicon link in index.html add this `<link rel="apple-touch-icon" sizes="152x152" href="logo152.png" />` for the different browsers to display the icons correctly
 
 **Planning:**
 Think through folder structure
