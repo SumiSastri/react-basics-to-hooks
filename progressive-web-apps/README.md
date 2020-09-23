@@ -21,6 +21,4 @@ Medium [https://medium.com/@samichkhachkhi/pwa-checklist-for-the-googl-341cb0426
 
 Lighthouse[https://developers.google.com/web/tools/lighthouse]
 
-
-
-  
+## Lightweight server

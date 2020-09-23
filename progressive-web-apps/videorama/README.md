@@ -44,9 +44,10 @@ Add any default styles here. Header can be changed to 20vh if you want maintain 
 - go to index.js and register it
   `serviceWorker.register();`
 
-- go to index.html and write your app title    
+- go to index.html and write your app title
 
 - In public folder
+
   - go to the favicon: create your own icons here [https://icoconvert.com/] don't change the name of the file it is easier to use favicon.ico. In the icons array in the manifest-json file update the icon sizes if these sizes are not specified
 
   ```
@@ -57,9 +58,10 @@ Add any default styles here. Header can be changed to 20vh if you want maintain 
     },
   ```
 
-  you will not need to change this file if the sizes are in a create-react-app. In the index.html as well ```<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />``` you will not need to change this link reference.
+  you will not need to change this file if the sizes are in a create-react-app. In the index.html as well `<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />` you will not need to change this link reference.
 
-* public folder add new logo-icon sizes 
+* public folder add new logo-icon sizes
+
 - open .png files, go to tools, adjust size, save each of these versions in public folder - start with the biggest and go down to ensure you get the best resolution call them logo120, logo144 - again makes it easier for links in manifest-json and index.html files
   120x120-ios
   144x144 -android
@@ -78,13 +80,13 @@ Add any default styles here. Header can be changed to 20vh if you want maintain 
       "sizes": "120x120"
     },
   ```
+
 - go to manifest json and add these files to the array of objects with images
 - Change the app name in manifest json - short name char limit 12/ name char limit 45/
 - in index.html - Under the favicon link add this `<link rel="apple-touch-icon" sizes="152x152" href="logo152.png" />` for the different browsers to display the icons correctly
 
 * setUpTests.js
 * app.test.js
-
 
 ## API call with Hooks
 
@@ -172,7 +174,7 @@ Now proceed to add the videos and any other data you want to render from the arr
 
 - optimizes the build for the best performance
 - code minified, and chunked
-- once buiild it can be served with a static server
+- once app built it can be served with a static server
 - run `serve -s build`
 - production build folder is now in the videorama folder
 - in the build folder are the static minified files - html, css, js etc.,
