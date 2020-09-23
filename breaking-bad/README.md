@@ -213,11 +213,20 @@ export default SearchInput;
 
 **Set up server**
 
-This is a lightweight server npm package 
+This is a lightweight server npm package
 
 - cd into directory in terminal `sudo npm install -g, serve` the password prompt is your local laptop access
+- in the project folde `npm install -g serve`
 
-**Build and make available offline**
+**Build and serve**
+
+- build for production and deploy `npm run build`
+- once app built it can be served with a static server
+- run `serve -s build`
+
+**Add to chrome**
+<img src="/breaking-bad/src/assets/pwa-on-chrome.png" alt="Breaking-Bad PWA on Chrome" height="350"/>
+Only when you have a production build can you go to the developer tools and see if the app can be installed in chrome, select the install option and install
 
 1. Go to developer tools - hit refresh
 2. Look at network tab to see resources loaded - the fetch data files should appear as chunks served by Webpack
