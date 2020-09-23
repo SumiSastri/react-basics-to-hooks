@@ -29,7 +29,6 @@ Clean up:-
 - index.css
 - app.test.js
 - index.css
-- serviceWorker.js (then remove imports in index.js serviceWorker.js - and commented out text at the bottom)
 - In App.js remove everything in the header section and keep wrapping div
 - In public folder
 - go to index.html and write your app title
@@ -211,3 +210,21 @@ const loaderCSS = css`
 };
 export default SearchInput;
 ```
+
+**Set up server**
+
+This is a lightweight server npm package 
+
+- cd into directory in terminal `sudo npm install -g, serve` the password prompt is your local laptop access
+
+**Build and make available offline**
+
+1. Go to developer tools - hit refresh
+2. Look at network tab to see resources loaded - the fetch data files should appear as chunks served by Webpack
+3. Check the offline box - service worker cached data appears but not the fetch data as not connected to network
+4. You can download this data and put it into an array of objects as mock-data to be used for an offline component - take out the fetch call and simply load the data from the mock data file that is hard-coded.
+5. This is not a great option for large apps but for small side-projects it is an option
+
+Test on Chrome and Safari
+
+Deploy on Netifly

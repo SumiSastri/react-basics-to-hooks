@@ -40,10 +40,27 @@ Clean up:-
 Add any default styles here. Header can be changed to 20vh if you want maintain the react styling and move the header to the top of the page. Import google fonts, change colors etc.,
 
 - serviceWorker.js - we will need to register this later, it is opt-in but do not remove it as with other projects
+
 - go to index.js and register it
   `serviceWorker.register();`
 
-* public folder add new logo-icon sizes
+- go to index.html and write your app title    
+
+- In public folder
+  - go to the favicon: create your own icons here [https://icoconvert.com/] don't change the name of the file it is easier to use favicon.ico. In the icons array in the manifest-json file update the icon sizes if these sizes are not specified
+
+  ```
+  {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+  ```
+
+  you will not need to change this file if the sizes are in a create-react-app. In the index.html as well ```<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />``` you will not need to change this link reference.
+
+* public folder add new logo-icon sizes 
+- open .png files, go to tools, adjust size, save each of these versions in public folder - start with the biggest and go down to ensure you get the best resolution call them logo120, logo144 - again makes it easier for links in manifest-json and index.html files
   120x120-ios
   144x144 -android
   152x152 -ios
@@ -56,18 +73,18 @@ Add any default styles here. Header can be changed to 20vh if you want maintain 
 
   ```
   {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "logo120.png",
+      "type": "image/png",
+      "sizes": "120x120"
     },
   ```
+- go to manifest json and add these files to the array of objects with images
+- Change the app name in manifest json - short name char limit 12/ name char limit 45/
+- in index.html - Under the favicon link add this `<link rel="apple-touch-icon" sizes="152x152" href="logo152.png" />` for the different browsers to display the icons correctly
 
 * setUpTests.js
 * app.test.js
 
-- In public folder
-  - go to the favicon: create your own icons here [https://icoconvert.com/]
-  - go to index.html and write your app title
 
 ## API call with Hooks
 
@@ -182,7 +199,7 @@ Now proceed to add the videos and any other data you want to render from the arr
 
 - [Back to Table of Contents](#Table-of-Contents)]
 
-- In developer tools go to network tools - note the code chunks in webbpack
+- In developer tools go to network tools - note the code chunks in webpack
 
 <img src="/progressive-web-apps/videorama/src/assets/network-tab-check.png" alt="PWA project" height="250"/>
 
