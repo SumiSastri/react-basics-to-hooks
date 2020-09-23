@@ -2,26 +2,34 @@
 
 <img src="/breaking-bad/src/assets/breaking-bad-app-screenshot.png" alt="Breaking-Bad PWA with Hooks" height="350"/>
 
-1. [Scaffolding](#Scaffolding)
-2. [API call with Hooks](#API-call-with-Hooks)
-3. [Child components](#Child-components)
-4. [Nested components](#Nested-components)
-5. [Loading library](#Loading library)
+1. [Scaffolding](#File-access-and-scaffolding)
+2. [Project-build](#Project-build)
+3. [API call with Hooks](#API-call-with-Hooks)
+4. [Child components](#Child-components)
+5. [Nested components](#Nested-components)
+6. [Loading library](#Loading-library)
+7. [PWA set up](#PWA-set-up)
 
-#### Scaffolding:
+#### File access and scaffolding
 
-Install
+To access file - cd into repo and clone
+
+- `npm install -y`
+
+Dependencies:
 
 - npx create-react-app 'breaking-bad'
 - npm install axios
 - npm install react-icons --save
 - npm install --save react-spinners + npm install @emotion/core
 
-Libraries
+A note on React Libraries
 Icons - react-icons [https://github.com/react-icons/react-icons]
 Loading - works with emotion CSS documentation react-spinners [https://www.npmjs.com/package/react-spinners][https://github.com/davidhu2000/react-spinners]
 
-Clean up:-
+#### Project build
+
+**Clean up create-react-app**
 
 - Remove files
 - setUpTests.js
@@ -211,29 +219,48 @@ const loaderCSS = css`
 export default SearchInput;
 ```
 
-**Set up server**
+### PWA set up
 
-This is a lightweight server npm package
+- [Back to Table of Contents](#Table-of-Contents)]
+
+1. Set up server with an npm package
 
 - cd into directory in terminal `sudo npm install -g, serve` the password prompt is your local laptop access
 - in the project folde `npm install -g serve`
 
-**Build and serve**
+2. Build for production and serve on the server
 
 - build for production and deploy `npm run build`
 - once app built it can be served with a static server
 - run `serve -s build`
 
-**Add to chrome**
-<img src="/breaking-bad/src/assets/pwa-on-chrome.png" alt="Breaking-Bad PWA on Chrome" height="350"/>
-Only when you have a production build can you go to the developer tools and see if the app can be installed in chrome, select the install option and install
+3. Add to chrome
+   <img src="/breaking-bad/src/assets/pwa-on-chrome.png" alt="Breaking-Bad PWA on Chrome" height="350"/>
+   Only when you have a production build can you go to the developer tools and see if the app can be installed in chrome, select the install option and install.
+   You need to select the localhost as described by the `serve -s build` output in the console
+   If you go to a new tab and click on apps, you will see the PWA in the apps list on your local host.
 
-1. Go to developer tools - hit refresh
-2. Look at network tab to see resources loaded - the fetch data files should appear as chunks served by Webpack
-3. Check the offline box - service worker cached data appears but not the fetch data as not connected to network
-4. You can download this data and put it into an array of objects as mock-data to be used for an offline component - take out the fetch call and simply load the data from the mock data file that is hard-coded.
-5. This is not a great option for large apps but for small side-projects it is an option
+4. Add to Safari
+   You need to select the ip address as described by the `serve -s build` output in the console
 
-Test on Chrome and Safari
+- Go to an apple phone or tablet - not mac desktop
+- Use the network provided in the serve - `http://192.168.1.87:53105 ` - which is the DNS for the site
+- Go to share icon
+- Select add to homescreen
+- The icon will now connect to the local version for testing
 
-Deploy on Netifly
+5. Steps for creating an offline version to improve Lighthouse metrics
+
+- Go to developer tools - hit refresh
+- Look at network tab to see resources loaded - the fetch data files should appear as chunks served by Webpack
+- Check the offline box - service worker cached data appears but not the fetch data as not connected to network
+- You can download this data and put it into an array of objects as mock-data to be used for an offline component - take out the fetch call and simply load the data from the mock data file that is hard-coded.
+
+Note: This is not a great option for large apps but for small side-projects it is an option
+
+6. Deploy on Netifly
+
+- Run final build - make sure you have cleaned up code, taken out any comments, spaces, refactors etc.
+  `npm run build `
+- Once built run the production ready app on server `serve -s build`
+- Run a Lighthouse test - go to [https://developers.google.com/speed/pagespeed/insights/] and add your DNS address [http://192.168.1.87:53105] and run analyze (note that your app must be running the final build version on your local server)

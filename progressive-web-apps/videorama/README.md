@@ -256,7 +256,8 @@ Change the app name in manifest json - short name char limit 12/ name char limit
 
 - run build and serve
 - Go to chrome in ordinary dev mode not incognito/guest
-- in build mode you will see the pwa to be installed
+- side bar of dev tools three dots click you will see the prompt to install the app as pwa
+- only in build and serve mode you will see the pwa to be installed
 - click install
 - open new tab
 - you will see the app installed
@@ -270,7 +271,7 @@ Change the app name in manifest json - short name char limit 12/ name char limit
   `<link rel="apple-touch-icon" sizes="152x152" href="videorama152.png" />`
 - put the link under the favicon link
 - run a build and serve
-- use a Apple phone or toablet with the ip address 192.168.187:49572
+- use a Apple phone or tablet with your ip address 192.168.187:49572
 - the app will appear in the Safari browser
 - go to the share icon
 - select Add to Home Screen
