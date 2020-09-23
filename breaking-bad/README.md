@@ -263,4 +263,6 @@ Note: This is not a great option for large apps but for small side-projects it i
 - Run final build - make sure you have cleaned up code, taken out any comments, spaces, refactors etc.
   `npm run build `
 - Once built run the production ready app on server `serve -s build`
-- Run a Lighthouse test - go to [https://developers.google.com/speed/pagespeed/insights/] and add your DNS address [http://192.168.1.87:53105] and run analyze (note that your app must be running the final build version on your local server)
+- Run a Lighthouse test
+- choose an incognito browsing page
+- go to [https://developers.google.com/speed/pagespeed/insights/] and add your DNS address [http://192.168.1.87:53105] and run analyze (note that your app must be running the final build version on your local server)
