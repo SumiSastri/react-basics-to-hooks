@@ -2,6 +2,8 @@
 
 <img src="/breaking-bad/src/assets/breaking-bad-app-screenshot.png" alt="Breaking-Bad PWA with Hooks" height="350"/>
 
+Deployed with Netifly on [https://happy-brown-985f49.netlify.app]
+
 1. [Scaffolding](#File-access-and-scaffolding)
 2. [Project-build](#Project-build)
 3. [API call with Hooks](#API-call-with-Hooks)
@@ -266,3 +268,5 @@ Note: This is not a great option for large apps but for small side-projects it i
 - Run a Lighthouse test
 - choose an incognito browsing page
 - go to [https://developers.google.com/speed/pagespeed/insights/] and add your DNS address [http://192.168.1.87:53105] and run analyze (note that your app must be running the final build version on your local server)
+- push final changes to github
+- create Netifly account - drag and drop build folder into the dashboard section - the app is auto deployed

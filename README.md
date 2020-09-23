@@ -1,32 +1,38 @@
 # Table of Contents
 
 1. [Project goals](#Project-goals)
-2. [Folder structure](#Folder-structure)
+2. [Certifications](#Certifications)
 3. [Project access](#Project-access)
 
    [RESOURCES](#Resources)
 
 #### Project goals
 
-In this project, I explore the documentation of React and React Hooks. It is one in a series of tutorials where I work on the documentation and tutorial projects to apply the knowledge from the documentation and set into context.
+The Breaking Bad progressive web app is the key project that applies the knowledge of React, React Hooks and Progressive Web-Apps. It has been deployed on Netifly [https://happy-brown-985f49.netlify.app]
 
-#### Folder structure
+The project as a whole follows a set of Linked-in learning tutorials with their excercises.
 
-There are 4 folders in this project each with their own readme to document what I have learnt.
+#### Certifications
 
-1. [Breaking Bad](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/breaking-bad)
-   Project following You Tube Brad Traversy's tutorial to experiment with Hooks
+1. Learning React
+2. React Building Progressive Apps
+3. React Creating and Hosting a FullStack site
+4. React State Management
 
-2. [Fundamentals](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/fundamentals)
-   Tutorials on the fundamentals of React, follows the basic and intermediate documentation with examples and code snippets. This has a front-end which demos many concepts and has a brief explaination of how the code works. There are readme's in each section to drill down into the documentation and simplify it. There is a mini-project on the Context-API following a tutorial from NetNinja as I found the concepts a bit dry in the documentation, the project helped me understand how the documentation could be applied to a real o project.
+Key folders for code base
 
-3. [Hooks](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/hooks)
+- [Breaking Bad](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/breaking-bad)
+  Project following You Tube Brad Traversy's tutorial to experiment with Hooks
+
+- [Fundamentals](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/fundamentals)
+  Tutorials on the fundamentals of React, follows the basic and intermediate documentation with examples and code snippets. This has a front-end which demos many concepts and has a brief explaination of how the code works. There are readme's in each section to drill down into the documentation and simplify it. There is a mini-project on the Context-API following a tutorial from NetNinja as I found the concepts a bit dry in the documentation, the project helped me understand how the documentation could be applied to a real o project.
+
+- [Hooks](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/hooks)
 
 Work in Progress: Tutorials on the fundamentals of Hooks, follows the basic and intermediate documentation with examples and code snippets.
 
-3. [Progressive-Web-Apps]()
-
-A fully deployed app on Netifly, following a Linked-In course.
+- [Progressive-Web-Apps-Videorama]([https://github.com/SumiSastri/react-basics-to-hooks/tree/master/progressive-web-apps/videorama])
+  In the subfolder Videorama is a fully deployed app on Netifly, following a Linked-In course. This course has also been used to adapt the Breaking-Bad project and turn it into a PWA.
 
 #### Project access
 
