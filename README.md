@@ -22,7 +22,7 @@ The project as a whole follows a set of Linked-in learning tutorials with their 
 Key folders for code base
 
 - [Breaking Bad](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/breaking-bad)
-  Project following You Tube Brad Traversy's tutorial to experiment with Hooks
+  Project following YouTube Brad Traversy's tutorial to experiment with Hooks
 
 - [Fundamentals](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/fundamentals)
   Tutorials on the fundamentals of React, follows the basic and intermediate documentation with examples and code snippets. This has a front-end which demos many concepts and has a brief explaination of how the code works. There are readme's in each section to drill down into the documentation and simplify it. There is a mini-project on the Context-API following a tutorial from NetNinja as I found the concepts a bit dry in the documentation, the project helped me understand how the documentation could be applied to a real o project.
