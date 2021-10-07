@@ -1,10 +1,82 @@
 # Table of Contents
 
-1. [Project goals](#Project-goals)
-2. [Certifications](#Certifications)
-3. [Project access](#Project-access)
+1. [Project access](#Project-access)
+2. [Project goals](#Project-goals)
+3. [Certifications](#Certifications)
 
-   [RESOURCES](#Resources)
+#### Project access
+
+Clone Repo: https://github.com/SumiSastri/react-basics-to-hooks.git
+
+**Install dependencies**
+
+cd (change directory) from the root directory - react-basics-to-hooks - into the repo you want to access
+
+- breaking bad
+- fundamentals
+- hooks
+
+`$npm install -y`
+
+If any audit issues run
+`$npm audit fix`
+
+If you get the warning: `Greetings, time traveller. We are in the golden age of prefix-less CSS, where Autoprefixer is no longer needed for your stylesheet.`
+
+update the project with the latest react-scripts - run this command in the repo
+
+`$npm install react-scripts@latest`
+
+**Run React apps**
+
+`$npm run start`
+
+Access project scripts - debugging if you have incompatibility issues with es-lint/
+
+1. Check if node_modules/eslint is outside your project directory - npm has issues with package hoisting - Try running npm ls eslint in your project folder to see where it is - This will tell you which other package (apart from the expected react-scripts) installed eslint.
+
+-The files in these folders are outside the project directory you can
+
+1. Delete package-lock.json
+2. Delete node modules
+3. Remove es-lint from dependencies/ dev-dependencies
+4. run `npm install -y`
+5. You can also try `npm uninstall eslint` and then `npm run start`
+
+Note: If nothing else helps, add SKIP_PREFLIGHT_CHECK=true to an .env file in your project. **I have chosen this option as I am not using this folder to deploy or run a production build.**
+That would permanently disable this preflight check in case you want to proceed anyway.
+
+Note: Ensure that gitignore file is set up. If it is not create the dot file
+
+$touch .gitignore
+Add this code to the file and save
+
+```
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+```
 
 #### Project goals
 
@@ -33,31 +105,6 @@ Work in Progress: Tutorials on the fundamentals of Hooks, follows the basic and 
 
 - [Progressive-Web-Apps-Videorama]([https://github.com/SumiSastri/react-basics-to-hooks/tree/master/progressive-web-apps/videorama])
   In the subfolder Videorama is a fully deployed app on Netifly, following a Linked-In course. This course has also been used to adapt the Breaking-Bad project and turn it into a PWA.
-
-#### Project access
-
-**Install dependencies**
-
-npm install -y
-
-**Run React apps**
-
-npm run start
-
-Access project scripts - debugging if you have incompatibility issues with es-lint/
-
-1. Check if node_modules/eslint is outside your project directory - npm has issues with package hoisting - Try running npm ls eslint in your project folder to see where it is - This will tell you which other package (apart from the expected react-scripts) installed eslint.
-
--The files in these folders are outside the project directory you can
-
-1. Delete package-lock.json
-2. Delete node modules
-3. Remove es-lint from dependencies/ dev-dependencies
-4. run `npm install -y`
-5. You can also try `npm uninstall eslint` and then `npm run start`
-
-Note: If nothing else helps, add SKIP_PREFLIGHT_CHECK=true to an .env file in your project. **I have chosen this option as I am not using this folder to deploy or run a production build.**
-That would permanently disable this preflight check in case you want to proceed anyway.
 
 #### RESOURCES
 
