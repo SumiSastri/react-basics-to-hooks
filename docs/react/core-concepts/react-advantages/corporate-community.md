@@ -1,9 +1,11 @@
-3. Long-term-stability due to Facebook investment and the open source community that supports it
+Plural Sight: React the Big Picture : Cory House
+
+**Long-term-stability due to Facebook investment and the open source developer and corporate community that supports it**
 
 - FB/ WhatsApp/ Instagram are all built on React - high level of traffic
 - Active blogs for release and plans for the future
 - Breaking changes with CodeMod update
-- React codemod script with every release this resolves breaking changes making all React libraries backward compatibile and ensures long term stability
+- React codemod script with every release this resolves breaking changes making all React libraries backward compatibile and ensures long term stability (A codemod is a command line tool that you can point at your code base to automate changes. With React codemod, you can automatically update older React components to the latest specifications.)
 - One of the most popular repos on GitHub, downloaded over 10-mil times a week
 - Stack-share shows many large corporates use React and its growing ecosystem
 - Reactiflux - online community
@@ -14,6 +16,6 @@
 - Although features are mainly based on FB needs but as an open-source platform there is a balance of power between FB and the communities
 - React came with a patent clause but with React 16 this was removed it now uses the open source MIT licence
 
-- List of free component libraries 
+- List of free component libraries
 - Brillout [https://github.com/brillout/awesome-react-components]
 - Enaqx [https://github.com/enaqx/awesome-react]

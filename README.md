@@ -3,6 +3,7 @@
 1. [Project access](#Project-access)
 2. [Project goals](#Project-goals)
 3. [Certifications](#Certifications)
+4. [Resources](#RESOURCES)
 
 #### Project access
 
@@ -107,6 +108,11 @@ Work in Progress: Tutorials on the fundamentals of Hooks, follows the basic and 
   In the subfolder Videorama is a fully deployed app on Netifly, following a Linked-In course. This course has also been used to adapt the Breaking-Bad project and turn it into a PWA.
 
 #### RESOURCES
+
+The content of this repo has come from several references this lists some of the key resources I have used.
+
+Tutorials:
+Plural Sight: React the Big Picture : Cory House
 
 Documentation:
 React
