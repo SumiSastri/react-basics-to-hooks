@@ -124,6 +124,9 @@ Plural Sight: React the Big Picture : Cory House
 Plural Sight: Designing React Components: Peter Kellner
 Code: [https://github.com/pkellner/pluralsight-designing-react-components-course-code]
 
+YouTube: React-2016 and React-Hooks examples come from this tutorial
+CodeEvolution: https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
+
 Documentation:
 React
 [https://reactjs.org/docs/getting-started.html]
