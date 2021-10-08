@@ -1,6 +1,7 @@
 **What is JSX in a component?**
 
-JSX documentation: [https://reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized]
+Documentation for JSX: [https://reactjs.org/docs/introducing-jsx.html]
+Detailed documentation for JSX[https://reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized]
 
 In the React Component Library HTML is generated using JavaScript.
 

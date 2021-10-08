@@ -21,8 +21,9 @@ Clone Repo: https://github.com/SumiSastri/react-basics-to-hooks.git
 cd (change directory) from the root directory - react-basics-to-hooks - into the repo you want to access
 
 - breaking bad
-- fundamentals
+- react-2016
 - hooks
+- progressive-web-apps
 
 `$npm install -y`
 

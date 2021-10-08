@@ -14,6 +14,8 @@ Plural Sight: React the Big Picture : Cory House
 
 The versatility comes from the fact that the render method is separate from the component composition There are over a dozen virtual rendering ecosystems.
 
+Components help developers isolate features and build them independently. While one developer works on a nav-bar another can work on buttons, the components can be exported and imported to build a page. Facebook uses over 50,000 components for its user interface. Building smaller components also helps quickly solve and debug problems and test functionality of the component in isolation from the rest of the app before proceeding to end-to-end testing.
+
 This GitHub repo lists them [https://github.com/chentsulin/awesome-react-renderer] - so from replacing HTML in emails to in the DOM, React creates virtual environments for render then plugs into these systems using the component library.
 
 `ReactDomServer.renderToString()` the method that renders your component to a string of HTML
