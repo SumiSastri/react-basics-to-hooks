@@ -7,6 +7,13 @@
 
 #### Project access
 
+Pre-requisites:
+
+- Latest version of node - Node 16 with NPM 6.14.12 (nodejs.org)
+- GitHub account
+- Local device connected to GH
+- Add React Dev Tools to Chrome (or browser that supports React Dev Tools)
+
 Clone Repo: https://github.com/SumiSastri/react-basics-to-hooks.git
 
 **Install dependencies**
@@ -113,6 +120,8 @@ The content of this repo has come from several references this lists some of the
 
 Tutorials:
 Plural Sight: React the Big Picture : Cory House
+Plural Sight: Designing React Components: Peter Kellner
+Code: [https://github.com/pkellner/pluralsight-designing-react-components-course-code]
 
 Documentation:
 React

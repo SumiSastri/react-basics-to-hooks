@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-// unamed export - ES-5 - uses the function key word
+// UNNAMED EXPORT - ES-5 - uses the function key word
 // function Greet() {
 // 	return (
 // 		<div>
@@ -9,7 +9,7 @@ import React from 'react';
 // 	);
 // }
 
-// unamed export - ES-6
+// UNNAMED EXPORT - ES-6
 // uses const and let key words
 // const Greet = () => (
 // 	<div>
@@ -19,16 +19,16 @@ import React from 'react';
 
 // export default Greet;
 
-// named export with props
+// // NAMED EXPORT with props (best practice)
 export const Greet = ({ welcome, example, children }) => (
-	<div>
-		<h1>Hello World</h1>
-		{children}
-		<div>
-			<p>
-				{welcome} {example}
-			</p>
-			{children}
-		</div>
-	</div>
+  <div>
+    <h1>Hello World</h1>
+    {children}
+    <div>
+      <p>
+        {welcome} {example}
+      </p>
+      {children}
+    </div>
+  </div>
 );
