@@ -25,6 +25,42 @@ body {
   padding: 15px;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.test {
+  color: paleturquoise;
+}
+
+header {
+  height: 150px;
+}
+
+header img {
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  height: 100px;
+}
+
+input[type="text"] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 95%;
+  margin: 15px;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -49,7 +85,11 @@ img {
   overflow: hidden;
   padding: 0 2rem;
 }
-
+.container2 {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
 .container-borders {
   max-width: 1100px;
   margin: auto;
@@ -120,11 +160,84 @@ img {
   text-align: center;
 }
 
-/* Cards */
+/* Card */
+
 .card {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+}
+
+.card1 {
+  cursor: pointer;
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card1 h1 {
+  font-size: 25px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.card1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card1-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card1:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card1-front,
+.card1-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card1-back {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.card1 li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* List */
@@ -207,6 +320,18 @@ img {
   grid-gap: 1rem;
 }
 
+/* Buttons and badges */
+.btn1 {
+  display: inline-block;
+  color: #fff;
+  background-color: #3fb573;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px 15px;
+  border: 0;
+  margin: 10px 0;
+}
+
 .btn {
   display: inline-block;
   background: var(--light-color);
@@ -220,6 +345,7 @@ img {
   transition: opacity 0.2s ease-in;
   outline: none;
 }
+
 .btn-pink {
   display: inline-block;
   color: grey;

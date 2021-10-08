@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
-import Home from "./components/FunctionalComponentWithNamedExport";
+import Home from "./functionalComponents/FunctionalComponentWithNamedExport";
 import TableOfContentsBar from "./siteNavs/TableOfContentsBar";
-import ReactComponents from "./components/ReactComponents";
-import FunctionalComponent from "./components/FunctionalComponent";
+import ReactComponents from "./functionalComponents/ReactComponents";
+import FunctionalComponent from "./functionalComponents/FunctionalComponent";
 import ClassComponents from "./components/ClassComponents";
 import Counter from "./classComponents/Counter";
 import FunctionalComponentClickEvents from "./eventComponents/FunctionComponentClickEvents";

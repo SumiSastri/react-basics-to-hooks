@@ -43,19 +43,13 @@ class Form extends Component {
         <div>
           <h4>Basic Form Inputs</h4>
           <p>
-            In HTML, forms hold state therefore the data typed in is immediately
-            submitted on click. However, in React data is held in state, not the
-            form input filed. Data needs to be passed from state to the form
-            components by using factory functions to setState in the event
-            handler of the components <em>onChange, onClick, onSubmit.</em>
+            In HTML forms state is retained and inputs entered by users update
+            immediately. As state is not retained in inputs in React but in
+            memory with the virtual DOM user inputs need to listen to an event
+            and update. See the Forms-Hub repo in GitHub for a deeper dive into
+            controlled components or form inputs.
           </p>
-          <p>
-            Child components like text inputs, buttons are created as child
-            components of the stateful form component. In the stateful component
-            the methods to handle the updated state are written and passed as
-            props to the child component.
-          </p>
-          <label>Text Field (in parent component)</label>
+          <label>Text Field</label>
           <input
             type="text"
             placeholder="Type text here"
@@ -64,7 +58,7 @@ class Form extends Component {
           />
         </div>
         <div>
-          <label>Text Area(in parent component)</label>
+          <label>Text Area</label>
           <textarea
             type="text"
             placeholder="Type text here"
@@ -73,7 +67,7 @@ class Form extends Component {
           />
         </div>
         <div>
-          <label>Select Filter(in parent component)</label>
+          <label>Select Filter</label>
           <select value={selectFilter} onChange={this.handleSelectFilterChange}>
             <option value="Default">Scroll to select one</option>
             <option value="Option 1">Option 1</option>
