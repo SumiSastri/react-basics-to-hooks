@@ -4,20 +4,21 @@ export default class ClassComponentWithProps extends Component {
   constructor(props) {
     super();
     this.state = {
-      data: "I am the value of the data attribute in state",
+      destructuredData:
+        "As state is a JavaScript object it can be destructured into each of its key-value pairs. I am the destructuredData key with the value of this string",
     };
   }
   render() {
-    const { data } = this.state;
+    const { destructuredData } = this.state;
     // const { name } = this.props;
     return (
       <div>
         <h4>Example 6: Destructuring</h4>
         <p>
-          In this JSX expression we are destructuring the data attribute in
-          state by abstracting the <em>this</em> key word and rendering only the
-          data attribute which reads:
-          <strong>{data}</strong>
+          Destructing is a JavaScript concept used for both objects and arrays.
+          In React you can destructure props and state as they are both objects.
+          With React 2019, arrays are destructured to hold state information.
+          DEMO: <strong className="text-success">{destructuredData}</strong>
         </p>
       </div>
     );

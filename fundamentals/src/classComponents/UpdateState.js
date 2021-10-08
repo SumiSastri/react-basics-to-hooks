@@ -5,13 +5,13 @@ export class UpdateState extends Component {
     super();
 
     this.state = {
-      data: "Placeholder: This is the initial state data",
+      data: "I am the initial data in the state object",
     };
   }
 
   updateData() {
     this.setState({
-      data: "Updating state: with the updateData method to setState ",
+      data: "I have been updated with the setState Method",
     });
   }
 
@@ -20,19 +20,18 @@ export class UpdateState extends Component {
       <div>
         <h4>Example 7: setState to update data in the state object </h4>
         <p>
-          State is immutable and should not be updated in the constructor
-          method. Click the button below to update the data in state.
+          State as an object is readable and writable. However if you change
+          state directly in the constructor method it will update in the console
+          and will not be rendered. To render data held in state you must use
+          the setState() method. DEMO: Click the button below to update the data
+          in state.
         </p>
         <p>
-          State: <strong>{this.state.data}</strong>
+          State: <span className="badge">{this.state.data}</span>
         </p>
         <button className="btn-light" onClick={() => this.updateData()}>
-          Click to demo state data updating with the setState method
+          Click me
         </button>
-        <p>
-          The <em>setState</em>method has been written as a factory function and
-          passed into the onClick handler to udpate the data in state.
-        </p>
       </div>
     );
   }

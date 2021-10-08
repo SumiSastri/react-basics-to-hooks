@@ -22,7 +22,10 @@ function App() {
       <Switch>
         <Fragment>
           <div className="App">
-            <NavBar title="React Tutorial: Covers Fundamentals to Hooks" icon />
+            <NavBar
+              title="Traditional React with Class and Functional Components"
+              icon
+            />
             <Route exact path="/" component={Home} />
             <TableOfContentsBar />
             <Route path="/components" component={ReactComponents} />

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class ClassComponentWithProps extends Component {
   static defaultProps = {
-    name: "THIS IS THE STATIC DEFAULT PROP",
+    name: "This is the data in the static defaultProps object in a class component it is written before the constructor",
   };
   // static propTypes = {
   //   name: ProptTypes.string.isRequired,
@@ -22,18 +22,15 @@ export class ClassComponentWithProps extends Component {
         </h4>
         <p>
           Props follow the same pattern where the child component renders the
-          props set by the parent component. This class component is the child
-          component and props have been imported as a parameter of the
-          constructor method. The prop imported has an attribute description
-          with the string:
+          props set by the parent component. DEMO:
           <strong>{this.props.description}</strong>
         </p>
+        <br />
         <h4>Example 4: Static Props defined in class components</h4>
         <p>
-          In class components, props can be defined in the parent as static
-          default props and passed to the child. This prop is defined before the
-          constructor method and then can be imported into child components.
-          {this.props.name}
+          In class components, props can also be defined as static default props
+          and passed to the child. DEMO:
+          <span className="text-dark"> {this.props.name}</span>
         </p>
       </div>
     );

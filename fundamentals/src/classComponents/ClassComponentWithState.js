@@ -5,7 +5,7 @@ export class ClassComponentWithState extends Component {
     super();
 
     this.state = {
-      data: "INITIAL STATE DATA",
+      data: "I am string in the state object",
     };
   }
   render() {
@@ -13,10 +13,10 @@ export class ClassComponentWithState extends Component {
       <div>
         <h4>Example 2: Stateful components</h4>
         <p>
-          Here state is defined as a string in the constructor method. The
-          constructor and the super methods are immediately invoked and then
-          rendered. The data in state that is rendered here is:{" "}
-          {this.state.data}
+          In class components, the constructor and the super methods are
+          immediately invoked and then rendered. DEMO of data held in state:
+          {""}
+          <span className="text-primary">{this.state.data}</span>
         </p>
       </div>
     );
