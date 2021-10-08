@@ -1,83 +1,104 @@
 ## HOW TO USE THE PROPS.CHILDREN METHOD WITH FUNCTIONAL COMPONENTS
 
+What is props.children?
+
+CodeEvolution is a good tutorial: https://www.youtube.com/watch?v=m7OWXtbiXX8
+
+Children is a reserved key word for the JSX that is rendered within a component - here the `p` & the `icon` tags are child props.
+
+`<Component><div><p><icon></icon></p></div></Component>`
+
+- Children is an inbuild property (param) of every functional component. Where there are no children nothing is rendered.
+  `const myComponent = ({children, + other named props created by developer}) => { render(<div>{props.children}<div/>)}`
+
+- Unamed/ unknown props can also be rendered not just the named props with the `props.children` method.
+
 **Step1**
-Create the child component
+Create a child component
+
+`<Component/>`
+
 **Step2**
 Import the child component into 2 different parent components
+
+USE CASE 1
+
+```
+<Container1>
+<Component/>
+</Container1>
+```
+
+USE CASE 2 - props now change based on this use case
+
+```
+<Container2>
+<Component/>
+</Container2>
+
+```
+
 **Step3**
-Create the properties for each of the instances of the child components in each of the parent components
+Create properties for each of the instances of the child components in each of the parent components
+
+USE CASE 1
+
+```
+<Container1>
+<Component
+prop1='I am a list of numbers'
+prop2={false}
+prop3={[1,2, 3, 4]}
+prop4={add2 = (a,b) => a + b}
+><div><p><icon></icon></p></div><Component>
+</Container1>
+```
+
+USE CASE 2 - props now change based on this use case
+
+```
+<Container2>
+<Component
+prop1='I am a shopping list'
+prop2={true}
+prop3={['apples,'oranges', 'pears']}
+prop4={multiply3 = (x,y, z) => x _ y _ z}
+><div><button/></div></Component>
+</Container2>
+
+```
+
 **Step4**
-Pass named properties from the parent components to the child and use ```props.children``` to render - this is for nested components
+Go back to the component definition and use `props.children` to render the nested unamed props in USE CASE 1 where the component has been called
+
+COMPONENT DEFINITION
+
+```
+export const Component = ({prop1, prop2, prop3, prop4, children}) => {
+return (
+<Component
+prop1={prop1: string}
+prop2={prop2: boolean}
+prop3={prop3: array}
+prop4={prop4: method}
+>{props.children}</Component>
+)
+}
+```
+
 **Step5**
-Destructure the child properties in the child component with a comma or spread operator and use the children key word.
 
-**Step1 Create Child component**
-
-**Step4 & 5 Pass named properties from the parent and render if required or just pass children destructured and render children as an expression**
+Use the spread operator for the rest of the props
 
 ```
-import React from "react";
-
-function GrandChild2({ description, children }) {
-  return (
-    <div>
-      <h3>I am GrandChild2{description}</h3>
-      <p>I want my children to be rendered{children}</p>
-    </div>
-  );
+export const Component = ({...props, children}) => {
+return (
+<Component
+prop1={prop1: string}
+prop2={prop2: boolean}
+prop3={prop3: array}
+prop4={prop4: method}
+>{props.children}</Component>
+)
 }
-
-export default GrandChild2;
-```
-
-**Step2 Two Parents for the same child**
-
-PARENT ONE **Step3 Create properties for GrandChild2 in enclosing div tags they will not be rendered till the children prop is passed from parent to child**
-
-```
-import React from "react";
-
-import GrandChild1 from "../propTreeFunctionalComponents/GrandChild1";
-import GrandChild2 from "../propTreeFunctionalComponents/GrandChild2";
-
-function Child2({ duplicateForChildren }) {
-  return (
-    <div>
-      <h2>Child-2{duplicateForChildren}</h2>
-      <GrandChild1 instrument="I play the violin" />
-      <GrandChild2>
-        <div>
-          <p>There are no children props to render here</p>
-        </div>
-      </GrandChild2>
-    </div>
-  );
-}
-
-export default Child2;
-```
-
-PARENT TWO **Step3 Create properties for GrandChild2 in enclosing div tags they will not be rendered till the children prop is passed from parent to child**
-
-```
-import React from "react";
-
-import GrandChild2 from "../propTreeFunctionalComponents/GrandChild2";
-import GrandChild5 from "../propTreeFunctionalComponents/GrandChild5";
-
-function Child3({ nested }) {
-  return (
-    <div>
-      <h2>Child-3{nested}</h2>
-      <GrandChild2 description="I am 5m tall">
-        <div>
-          <p>Rendering children of props of GrandChild2</p>
-        </div>
-      </GrandChild2>
-      <GrandChild5 height="I am 2m tall" />
-    </div>
-  );
-}
-
-export default Child3;
 ```

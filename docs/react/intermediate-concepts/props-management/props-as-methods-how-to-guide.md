@@ -8,11 +8,11 @@ When a child component wants to communicate to a parent component we use methods
 
 - Import the child component to connect parent to child
 - In state add data that you want displayed in the child component
-- With React 2016 use state with or without a constructor depending on the use case and update state with the ```setState()``` method
-- With React 2019 ```useState()``` method from Hooks
+- With React 2016 use state with or without a constructor depending on the use case and update state with the `setState()` method
+- With React 2019 `useState()` method from Hooks
 - Write functions where behaviour changes required - in the counter example the counter increments by a random number, one etc.,
 
-**See ```App2.js``` demo**
+**See `props-and-state` in code snippets-(demos) folder**
 
 - In the render method create attributes/ props for the child component they can take any name
 
@@ -27,5 +27,5 @@ When a child component wants to communicate to a parent component we use methods
 
 **See Button2.js & Display.js for a demo on destructuring**
 
-6. Remember props are immutable therefore if you set these variables in the child component they will be rendered in all modules where the parent component is exported. Therefore use a reusable function 
-see the difference between ```App1.js``` and ```App2.js```
+6. Remember props are immutable therefore if you set these variables in the child component they will be rendered in all modules where the parent component is exported. Therefore use a reusable function
+   see the difference between `App1.js` and `App2.js`
