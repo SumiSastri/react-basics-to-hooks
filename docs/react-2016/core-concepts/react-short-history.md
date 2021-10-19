@@ -9,3 +9,5 @@ React apps are just collections of components that render their output based on 
 2015 - React Native released
 2016 - React 15 released
 2019 - React Hooks React 16.8
+
+Note React is a library not an application (App)
