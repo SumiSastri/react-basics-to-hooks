@@ -10,3 +10,5 @@ From Testing React Components - Plural Sight (Liam McLennan)
 8. Code rot - old code/ old tests never deleted slows down apps
 9. Tests not needed - for example testing implementation rather than logic
 10. Difficult to test false negatives(?)
+11. Never test the same thing 2 times
+12. Never test ui that can be tested in another way(?)

@@ -1,4 +1,5 @@
 From Testing React Components - Plural Sight (Liam McLennan)
+Documentation: https://testing-library.com/docs/
 
 - Components are functions
 - With Hooks they are functional components

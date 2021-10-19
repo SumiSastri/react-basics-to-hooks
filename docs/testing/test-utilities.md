@@ -1,4 +1,5 @@
 From Testing React Components - Plural Sight (Liam McLennan)
+Documentation: https://testing-library.com/docs/
 
 -Another library in the eco system for testing with 2 frequently used methods `act()` and `reactTestUtilities()` - traverses the DOM manually not a great dev-user experience
 
