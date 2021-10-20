@@ -123,9 +123,13 @@ Tutorials:
 Plural Sight: React the Big Picture : Cory House
 Plural Sight: Designing React Components: Peter Kellner
 Code: [https://github.com/pkellner/pluralsight-designing-react-components-course-code]
+Plural Sight: Testing React Components: Liam McLennan
 
 YouTube: React-2016 and React-Hooks examples come from this tutorial
 CodeEvolution: https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
+
+NetNinja for testing: https://www.youtube.com/watch?v=7dTTFW7yACQ
+GitHub Repo NetNinja Testing: [https://github.com/harblaith7/React-Testing-Library-Net-Ninja/tree/main/src]
 
 Documentation:
 React
@@ -139,3 +143,6 @@ Cheat sheets from docs
 
 & FAQs - this one is really useful to understand why Hooks and benefits of using Hooks
 [https://reactjs.org/docs/hooks-faq.html]
+
+React Testing Library:
+[https://testing-library.com/docs/]
