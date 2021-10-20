@@ -26,4 +26,9 @@ The test blocks then dive deeper into the component's individual testable units
     const { container, getByText /*other props in the library*/ } = render(myComponentVaribale);
     <!-- this is when initial values are re-rendered after initial empty render of component -->
     expect(getByText("I am a string")).toBeInTheDocument();
+
+<!-- Await block with async and method findBy rather than getBy  -->
+
+    const someHTMLElement = await screen.findByTestId(`abcd123`)
+        expect(someHTMLElement).toBeInTheDocument();
 ```
