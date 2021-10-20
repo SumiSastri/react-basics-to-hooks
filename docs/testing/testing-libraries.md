@@ -1,0 +1,6 @@
+- jest (a javascript testing library that is inbuilt into React-testing library)
+- enzyme (another javascript testing library)
+- react testing library (ships with create react app)
+- cypress testing (end-to-end testing in the browser)
+- puppeteer (end-to-end testing)
+- mocha and chai (unit testing libraries)
