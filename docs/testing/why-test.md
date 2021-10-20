@@ -7,5 +7,6 @@ From Testing React Components - Plural Sight (Liam McLennan)
 5. The design should not throw errors when compiled or interpreted (parsed) by a computer
 6. Good training for developers - [attern of thinking produced by the testing process facilitates good design
 7. Catches bugs and removes errors
-8. Speed up QA (quality assurance) time
+8. Speed up QA (quality assurance) time - integrate into work-flow/ build complex test flow through the code release process
 9. Automates iterative code development - long term more efficient
+10. Make code modular that can be testable - makes you write better code

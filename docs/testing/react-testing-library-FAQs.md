@@ -26,3 +26,9 @@
    `afterEach()` - good for clean up (dismounting component)
    `afterAll()` - runs once after all tests
    Net Ninja: [https://www.youtube.com/watch?v=MtiQMhzjQrY&list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ&index=14]
+
+6. Two methods for event handling
+   `fireEvent()`
+   eg: If you want to simulate change `fireEvent.onChange(elementName, {target: {value:'Change me'}})`
+   `userEvent()`
+   eg: Screen object is good if you can't find an element and need to display an error message by an alert message `userEvent.type(screen.findByRole("alert", "There is an error"))`

@@ -128,8 +128,12 @@ Plural Sight: Testing React Components: Liam McLennan
 YouTube: React-2016 and React-Hooks examples come from this tutorial
 CodeEvolution: https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
 
-NetNinja for testing: https://www.youtube.com/watch?v=7dTTFW7yACQ
+Testing:
+NetNinja best YouTube tute for testing: https://www.youtube.com/watch?v=7dTTFW7yACQ
 GitHub Repo NetNinja Testing: [https://github.com/harblaith7/React-Testing-Library-Net-Ninja/tree/main/src]
+Traversy Media very high-level overview: [https://www.youtube.com/watch?v=OVNjsIto9xM]
+Academind - JavaScript testing(not specifically React): [https://www.youtube.com/watch?v=r9HdJ8P6GQI]
+MPJ - Fun-Fun Functions[https://www.youtube.com/watch?v=Eu35xM76kKY] Too long and waffly
 
 Documentation:
 React
