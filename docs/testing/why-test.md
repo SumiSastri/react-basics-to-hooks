@@ -10,3 +10,7 @@ From Testing React Components - Plural Sight (Liam McLennan)
 8. Speed up QA (quality assurance) time - integrate into work-flow/ build complex test flow through the code release process
 9. Automates iterative code development - long term more efficient
 10. Make code modular that can be testable - makes you write better code
+
+Resources:
+The test pyramid:
+[https://martinfowler.com/articles/practical-test-pyramid.html]

@@ -8,3 +8,5 @@
 8. Data calls
 9. Authentication (user-login-logout-access to parts of the site)
 10. State-management tools/ custom Hooks (not the implementation of these but functionality)
+
+- test-coverage - making sure 100 percent of the code written is covered with appropriate tests
