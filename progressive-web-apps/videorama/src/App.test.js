@@ -54,7 +54,6 @@ describe("Videorama PWA app integration tests", () => {
       );
       screen.debug(showVideos);
       expect(showVideos).toMatch(/https/);
-
       const img = findByAltText("artists work");
       expect(img.src).toMatch(/https/);
     });
