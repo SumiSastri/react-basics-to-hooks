@@ -1,10 +1,13 @@
 No matter what the testing library is there is a structure most testing libraries follow the 3 As
 
 Arrange - Act - Assert
+Render -> Query DOM -> Check DOM behaviour matches expectations
 
 _Arrange:_
 
 - Describe: the test/ it/ describe methods (describes the test that is being conducted) it groups all similar tests into one block with several single assertions within the block. You can also have a child describe block
+
+**Render Component**
 
 _Act:_
 
@@ -16,8 +19,12 @@ _Act:_
 
 - Mock Data: simulations-mocks functions/ event handling
 
+**Query DOM**
+
 _Assert:_
 
 - Assertions: interact with the elements and then run the next methods - expectation/ assertion methods (how the code is expected to run, what the output should be)
 
 Best practice is one assertion per test - invert the test to make sure it fails as well
+
+**Assertion on expected DOM behaviour**

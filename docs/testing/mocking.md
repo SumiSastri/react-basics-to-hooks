@@ -25,9 +25,6 @@ const MockTodoFooter = ({ numberOfIncompleteTasks }) => {
 - Calls are slow
 - Testing calls are short and frequent and devs need fast response to check features that are local not external
 
-Tute: Net Ninja: [https://www.youtube.com/watch?v=TBZy-Rc-xX0&list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ&index=13]
-Example mock: Net Ninja - GitHub file [https://github.com/harblaith7/React-Testing-Library-Net-Ninja/blob/main/src/__mocks__/axios.js]
-
 5. Mock events - If you want to simulate change
    Example:
    `fireEvent.onChange(elementName, {target: {value:'Change me'}})`
