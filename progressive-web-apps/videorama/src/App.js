@@ -11,6 +11,7 @@ function App() {
         "https://orangevalleycaa.org/api/videos"
       ).then((response) => response.json());
       setVideoData(ovVideoData);
+      console.log(ovVideoData);
     };
     fetchVideoData();
   }, []);
@@ -24,8 +25,21 @@ function App() {
       </header>
       {ovVideoData.map((video) => (
         <div className="video-container" key={video.video_url}>
-          <video className="videos" controls src={video.video_url} />
+          <video
+            alt="shows videos from the orange valley california api"
+            data-testid="showVideos"
+            className="videos"
+            controls
+            src={video.video_url}
+          />
           <h2> {video.name}</h2>
+          <h5>Category: {video.category}</h5>
+          <img
+            alt="artists work"
+            src={video.thumbnail}
+            style={{ height: "150px" }}
+          />
+          <p> {video.description}</p>
         </div>
       ))}
     </div>

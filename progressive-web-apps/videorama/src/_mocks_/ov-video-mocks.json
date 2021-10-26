@@ -1,0 +1,96 @@
+const ovVideoMockResponse - {
+    
+"category": "Craft",
+"category_id": "2",
+"id": "1",
+"image": "http://orangevalleycaa.org/api/media/images/WomanSculptsClay_042009083.png",
+"name": "Modeling Faces in Clay with Janet Blake",
+"thumbnail": "http://orangevalleycaa.org/api/media/images/thumbs/WomanSculptsClay_042009083.png",
+"video_url": "http://orangevalleycaa.org/api/media/videos/WomanSculptsClayMusic_042009083.mp4"
+},
+
+
+
+
+category: "Dance"
+category_id: "3"
+created_by: "Manuel Juarez, Art Director, OVCAM "
+cropped: "http://orangevalleycaa.org/api/media/images/cropped/FireDancers_042981315.png"
+description: "Fire Rhythm, a Los Angeles dance team, is rising in the elite ranks of fire dancing. This video captured their astounding performance at the Orange Valley Contemporary Arts Museum."
+duration: "00:00:20"
+file_name_original: "fire dancers_042981315_MUSIC.mp4"
+id: "2"
+image: "http://orangevalleycaa.org/api/media/images/FireDancers_042981315.png"
+keywords: "baton,dance,fire,performer,poi"
+name: "Fire Dancers Shine Bright"
+popularity: "10"
+thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/FireDancers_042981315.png"
+video_url: "http://orangevalleycaa.org/api/media/videos/FireDancersMusic_042981315.mp4"
+
+
+
+
+category: "Art"
+category_id: "1"
+created_by: "Betty Clinton, Video Producer, OVCAA"
+cropped: "http://orangevalleycaa.org/api/media/images/cropped/GraphicArtist_052214820.png"
+description: "Ben Woolrich, Principal Designer for Metro Design, has been teaching a Saturday graphic design camp at the Orange Valley Community Center. We filmed his recent session to share his inspiring lessons with the youth art community.  Ben's warm and open approach to education, along with his mastery of design, is a joy to behold."
+duration: "00:00:40"
+file_name_original: "graphic artist_052214820.mp4"
+id: "3"
+image: "http://orangevalleycaa.org/api/media/images/GraphicArtist_052214820.png"
+keywords: "computer,design,graphic,tablet,youth"
+name: "Graphic Art Camp Draws Youth Artists in Droves"
+popularity: "10"
+thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/GraphicArtist_052214820.png"
+video_url: "http://orangevalleycaa.org/api/media/videos/GraphicArtistMusic_052214820.mp4"
+
+
+
+category: "Craft"
+category_id: "2"
+created_by: "John Chen, President, Association of Metal Arts"
+cropped: "http://orangevalleycaa.org/api/media/images/cropped/SculptorWelding_053783433.png"
+description: "Three Orange Valley metal sculptors share their talent, vision, and tips for turning a love of welding and sculpture into a hot career."
+duration: "00:00:19"
+file_name_original: "sculptor welding_053783433.mp4"
+id: "4"
+image: "http://orangevalleycaa.org/api/media/images/SculptorWelding_053783433.png"
+keywords: "art,metal,sculpture,welding"
+name: "The Art of Welding"
+popularity: "5"
+thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/SculptorWelding_053783433.png"
+video_url: "http://orangevalleycaa.org/api/media/videos/SculptorWeldingMusic_053783433.mp4"
+
+
+category: "Dance"
+category_id: "3"
+created_by: "Ronald Winter, Video Producer, OVCAA "
+cropped: "http://orangevalleycaa.org/api/media/images/cropped/BalletInSmoke_054599628.png"
+description: "A local ballet group known as \"Leaps and Bounds\", is wowing audiences with their highly stylized recitals performed against wildly animated backgrounds. Our OVCAA video team took a look at the artistry behind these shows and learned that there's more to it than smoke and mirrors."
+duration: "00:00:21"
+file_name_original: "ballet in smoke_054599628.mp4"
+id: "5"
+image: "http://orangevalleycaa.org/api/media/images/BalletInSmoke_054599628.png"
+keywords: "ballet,dance,performance,production,recital,smoke"
+name: "Leaps and Bounds"
+popularity: "5"
+thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/BalletInSmoke_054599628.png"
+video_url: "http://orangevalleycaa.org/api/media/videos/BalletInSmokeMusic_054599628.mp4"
+
+
+category: "Craft"
+category_id: "2"
+created_by: "Betty Clinton, Video Producer, OVCAA"
+cropped: "http://orangevalleycaa.org/api/media/images/cropped/GlassBlownDragon_056473995.png"
+description: "Thai glass blowers create some of the most elaborate and dramatic sculptures, vases, and ornaments seen in this artistic genre. OVCAA video producer, Betty Clinton, was recently vacationing in Thailand and decided to turn her camera on this intriguing and mystifying art, and its talented artists."
+duration: "00:00:12"
+file_name_original: "glass blown dragon_056473995.mp4"
+id: "6"
+image: "http://orangevalleycaa.org/api/media/images/GlassBlownDragon_056473995.png"
+keywords: "art,blowing,glass,sculpture,thailand,torch"
+name: "Blowing Glass"
+popularity: "1"
+thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/GlassBlownDragon_056473995.png"
+video_url: "http://orangevalleycaa.org/api/media/videos/GlassBlownDragonMusic_056473995.mp4"
+[[Prototype]]: Object
