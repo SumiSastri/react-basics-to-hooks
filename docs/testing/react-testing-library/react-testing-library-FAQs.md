@@ -36,3 +36,4 @@ Common mistakes blog:
    `userEvent()`
    eg: Screen object is good if you can't find an element and need to display an error message by an alert message `userEvent.type(screen.findByRole("alert", "There is an error"))`
    Wrapping the event handler in the `.act(() => {fireEvent.onChange(elementName, {target: {value:'Change me'}})})` method and some challenges: [https://kentcdodds.com/blog/fix-the-not-wrapped-in-act-warning]
+   Event submission on a form uses the `fireEvent.submit()` change handler

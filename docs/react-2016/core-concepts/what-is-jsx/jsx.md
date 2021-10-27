@@ -3,11 +3,19 @@
 Documentation for JSX: [https://reactjs.org/docs/introducing-jsx.html]
 Detailed documentation for JSX[https://reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized]
 
-In the React Component Library HTML is generated using JavaScript.
+The fundamental building block of React Component Library is the element. React has a built-in element for each HTML element - this element is generated using JavaScript. You can use React's createElement method to assemble these elements together, and you can create new custom elements by creating React components. Every React component is an extension of the React component class, and every component has a render method that returns some piece of your HTML user interface.
+
+But using the createElement method for nested components is confusing. There's a simpler way to define React components called JSX.
 
 JSX stands for JavaScript XML that is transpiled back into JavaScript in the React Library so that browsers can read them.
 
-Babel transpiles JSX back into a function call for an HTML element. `React.createElement()`.
+JSX as a sort of templating mechanism. So instead of writing nested `.createElement()` methods, you can just nest React elements in a way similar to how you would write the HTML that the component will render.
+During your build process prior to deploying your app, your JSX code will be compiled into
+`.createElement()` methods. JSX is just a convenience for developers to make building components easier and has no performance impact on the final code that runs in the browser.
+
+Each component in your user interface will be built from some combination of other custom components and HTML components. And all of them will build into a single root component that will be rendered in the browser using the `reactDOM.render()` method. This process of putting components together is called composition.
+
+Changes in the root component trickle down through the component tree and cause updates in child components. Babel transpiles JSX back into a function call for an HTML element. `React.createElement()`.
 
 In HTML, which is also a declarative code, this is an example of how the code would be written.
 

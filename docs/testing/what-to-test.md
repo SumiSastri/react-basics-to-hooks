@@ -1,3 +1,5 @@
+In web applications, there are generally a few things that need to be tested. Does it render? And does it produce the desired output? So does it render how you want it to render? Does it handle events as expected? Do all the conditionals of the if/thens and loops work as expected? Are edge cases handled appropriately? A short checklist of what to test:-
+
 1. High value features
 2. Edge cases in high-value features
 3. High dependency features

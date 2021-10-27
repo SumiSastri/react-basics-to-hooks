@@ -23,6 +23,9 @@ Infoq: [https://www.infoq.com/articles/balancing-unit-and-end-to-end-tests/]
 
 [https://www.guru99.com/smoke-sanity-testing.html]
 
-- chaos testing
+- chaos/ riot testing
 - security testing
-- regression testing
+- acceptance testing - tests whether a product meets the requirements of the customer
+- performance testing - looks at the speed of the system (Lighthouse tests)
+- usability testing - ui-ux tests (hotjar etc.)
+- regression testing - tests whether a modification is working correctly and whether anything broke as a result of a modification

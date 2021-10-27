@@ -1,6 +1,11 @@
-No matter what the testing library is there is a structure most testing libraries follow the 3 As
+Across all frameworks there is a common understanding of how tests are arranged and how they work.
+A set of tests for a particular unit is called a test suite.
+A single test within a suite of tests is called a spec.
+A spec is made up of assertions.
+Assertions produce true or false values by using matchers.
 
-Arrange - Act - Assert
+Test suites follow the 3 As:
+Arrange - Act - Assert - these co-incide with the actions in each of the stages
 Render -> Query DOM -> Check DOM behaviour matches expectations
 
 _Arrange:_

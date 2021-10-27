@@ -1,16 +1,16 @@
-__What is the Virtual DOM and why is it important?__
+**What is the Virtual DOM and why is it important?**
 
-The document object model or DOM , is an API. The DOM-API provides us with a visual representation of the state tree - or the underlying data of the app. 
+The document object model or DOM , is an API. The DOM-API provides us with a visual representation of the state tree - or the underlying data of the app.
 
 JavaScript is fast but updating the DOM is expensive, therefore optimizing how the DOM is used, will optimise performance.
 
-The DOM-API is made up of nodes and each node holds some element of state in the node. 
+The DOM-API is made up of nodes and each node holds some element of state in the node.
 
-In vanilla JavaScript, and libraries like J-Query, the developer needs to work on accessing each node via CSS-selectors. This is inefficient in run-time, costly and time-consuming. 
+In vanilla JavaScript, and libraries like J-Query, the developer needs to work on accessing each node via CSS-selectors. This is inefficient in run-time, costly and time-consuming.
 
 The DOM is updated with every state change and the whole DOM-tree has to change. The constant changing results in layout thrashing - when a browser has to recalculate where the change has occured in the DOM-tree through every branch of the DOM-tree.
 
-The Virtual DOM is a virtual copy of the DOM and is updated in the background via the inbuilt methods in the React library via the DOM tree-reconciliation alogrithm. 
+The Virtual DOM is a virtual copy of the DOM and is updated in the background via the inbuilt methods in the React library via the DOM tree-reconciliation alogrithm.
 
 A snapshot of the DOM tree is saved and the DOM is updated only with the changes required with the tree-reconciliation algorithm in memory.
 
@@ -22,6 +22,6 @@ Only the computed-diff is updated. In HTML imperative code can be written to upd
 
 The virtual-DOM is like a virtual browser or sandbox where you can first run your code, see where it breaks, debug it and publish only when there are no breaking changes.
 
-**See the demo ```mvc-virtualDOM.js``` to interact with the power of the virtual DOM**
+**See the demo `mvc-virtualDOM.js` to interact with the power of the virtual DOM**
 
 Check this also with the Chrome Dev tools to inspect the input field in both HTML and React

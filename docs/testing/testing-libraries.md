@@ -1,8 +1,0 @@
-- jest (a javascript testing library that is inbuilt into React-testing library)
-- enzyme (another javascript testing library) -> helps shallow rendering of components/ nested components
-- react testing library (ships with create react app) no need to add it to the project as a separate library
-- cypress testing (end-to-end testing in the browser)
-- puppeteer (end-to-end testing)
-- mocha and chai (unit testing libraries)
-- test utilities
-- test renderer

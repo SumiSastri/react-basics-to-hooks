@@ -82,7 +82,7 @@ Imperative code prescribes an exact sequence of steps in the alogrithm for the c
 
 Declarative code is when the outcome is described and the code takes care of the execution.
 
-React uses declarative code to build UI by the description of the actions required for the user-interface to be rendered.
+React uses declarative code to build UI by the description of the actions required for the user-interface to be rendered. In declarative programming, the programmer focuses on logic or the desired outcome rather than the step-by-step instructions required to produce that outcome.
 
 React describes how the web user-interface should be rendered. The render method is separate from the function that describes how the component should look. The description of the ui is held in the data - props or state - that is then rendered on a browser.
 

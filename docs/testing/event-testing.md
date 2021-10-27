@@ -12,4 +12,6 @@ Event testing in three steps - not as straight forward as testing components as 
 
 If you want to simulate change `fireEvent.onChange(elementName, {target: {value:'Change me'}})`
 
-**Gotchas:** In forms where there are several events on the page or conditional rendering variable declaration is not hoisted, the element appears after the event is fired therefore you need to look at the sequence of events and declare each variable required for the selection of the element after the conditional rendering is complete
+**Gotchas:** In forms where there are several events on the page or conditional rendering variable declaration is not hoisted, the element appears after the event is fired therefore you need to look at the sequence of events and declare each variable required for the selection of the element after the conditional rendering is complete.
+
+To submit data on a form the event is `fireEvent.submit()`

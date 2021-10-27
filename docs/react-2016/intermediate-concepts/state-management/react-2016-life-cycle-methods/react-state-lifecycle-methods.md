@@ -2,7 +2,11 @@ The purpose of this documentation is to show how state gets updated through the 
 
 Detailed documentation of lifecycle methods [https://reactjs.org/docs/react-component.html]
 
-__What is the purpose of having lifecycle methods in React?__
+**What is the purpose of having lifecycle methods in React?**
+
+The lifecycle methods are methods that are called at certain points in the life of a component. There are two broad categories of lifecycle methods--the mount/unmount methods and the updating methods.
+
+Mounting in React refers to the end result of rendering a component and outputting to its final destination, a browser in our case. The componentDidMount method then is the first place where it's safe to modify the state of component. ComponentDidMount is the place where you can do anything that requires browser DOM nodes, and it's also the recommended place for instantiating network requests.
 
 As React does not interact with the DOM directly, the Virtual DOM mimics the way HTML-CSS and JavaScript files are retrieved from a server. (See documentation on MVC model)
 
@@ -12,11 +16,11 @@ JavaScript - JSX transpiled back into JavaScript with transpilers/ code-compiler
 
 React methods are held in the global React-object with all its methods. The key purpose of react is to render data in state and props. As the data enters the component, flows from one component to another and shares component state.
 
-To do this each component has a lifecycle where state enters, updates and is removed from a component.
+To do this each component has a lifecycle where state enters, updates and is removed from a component as it Mounts and Unmounts from the virtual DOm.
 
-The life-cycle methods in React components follow the lifecylce from a component's created to being rendered on the DOM and then removed from the DOM-tree.
+The life-cycle methods in React components follow the lifecylce from a component's created to being rendered on the virtual-DOM and then removed from the DOM-tree.
 
-__Key life-cycle methods__
+**Key life-cycle methods**
 
 **Mounting - component is created and inserted into DOM: Methods available**
 
@@ -24,7 +28,7 @@ Invoked in this order
 
 - `constructor()` & `super()` where you intialise and set state and bind events to the class
 - `static getDerivedStateFromProps()` rarely used only when state depends on change in props over time
-- `render()` - reads `this.props` or `this.state` and renders this to the virtual DOM: not to be confused with ```ReactDom.render()``` this is the final render. In this method the component is first rendered then all its children components
+- `render()` - reads `this.props` or `this.state` and renders this to the virtual DOM: not to be confused with `ReactDom.render()` this is the final render. In this method the component is first rendered then all its children components
 - `componentDidMount()` called only once, invoked after component successfully renders on real DOM with all its children (you can call external data with network requests (API calls) in this life-cycle method as it is accessing the DOM and interacting with the DOM)
 
 **Update - component re-renders due to changes in props or state: Methods available**
@@ -45,7 +49,6 @@ When the component umounts, error boundaries need to be defined and how errors t
 
 - `static getDerivedStateFromProps()` checks to see what state is in the error and catches that error to throw an exception handler
 - `componentDidCatch` successfully capture the error to help debugging
-
 
 ## Async JavaScript with React lifecycle methods.
 
