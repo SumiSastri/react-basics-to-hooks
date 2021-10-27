@@ -1,5 +1,6 @@
 import React from "react";
 import { render, screen, wait, act } from "@testing-library/react";
+
 import App from "./App";
 
 // Arrange - the describe block - render the component
@@ -58,4 +59,12 @@ describe("Videorama PWA app integration tests", () => {
       expect(img.src).toMatch(/https/);
     });
   });
+});
+
+// third describe block tests useState()
+//Arrange  - ideally do not use the .act() method
+it("updates the page with new videos", () => {
+  const { getByText } = render(<App />);
+  const pageHeading = getByText(/Videorama/i);
+  expect(pageHeading).toBeInTheDocument();
 });

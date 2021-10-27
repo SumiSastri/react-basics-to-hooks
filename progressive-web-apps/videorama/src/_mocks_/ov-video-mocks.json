@@ -1,35 +1,26 @@
-const ovVideoMockResponse - {
-    
+{  
 "category": "Craft",
 "category_id": "2",
 "id": "1",
+"description": "Fire Rhythm, a Los Angeles dance team, is rising in the elite ranks of fire dancing. This video captured their astounding performance at the Orange Valley Contemporary Arts Museum.",
 "image": "http://orangevalleycaa.org/api/media/images/WomanSculptsClay_042009083.png",
 "name": "Modeling Faces in Clay with Janet Blake",
 "thumbnail": "http://orangevalleycaa.org/api/media/images/thumbs/WomanSculptsClay_042009083.png",
 "video_url": "http://orangevalleycaa.org/api/media/videos/WomanSculptsClayMusic_042009083.mp4"
 },
 
+{
+"category": "Dance",
+"category_id": "3",
+"description": "Fire Rhythm, a Los Angeles dance team, is rising in the elite ranks of fire dancing. This video captured their astounding performance at the Orange Valley Contemporary Arts Museum.",
+"id": "2",
+"image": "http://orangevalleycaa.org/api/media/images/FireDancers_042981315.png",
+"name": "Fire Dancers Shine Bright",
+"thumbnail": "http://orangevalleycaa.org/api/media/images/thumbs/FireDancers_042981315.png",
+"video_url": "http://orangevalleycaa.org/api/media/videos/FireDancersMusic_042981315.mp4"
+},
 
-
-
-category: "Dance"
-category_id: "3"
-created_by: "Manuel Juarez, Art Director, OVCAM "
-cropped: "http://orangevalleycaa.org/api/media/images/cropped/FireDancers_042981315.png"
-description: "Fire Rhythm, a Los Angeles dance team, is rising in the elite ranks of fire dancing. This video captured their astounding performance at the Orange Valley Contemporary Arts Museum."
-duration: "00:00:20"
-file_name_original: "fire dancers_042981315_MUSIC.mp4"
-id: "2"
-image: "http://orangevalleycaa.org/api/media/images/FireDancers_042981315.png"
-keywords: "baton,dance,fire,performer,poi"
-name: "Fire Dancers Shine Bright"
-popularity: "10"
-thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/FireDancers_042981315.png"
-video_url: "http://orangevalleycaa.org/api/media/videos/FireDancersMusic_042981315.mp4"
-
-
-
-
+{
 category: "Art"
 category_id: "1"
 created_by: "Betty Clinton, Video Producer, OVCAA"
@@ -44,9 +35,9 @@ name: "Graphic Art Camp Draws Youth Artists in Droves"
 popularity: "10"
 thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/GraphicArtist_052214820.png"
 video_url: "http://orangevalleycaa.org/api/media/videos/GraphicArtistMusic_052214820.mp4"
+},
 
-
-
+{
 category: "Craft"
 category_id: "2"
 created_by: "John Chen, President, Association of Metal Arts"
@@ -61,8 +52,9 @@ name: "The Art of Welding"
 popularity: "5"
 thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/SculptorWelding_053783433.png"
 video_url: "http://orangevalleycaa.org/api/media/videos/SculptorWeldingMusic_053783433.mp4"
+},
 
-
+{
 category: "Dance"
 category_id: "3"
 created_by: "Ronald Winter, Video Producer, OVCAA "
@@ -77,8 +69,8 @@ name: "Leaps and Bounds"
 popularity: "5"
 thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/BalletInSmoke_054599628.png"
 video_url: "http://orangevalleycaa.org/api/media/videos/BalletInSmokeMusic_054599628.mp4"
-
-
+},
+{
 category: "Craft"
 category_id: "2"
 created_by: "Betty Clinton, Video Producer, OVCAA"
@@ -94,3 +86,4 @@ popularity: "1"
 thumbnail: "http://orangevalleycaa.org/api/media/images/thumbs/GlassBlownDragon_056473995.png"
 video_url: "http://orangevalleycaa.org/api/media/videos/GlassBlownDragonMusic_056473995.mp4"
 [[Prototype]]: Object
+}
