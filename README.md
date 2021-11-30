@@ -1,3 +1,5 @@
+![Front-end-development: The React Ecosystem](assets/FE-Dev-React-EcoSystem.png)
+
 # Table of Contents
 
 1. [Project access](#Project-access)
