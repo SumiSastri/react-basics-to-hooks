@@ -15,6 +15,7 @@ Pre-requisites:
 - GitHub account
 - Local device connected to GH
 - Add React Dev Tools to Chrome (or browser that supports React Dev Tools)
+- A code editor - VS Code used for these projects.
 
 Clone Repo: https://github.com/SumiSastri/react-basics-to-hooks.git
 
@@ -108,13 +109,14 @@ Key folders for code base
   Project following YouTube Brad Traversy's tutorial to experiment with Hooks
 
 - [Fundamentals](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/fundamentals)
-  Tutorials on the fundamentals of React, follows the basic and intermediate documentation with examples and code snippets. This has a front-end which demos many concepts and has a brief explaination of how the code works. There are readme's in each section to drill down into the documentation and simplify it. There is a mini-project on the Context-API following a tutorial from NetNinja as I found the concepts a bit dry in the documentation, the project helped me understand how the documentation could be applied to a real o project.
+  Tutorials on the fundamentals of React, follows the basic and intermediate documentation with examples and code snippets. This has a front-end which demos many concepts and has a brief explaination of how the code works. There are readme's in each section to drill down into the documentation and simplify it. There is a mini-project on the Context-API following a tutorial from NetNinja. The project helped me understand how the documentation could be applied to a real o project. This section uses class-based react-components.
 
 - [Hooks](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/hooks)
 
 Work in Progress: Tutorials on the fundamentals of Hooks, follows the basic and intermediate documentation with examples and code snippets.
 
 - [Progressive-Web-Apps-Videorama]([https://github.com/SumiSastri/react-basics-to-hooks/tree/master/progressive-web-apps/videorama])
+
   In the subfolder Videorama is a fully deployed app on Netifly, following a Linked-In course. This course has also been used to adapt the Breaking-Bad project and turn it into a PWA.
 
 #### RESOURCES
