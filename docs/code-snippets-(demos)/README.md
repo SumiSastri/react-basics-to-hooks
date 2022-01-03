@@ -1,3 +1,3 @@
-These code snippets are merely illustrations to understand the documentation. They are snippets to accompany the documentation to make it easy to understand. Code can be copied into jscomplete.com/playground or any code sandbox of your choice.
+## Demos for docs
 
-To spin up the FE of these concepts in action cd into the fundamentals and hooks repos.
+This section has code snippets that serve as the demos for documentation of core React concepts. The intermediate and advanced concepts are in React-2016 and React-2019 respectively.

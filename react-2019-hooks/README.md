@@ -1,6 +1,6 @@
-### React-fundamentals-to-Hooks
+## React-2019
 
-This section covers the basic concepts with React Hooks.The folder `hooks/src/docs` has notes on the key concepts on the difference between traditional React (using class and functional components) vs. modern React (using hooks). To access this repo please see the `README` in the root file.
+This section demos React-2019 - modern react with hooks. In the react-typescript repo some of the key components are repeated to show how typescript works with hooks and how to test with (jest) and the react-testing library.
 
 Official Documentation
 
