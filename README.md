@@ -7,15 +7,41 @@
 3. [Certifications](#Certifications)
 4. [Resources](#RESOURCES)
 
-#### Project access
+# Requirements
 
-Pre-requisites:
-
-- Latest version of node - Node 16 with NPM 6.14.12 (nodejs.org)
+- Node (latest LTM version)
+  Node.js version >= 14 or above. You can use nvm for managing multiple Node versions on a single machine installed
 - GitHub account
-- Local device connected to GH
 - Add React Dev Tools to Chrome (or browser that supports React Dev Tools)
 - A code editor - VS Code used for these projects.
+
+**Ensure Node is installed**
+
+In terminal check if you have node and which version - if not install it
+
+`node -v`
+`npm -v`
+
+Make a new folder
+`mkdir my-nameofapp`
+
+Change directory to the new folder created
+`cd my-nameofapp`
+
+Initialize it with node modules
+
+`npm init`
+
+This creates a new `package.json` file to store your project's dependencies installed via npm.
+
+The fastest way to scaffold any react project is with the Create React App (CRA) site generator. This will generate a fully-functional React app with many common features built-in like Babel, Webpack, Jest, and a hot reloading development server. For react tables CRA has been installed with all the dependencies for this project.To add typescript `npx create-react-app my-nameofapp --typescript`
+
+Wait for installation to be completed and cd into your app or clone this repo
+
+# Project access
+
+You can access this repo clone the repo and install dependencies:
+`npm install - y`
 
 Clone Repo: https://github.com/SumiSastri/react-basics-to-hooks.git
 
@@ -26,22 +52,22 @@ cd (change directory) from the root directory - react-basics-to-hooks - into the
 - breaking bad
 - react-2016-class-components
 - react-2019-hooks
-- progressive-web-apps
+- cd react-pwas/videorama-demo
 
-`$npm install -y`
+`npm install -y`
 
 If any audit issues run
-`$npm audit fix`
+`npm audit fix`
 
 If you get the warning: `Greetings, time traveller. We are in the golden age of prefix-less CSS, where Autoprefixer is no longer needed for your stylesheet.`
 
 update the project with the latest react-scripts - run this command in the repo
 
-`$npm install react-scripts@latest`
+`npm install react-scripts@latest`
 
-**Run React apps**
+**Scripts**
 
-`$npm run start`
+`npm run start`
 
 Access project scripts - debugging if you have incompatibility issues with es-lint/
 
@@ -60,7 +86,8 @@ That would permanently disable this preflight check in case you want to proceed 
 
 Note: Ensure that gitignore file is set up. If it is not create the dot file
 
-$touch .gitignore
+`touch .gitignore`
+
 Add this code to the file and save
 
 ```
@@ -90,13 +117,13 @@ yarn-error.log*
 
 ```
 
-#### Project goals
+# Project goals
 
 The Breaking Bad progressive web app is the key project that applies the knowledge of React, React Hooks and Progressive Web-Apps. It has been deployed on Netifly [https://happy-brown-985f49.netlify.app]
 
 The project as a whole follows a set of Linked-in learning tutorials with their excercises.
 
-#### Certifications
+# Certifications
 
 1. Learning React
 2. React Building Progressive Apps
@@ -105,17 +132,17 @@ The project as a whole follows a set of Linked-in learning tutorials with their 
 
 Key folders for code base
 
-- [Breaking Bad](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/breaking-bad)
-  Project following YouTube Brad Traversy's tutorial to experiment with Hooks
+- [Breaking Bad]()
+  Project following YouTube tutorial to experiment with Hooks
 
-- [Fundamentals](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/fundamentals)
-  Tutorials on the fundamentals of React, follows the basic and intermediate documentation with examples and code snippets. This has a front-end which demos many concepts and has a brief explaination of how the code works. There are readme's in each section to drill down into the documentation and simplify it. There is a mini-project on the Context-API following a tutorial from NetNinja. The project helped me understand how the documentation could be applied to a real o project. This section uses class-based react-components.
+- [Fundamentals]()
+  Tutorials on the fundamentals of React, follows the basic and intermediate documentation with examples and code snippets. This has a front-end which demos many concepts and has a brief explaination of how the code works. There are readme's in each section to drill down into the documentation and simplify it. There is a mini-project on the Context-API following a tutorial from NetNinja. The project helped me understand how the documentation could be applied to a real project. This section uses class-based react-components.
 
-- [Hooks](https://github.com/SumiSastri/react-basics-to-hooks/tree/master/hooks)
+- [Hooks]()
 
 Work in Progress: Tutorials on the fundamentals of Hooks, follows the basic and intermediate documentation with examples and code snippets.
 
-- [Progressive-Web-Apps-Videorama]([https://github.com/SumiSastri/react-basics-to-hooks/tree/master/progressive-web-apps/videorama])
+- [Progressive-Web-Apps-Videorama]()
 
   In the subfolder Videorama is a fully deployed app on Netifly, following a Linked-In course. This course has also been used to adapt the Breaking-Bad project and turn it into a PWA.
 
