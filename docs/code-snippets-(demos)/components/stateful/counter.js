@@ -1,41 +1,44 @@
 // rce for boiler plate in ES7
-import React, { Component } from 'react';
-
+import React, { Component } from "react";
+// in a stateful component, the return method returns the updated state of the component
+// the constructor is a JavaScript function that returns a protoype of a component
 export class Counter extends Component {
-	// rconst for constructor
-	constructor(props) {
-		super(props);
+  // rconst for constructor
+  constructor(props) {
+    super(props);
 
-		this.state = { count: 0 };
-	}
+    this.state = { count: 0 };
+  }
 
-	incrementVolume() {
-		this.setState(
-			{
-				count: this.state.count + 1
-			},
-			() => {
-				console.log(`Callback log value, ${this.state.count}`);
-			}
-		);
-		console.log(`Sync log value, ${this.state.count}`);
-	}
+  incrementVolume() {
+    this.setState(
+      {
+        count: this.state.count + 1,
+      },
+      () => {
+        console.log(`Callback log value, ${this.state.count}`);
+      }
+    );
+    console.log(`Sync log value, ${this.state.count}`);
+  }
 
-	incrementByFive() {
-		this.setState((previousState) => ({
-			count: previousState.count + 5
-		}));
-	}
+  incrementByFive() {
+    this.setState((previousState) => ({
+      count: previousState.count + 5,
+    }));
+  }
 
-	render() {
-		return (
-			<div>
-				<h4>Volume level {this.state.count}</h4>
-				<button onClick={() => this.incrementVolume()}>Increase volume</button>
-				<button onClick={() => this.incrementByFive()}>Increase volume by 5 decibals</button>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div>
+        <h4>Volume level {this.state.count}</h4>
+        <button onClick={() => this.incrementVolume()}>Increase volume</button>
+        <button onClick={() => this.incrementByFive()}>
+          Increase volume by 5 decibals
+        </button>
+      </div>
+    );
+  }
 }
 
 export default Counter;

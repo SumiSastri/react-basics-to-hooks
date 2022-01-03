@@ -1,6 +1,9 @@
 Common mistakes blog:
 [https://kentcdodds.com/blog/common-mistakes-with-react-testing-library]
 
+Five tips blog:
+[https://polvara.me/posts/five-things-you-didnt-know-about-testing-library]
+
 1. What is the difference between these methods?
    `getBy()`- only one element `getAllBy()` or an error returns an array of all the elements (used most of the time)
    `findBy()` - returns element or error and can be used with async JavaScript - used with async API calls

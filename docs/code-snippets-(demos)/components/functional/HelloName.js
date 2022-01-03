@@ -1,6 +1,7 @@
 import React from "react";
 
 //  A functional component is simply a JavaScript function that returns jsx.
+// params are props which is an object, children is an inbuilt prop
 // const GreetName= ({props}) => {return(<div> </div>)}
 
 // NAMED EXPORT
@@ -11,6 +12,7 @@ export const GreetName = (props) => {
   //   destructuring the props object
   const { title, name, petAnimal, children } = props;
   // return is a call back method - hence the parenthesis not curly braces
+  // the function call returns the object (props - which can be static or methods)
   return (
     <div>
       <h1>
