@@ -1,5 +1,6 @@
 Plural Sight Course:
 Building React Apps with TypeScript By Mat Warger
+GitHub files: https://github.com/mwarger/globomantics-react-ts
 
 In the root folder I have scaffolded this project with
 
