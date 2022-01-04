@@ -36,6 +36,10 @@ h2 {
 h3 {
   color: grey;
 }
+h4 {
+  color: palevioletred;
+  font-size: 20px;
+}
 
 .navigation {
   display: flex;

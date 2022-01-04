@@ -43,7 +43,7 @@ export class Counter extends Component<Props, State> {
                 <h3>Number of products in basket: {count}</h3>
                 <button onClick={() => this.incrementBy1()}>+1</button>
                 <button onClick={() => this.decrementBy1()}>-1</button>
-                <h3>Functional Component in a Class Component </h3>
+                <h4>Functional Component in a Class Component </h4>
                 <CalculateTax baseAmount={count} taxPercentCharged={0.5} />
             </div>
         );
