@@ -25,7 +25,7 @@ div {
 
 button {
   height: 50px;
-  width: 40px;
+  width: 100px;
   margin: 2px;
   padding: 2px;
 }
@@ -35,4 +35,17 @@ h2 {
 }
 h3 {
   color: grey;
+}
+
+.navigation {
+  display: flex;
+  margin: 50px;
+  float: left;
+  width: 100%;
+}
+
+img {
+  height: 75px;
+  width: auto;
+  margin-right: 750px;
 }
