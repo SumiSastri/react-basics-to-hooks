@@ -1,4 +1,6 @@
-The purpose of this documentation is to outline what the CRA (create-react-app) ships with and how to install it in a project.
+# Create-React-App - an introduction
+
+The purpose of this documentation is to outline what the CRA (create-react-app) ships with and how to install it in a project. Read with `cra-repo-files-and-structure.md`
 
 **Documentation**
 Follow the official documentation on: [https://create-react-app.dev/] & getting started[https://create-react-app.dev/docs/getting-started]
@@ -12,20 +14,10 @@ CRA is a pre-transpiled pack that sets up a react project. It ships with:
 - node modules (all dependencies for the react app) - this is generated on npm install or the create-react-app CLI commands/ webpack and babel are preloaded with this command
 
 - public folder (holds the root HTML file that renders the index.js - react controls the ui)
-
-  - manifest json(progessive-web-apps)
-
-- dotfiles
-- gitignore (ignores files that need not be pushed to version control)
-
+- dotfiles eg: gitignore (ignores files that need not be pushed to version control)
 - JSON files
-
-  - package-lock.json (insures consistent installion of dependencies)
-  - package-json - scripts object run the app
-
-- readme.md for mark-down documentation
+- README for mark-down documentation
 - Note: react-dom is for web based apps, react-native is for mobile apps
-
 - src file - The main folder for front-end developers is the source folder (src)
 
 In the src folder - App.js (the file responsible for the single page app's view in the browser) - App.css (styling) - index.css (body-styling) - serviceWorker (progressive web apps) - App.test.js (sample unit tests that can be run) - index.js (sends the app.js files to the HTML root DOM node) this is why it is called a Single Page App (SPA) as all files routed through a single route file and the ReactDOM.render()method which takes two arguements, the component page to be rendered and the where you want to render it - the particular node of the HTML file which is the root file.
@@ -96,4 +88,4 @@ Package-json & adding a proxy
 - Under the scripts object add one more key-value pair ` "proxy": "http://localhost:5000",`
   This allows you access to your home route on the back-end router - if you have chosen a differnt port all your need to do is replace the port number `"proxy": "http://localhost:yourportnumber",`
 
-Concurrently now becomes an interesting library to add if you are going full stack - look at the docs in the server-side documentation
+Concurrently now becomes an interesting library to add if you are going full stack - look at the docs in the server-side documentation.

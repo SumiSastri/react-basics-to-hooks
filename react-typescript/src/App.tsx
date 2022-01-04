@@ -3,7 +3,7 @@ import './App.css';
 import Counter from "./components/class/Counter"
 import CalculateTax from "./components/functional/CalculateTax"
 
-function App() {
+const App = () => {
   return (
     <div>
       <h1>React, TypeScript & Testing </h1>

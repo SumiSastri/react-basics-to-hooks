@@ -2,7 +2,10 @@ import { Component } from "react";
 
 import CalculateTax from "../functional/CalculateTax";
 
-// explicity declare the type of props and state, children is a built in prop/ optional prop in this component
+// TYPE DECLARATION
+// keep type of state and props within component not in separate file - this is a type generic cast to the React Component
+// children is a built in prop/ optional prop in this component - ReactNode (for virtual DOM)
+// see Error Boundary example for how to return children
 interface Props {
     children?: React.ReactNode;
 }
@@ -11,7 +14,8 @@ interface State {
     count: number;
 }
 
-// class is a constructor that creates a component with props and state 
+// TYPE ANNOTATION 
+// class is a constructor (function) that creates a component with props and state (params)
 export class Counter extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
@@ -43,6 +47,7 @@ export class Counter extends Component<Props, State> {
                 <CalculateTax baseAmount={count} taxPercentCharged={0.5} />
             </div>
         );
+
     }
 }
 
