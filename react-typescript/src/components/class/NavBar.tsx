@@ -1,10 +1,11 @@
-
 import { Component } from "react";
 
 import logo from '../../assets/FE-Dev-React-EcoSystem.png';
-import LogInButton from "../functional/LogInButton"
-import LogOutButton from "../functional/LogOutButton"
 
+import LoginButton from "../functional/LoginButton"
+import LoginWelcome from "../functional/LoginWelcome"
+import LogOutButton from "../functional/LogOutButton"
+import LogOutGoodbye from "../functional/LogOutGoodbye"
 
 interface Props {
     children?: React.ReactNode;
@@ -20,7 +21,7 @@ class NavBar extends Component<Props, State> {
         this.state = { isLoggedIn: false };
     }
 
-    handleLogIn = () => {
+    handleLogin = () => {
         this.setState({ isLoggedIn: true });
     };
 
@@ -32,18 +33,28 @@ class NavBar extends Component<Props, State> {
         const isLoggedIn = this.state.isLoggedIn;
         let button;
         if (isLoggedIn) {
-            button = <LogOutButton onClick={this.handleLogOut} />;
+            button = <LoginButton onClick={this.handleLogOut} />;
         } else {
-            button = <LogInButton onClick={this.handleLogIn} />;
+            button = <LogOutButton onClick={this.handleLogin} />;
         }
         return (
             <div className="navigation">
-                <div><img src={logo} alt="logo" />   <h1>React, TypeScript & Testing </h1></div>
-
+                {/* React fragment use */}
+                <><img src={logo} alt="logo" />   <h1>React, TypeScript & Testing </h1></>
                 {isLoggedIn ? (
-                    <LogOutButton onClick={this.handleLogOut} />
+                    <div>
+                        <LoginButton onClick={this.handleLogOut} />
+                        <LoginWelcome title="Mr." name="Chips" welcome="You are logged in" />
+                    </div>
                 ) : (
-                    <LogInButton onClick={this.handleLogIn} />
+                    <div>
+
+                        <LogOutButton onClick={this.handleLogin} />
+                        <LogOutGoodbye title="Mr." name="Chips" goodbye="You are logged out, click to login" />
+
+
+
+                    </div>
                 )}
 
             </div>

@@ -2,19 +2,19 @@
 import { FunctionComponent } from "react";
 
 // declare the prop types
-type ImageBoxProps = {
+type LoginButtonProps = {
     onClick: () => void
 };
 
 // annotate the type of component and props
-const LogInButton: FunctionComponent<ImageBoxProps> = ({ onClick }) =>
+const LoginButton: FunctionComponent<LoginButtonProps> = ({ onClick }) =>
 // export default function LogInButton(props) {
 //   console.log(props);
 // refactor to remove props declaration 
 (
     <div>
-        <button onClick={onClick}>Log-in</button>
+        <button onClick={onClick}>Loggedin</button>
     </div>
 );
 
-export default LogInButton;
+export default LoginButton;
