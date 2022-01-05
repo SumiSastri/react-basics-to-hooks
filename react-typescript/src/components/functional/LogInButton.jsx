@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 export default function LogInButton(props) {
   console.log(props);
   return (
@@ -10,3 +8,4 @@ export default function LogInButton(props) {
     </div>
   );
 }
+
