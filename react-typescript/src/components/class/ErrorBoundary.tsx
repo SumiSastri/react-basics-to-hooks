@@ -8,28 +8,28 @@ import React from "react";
 //   hasError: boolean;
 // }
 
-// REFACTOR 
+// REFACTOR
 type Props = {
   children: React.ReactNode;
-}
+};
 
 type State = {
   hasError: boolean;
-}
+};
 
-// TYPE ANNOTATION 
+// TYPE ANNOTATION
 class ErrorBoundary extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = { hasError: false };
   }
-  // TYPE ANNOTATION 
+  // TYPE ANNOTATION
   static getDerivedStateFromError(error: Error) {
     // Update state so the next render will show the fallback UI.
     return { hasError: true };
   }
 
-  // TYPE ANNOTATION 
+  // TYPE ANNOTATION
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     // You can also log the error to an error reporting service
     console.log(error, errorInfo.componentStack);

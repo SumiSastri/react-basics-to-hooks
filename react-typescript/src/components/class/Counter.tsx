@@ -8,13 +8,13 @@ import CalculateTax from "../functional/CalculateTax";
 // see Error Boundary example for how to return children
 type Props = {
     children?: React.ReactNode;
-}
+};
 
 type State = {
     count: number;
-}
+};
 
-// TYPE ANNOTATION 
+// TYPE ANNOTATION
 // class is a constructor (function) that creates a component with props and state (params)
 export class Counter extends Component<Props, State> {
     constructor(props: Props) {
@@ -43,11 +43,10 @@ export class Counter extends Component<Props, State> {
                 <h3>Number of products in basket: {count}</h3>
                 <button onClick={() => this.incrementBy1()}>+1</button>
                 <button onClick={() => this.decrementBy1()}>-1</button>
-                <h4>Functional Component in a Class Component </h4>
+                <h4>COMPONENT COMPOSITION: Functional Component nested in a Class Component </h4>
                 <CalculateTax baseAmount={count} taxPercentCharged={0.5} />
             </div>
         );
-
     }
 }
 

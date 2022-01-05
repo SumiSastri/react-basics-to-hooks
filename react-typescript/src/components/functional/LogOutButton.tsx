@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
 
 type LogOutButtonProps = {
-    onClick: () => void
-}
+    onClick: () => void;
+};
 
 const LogOutButton: FunctionComponent<LogOutButtonProps> = ({ onClick }) => {
     return (
@@ -10,6 +10,6 @@ const LogOutButton: FunctionComponent<LogOutButtonProps> = ({ onClick }) => {
             <button onClick={onClick}>LoggedOut</button>
         </div>
     );
-}
+};
 
 export default LogOutButton;

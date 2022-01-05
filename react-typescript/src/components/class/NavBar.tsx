@@ -1,11 +1,11 @@
 import { Component } from "react";
 
-import logo from '../../assets/FE-Dev-React-EcoSystem.png';
+import logo from "../../assets/FE-Dev-React-EcoSystem.png";
 
-import LoginButton from "../functional/LoginButton"
-import LoginWelcome from "../functional/LoginWelcome"
-import LogOutButton from "../functional/LogOutButton"
-import LogOutGoodbye from "../functional/LogOutGoodbye"
+import LoginButton from "../functional/LoginButton";
+import LoginWelcome from "../functional/LoginWelcome";
+import LogOutButton from "../functional/LogOutButton";
+import LogOutGoodbye from "../functional/LogOutGoodbye";
 
 interface Props {
     children?: React.ReactNode;
@@ -40,23 +40,28 @@ class NavBar extends Component<Props, State> {
         return (
             <div className="navigation">
                 {/* React fragment use */}
-                <><img src={logo} alt="logo" />   <h1>React, TypeScript & Testing </h1></>
+                <>
+                    <img src={logo} alt="logo" /> <h1>React, TypeScript & Testing </h1>
+                </>
                 {isLoggedIn ? (
                     <div>
                         <LoginButton onClick={this.handleLogOut} />
-                        <LoginWelcome title="Mr." name="Chips" welcome="You are logged in" />
+                        <LoginWelcome
+                            title="Mr."
+                            name="Chips"
+                            welcome="You are logged in"
+                        />
                     </div>
                 ) : (
                     <div>
-
                         <LogOutButton onClick={this.handleLogin} />
-                        <LogOutGoodbye title="Mr." name="Chips" goodbye="You are logged out, click to login" />
-
-
-
+                        <LogOutGoodbye
+                            title="Mr."
+                            name="Chips"
+                            goodbye="You are logged out, click to login"
+                        />
                     </div>
                 )}
-
             </div>
         );
     }
