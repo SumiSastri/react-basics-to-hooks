@@ -1,6 +1,6 @@
-The purpose of this documentation is to provide a basic understanding of the React.js open source library and answer frequent interview questions. It is a quick high-level view of React. Several sub-sections may go into the detail - this is purely to boil down the key concepts for interviews.
+# React interview questions for beginners
 
-Follows the React documentation [https://reactjs.org/docs/getting-started.html]
+The purpose of this document is to provide a summary/ cheat-sheet of this section's documents. They are handly if you are preparing interviews for beginners to React. The core-concepts folder takes a deeper dive into many of these concepts for beginners while the intermediate and advanced sections are created to provide further understanding of the React Component Library. The best way to double check all these details are to follow the React documentation [https://reactjs.org/docs/getting-started.html]
 
 **Why React?**
 
@@ -229,11 +229,13 @@ State can be accessed with the Hooks API with the `useState Hook` reference file
 
 14. **What is destructuring?**
 
-Destructuring is unpacking the components properties into single elements so that they can be passed down in a shorted version to the child components.
+Destructuring is a vanilla JavaScript concept used for both objects and arrays.
 
-It is a JavaScript concept used for both objects and arrays. In React you can destructure props and state as they are both objects.
+In React-2016 you can destructure `props` and `state` as they are both objects. In a class-based component, React Component `state` is defined in a JavaScript class, in the `constructor()` method as a JavaScript object.
 
-With React 2019, arrays are destructured to hold state information.
+With React-2019, `state` is an array which is destructured to hold state information and the `useState` hook is used to access the component parts of the array. The `state` array element is then updated with the `setState` method.
+
+Destructuring in React, as in JavaScript, is unpacking the `state` or `props` intrinsic properties as objects or arrays into single elements rather than key-value pairs so that they can be passed down in a shorted version to the child components.
 
 <!-- CHECK FOR DUPLICATE INFORMATION -->
 
