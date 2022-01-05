@@ -1,4 +1,4 @@
-# Functional Components
+# Functional Components - an introduction
 
 The purpose of this documentation is to outline what a functional component is and when to use it.
 

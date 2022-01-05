@@ -1,10 +1,10 @@
-# Class-based Components
+# Class-based Components - an introduction
 
 The purpose of this document is to outline what a class-based component is in React and and when should you use it.
 
 Documentation on class-based components [https://reactjs.org/docs/state-and-lifecycle.html]
 
-**What is a Class-based Component in React?**
+**What is a class-based Component in React?**
 
 The class-based components use JavaScript ES-6 classes to extend the the life-cycle methods in the React Component Library, `state` is always represented as a JavaScript object and therefore has all the properties of a plain JavaScript object. As React uses JavaScript syntax and no bespoke syntax, a class-based component is just JavaScript under the hood.
 

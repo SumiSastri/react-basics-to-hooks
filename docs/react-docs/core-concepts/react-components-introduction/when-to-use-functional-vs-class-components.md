@@ -1,4 +1,4 @@
-# Component Composition - Class or Functional Components?
+# Component Composition - when to use class-based or Functional Components?
 
 The purpose of this documentation is to demonstrate the difference between functional and class components and when should you use one over the other. Read in conjunction with the `functional-components.md` and `class-components.md` docs
 

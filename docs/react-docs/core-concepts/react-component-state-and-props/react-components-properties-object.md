@@ -1,4 +1,4 @@
-# Component properties or props
+# Component properties or props - an introduction
 
 The purpose of this document is to give you a quick overview of a React Components properties or `props`. Props documentation: [https://reactjs.org/docs/components-and-props.html]
 

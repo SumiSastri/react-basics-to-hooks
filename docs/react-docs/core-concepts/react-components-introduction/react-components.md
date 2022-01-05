@@ -1,4 +1,4 @@
-# React Components an Introduction
+# React Components - an introduction
 
 The purpose of this documentation is to introduce the concept of the modular Component-based structure of a React-Library, what a functional and class-based component are.
 

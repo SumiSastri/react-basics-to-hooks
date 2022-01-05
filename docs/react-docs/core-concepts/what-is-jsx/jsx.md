@@ -1,4 +1,4 @@
-# JSX (JavaScript XML)
+# JSX (JavaScript XML) an introduction to the core building block of the React library
 
 The purpose of this document is to give you a quick overview of JSX (JavaScript XML) - the file extension for React components. While a React Component may work with `.js` files `.jsx` is the preferred file extension and `.tsx` the preferred typescript extension vs. `.ts`. Files that do not render any JSX can continue to use `.ts` and `.js` extensions.
 

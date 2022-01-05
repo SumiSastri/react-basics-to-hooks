@@ -1,4 +1,4 @@
-# Component properties or props
+# What is the difference between the state object and the properties object?
 
 The purpose of this document is demonstrate the difference between React Components the `props` or properties object Props documentation: [https://reactjs.org/docs/components-and-props.html] and the `state` object Documentation on class-based components [https://reactjs.org/docs/state-and-lifecycle.html].
 
