@@ -1,13 +1,23 @@
 import React from "react";
 
-interface Props {
+// interface Props {
+//   children: React.ReactNode;
+// }
+
+// interface State {
+//   hasError: boolean;
+// }
+
+// REFACTOR 
+type Props = {
   children: React.ReactNode;
 }
 
-interface State {
+type State = {
   hasError: boolean;
 }
 
+// TYPE ANNOTATION 
 class ErrorBoundary extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);

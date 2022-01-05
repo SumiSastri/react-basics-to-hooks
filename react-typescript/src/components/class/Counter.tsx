@@ -6,11 +6,11 @@ import CalculateTax from "../functional/CalculateTax";
 // keep type of state and props within component not in separate file - this is a type generic cast to the React Component
 // children is a built in prop/ optional prop in this component - ReactNode (for virtual DOM)
 // see Error Boundary example for how to return children
-interface Props {
+type Props = {
     children?: React.ReactNode;
 }
 
-interface State {
+type State = {
     count: number;
 }
 
