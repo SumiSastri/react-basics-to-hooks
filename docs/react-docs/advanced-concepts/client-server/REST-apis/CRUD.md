@@ -1,19 +1,19 @@
-#### Appendix -3: - my notes on CRUD
+## What is CRUD?
 
-*  How do requests work?
-- Via methods - GET, POST, PUT, DELETE.
-GET - get documents and files from the server
-POST - Post the data from the browser to the database in the server
-PUT - Update the data from the browser with the new information in the server
-DELETE - Delete the information sent from the browser in the database
+Requests via the REST API calls work with 4 verbs that define the methods of the REST API requests to the server
 
-- Via query-strings - after the URL with a question mark, there are query string parameters in key-value pairs
+1.  GET - get documents and files from the server
+2.  POST - Post the data from the browser to the database in the server
+3.  PUT - Update the data from the browser with the new information in the server
+4.  DELETE - Delete the information sent from the browser in the database
+
+The query is sent via query-strings - after the URL with a question mark there are query string parameters in key-value pairs
 
 - Via the body of the request - you can see the request headers are encoded in the headers tab in network but you can still see all the data in the body of the request in the browser
 
 - Via encrypted - HTTPS requests - only client-server share information in a secure way
 
-* How do responses work - Debugging 
+\* How do responses work - Debugging 
 To see this request-response pattern in the console, you can go to the "Network" tab.
 - GO TO Server Status
 The response that the server sends back is the HTTP server status messages 
@@ -30,11 +30,11 @@ Documentation [https://www.w3schools.com/tags/ref_httpmessages.asp]
  - server status dode
  - remote (IP) address
  - response headers - content type
- - request headers 
+ - request headers
 
 - GO TO Response  - you can see the document type and the body of the request sent in HTTP this is open and visible to anyone who looks at the network tab, therefore sensitive information now is only sent via HTTPS requests
 
-* More resources:
+\* More resources:
 
 MDN documentation[https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work] 
 A good YouTube Video:  [https://www.youtube.com/watch?v=7_LPdttKXPc]
@@ -63,11 +63,9 @@ For all the id requests in router
 router.route('/animals/:id')
   .get(animals.show)
 
-
 EDIT AND UPDATE   - PUT 202
 Find by Id and update one
 In Insomnia - create object and only update key:value required to update
-
 
 FIND  AND DELETE   - DELETE 204
 Find by Id and delete one
