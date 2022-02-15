@@ -26,5 +26,8 @@ GraphQL came into existence due to the need for better flexibility and efficienc
 Today, GraphQL has become comparable, or an even better alternative to REST APIs with the wide adoption among several Fortune 500 companies and has even replaced REST APIs.
 
 PayPal, Yelp, GitHub and Twitter are early adopters.
+Resources:
 
 GraphQL integrates easily with React [https://app.pluralsight.com/guides/how-to-set-up-graphql-in-a-react-app]
+NetNinja [https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f]
+https://www.youtube.com/watch?v=NbKJFRgsw-A

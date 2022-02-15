@@ -1,8 +1,10 @@
 # What is an Application Programming Interface (API)
 
-Application Programming Interfaces allow a transfer of data (resources) from the client data-layer to servers. Servers then transfer this information to downstream backend operations - data validation, data storage, data transformation, etc.
+Application Programming Interfaces allow a transfer of data (resources) from the client data-layer to servers via the service or network-layer.
 
-Data is transported in JavaScript Object Notation`.json` files or .`.xml` files.
+In the network-layer, servers then transfer this information to downstream backend operations - data validation, data storage, data transformation, etc. This interaction happens with the help of API-endpoints created in the back-end.
+
+Data is transported in JavaScript Object Notation`.json` files or .`.xml` files from the front-end to the back-end.
 
 ## Simple Object Access Protocol (SOAP) vs. Representational State Transfer (REST)?
 

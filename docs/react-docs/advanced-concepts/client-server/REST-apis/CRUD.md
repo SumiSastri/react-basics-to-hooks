@@ -2,10 +2,10 @@
 
 Requests via the REST API calls work with 4 verbs that define the methods of the REST API requests to the server
 
-1.  GET - get documents and files from the server
-2.  POST - Post the data from the browser to the database in the server
-3.  PUT - Update the data from the browser with the new information in the server
-4.  DELETE - Delete the information sent from the browser in the database
+1.  GET - get documents and files from the backend databases/ cloud storage
+2.  POST - Post the data from the front-end browsers (cached data) via a network call to the backend dbs/ cloud stoage
+3.  PUT - Update the data, a call is sent to the backend and the data available is returned, this data now can be updated in the browser/ front end and sent back to the backend to be stored
+4.  DELETE - Delete the information sent from the frontend to the backend dbs/ cloud storage
 
 The query is sent via query-strings - after the URL with a question mark there are query string parameters in key-value pairs
 
