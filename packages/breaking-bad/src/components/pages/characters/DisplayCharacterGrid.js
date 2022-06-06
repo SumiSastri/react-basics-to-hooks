@@ -1,6 +1,6 @@
 import React from "react";
 
-import DisplayCharacter from "../characters/DisplayCharacter";
+import DisplayCharacter from "./DisplayCharacter";
 import Loading from "../../common/Loading";
 
 const DisplayCharacterGrid = ({ characters, isLoading }) => {

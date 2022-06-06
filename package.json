@@ -1,0 +1,12 @@
+{
+  "name": "react-basics-to-hooks",
+  "version": "1.0.0",
+  "devDependencies": {
+    "lerna": "^5.0.0"
+  },
+  "scripts": {
+    "test": "lerna run test --scope=@react-basics-to-hooks/react-2019-hooks",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff --since"
+  }
+}
