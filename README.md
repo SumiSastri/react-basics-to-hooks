@@ -38,6 +38,7 @@ __React-Hooks__ Looks at migration or co-existance of class components to/with h
 __PWAs__ How PWAs work with continuous integration/build and deploy (Breaking Bad and Videorama)
 
 __Work in Progress__
+
 - Augment with typescript and testing (work in progress - May 2022)
 - Manage with Lerna package manager to add to repo and react-learning 
 # Certifications

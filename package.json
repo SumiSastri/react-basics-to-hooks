@@ -1,12 +1,13 @@
 {
   "name": "react-basics-to-hooks",
   "version": "1.0.0",
+  "npmClient": "npm",
   "devDependencies": {
     "lerna": "^5.0.0"
   },
   "scripts": {
-    "test": "lerna run test --scope=@react-basics-to-hooks/react-2019-hooks",
     "new-version": "lerna version --conventional-commits --yes",
-    "diff": "lerna diff --since"
+    "diff": "lerna diff", 
+    "test": "lerna run test --scope={breaking-bad,videorama}"
   }
 }
