@@ -1,6 +1,10 @@
-![Front-end-development: The React Ecosystem](assets/FE-Dev-React-EcoSystem.png)
-
 # Table of Contents
+Breaking Bad - PWA with React Hooks
+
+<img src="/breaking-bad/src/assets/breaking-bad-app-screenshot.png" alt="Breaking-Bad PWA with Hooks" height="350"/>
+
+Deployed with Netifly on [https://happy-brown-985f49.netlify.app]
+
 
 1. [Project access](#Project-access)
 2. [Project goals](#Project-goals)
