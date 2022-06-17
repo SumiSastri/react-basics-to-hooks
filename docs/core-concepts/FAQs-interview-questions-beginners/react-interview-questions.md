@@ -1,4 +1,4 @@
-# React interview questions for beginners
+# React Component Library: 20 interview questions and answers for beginners
 
 The purpose of this document is to provide a summary/ cheat-sheet of this section's documents. They are handly if you are preparing interviews for beginners to React. The core-concepts folder takes a deeper dive into many of these concepts for beginners while the intermediate and advanced sections are created to provide further understanding of the React Component Library. The best way to double check all these details are to follow the React documentation [https://reactjs.org/docs/getting-started.html]
 
@@ -50,6 +50,7 @@ If you look at Angular the syntax `*ngFor` has to be used as the syntax, there i
 
 Therefore you need to learn the syntax of the framework, with React, you only need to know the JavaScript syntax and apply it.
 
+
 2. **What is the difference between a library and a framework**
 
 The key difference between a library and a framework is the amount of control a developer has over features and functionality.
@@ -75,6 +76,7 @@ With React being JavaScript centric as a library it has no template-framework sp
 This makes skills transfer easier - to Node and other JavaScript-based libraries.
 
 More from Freecodecamp [https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/]
+
 
 3. **What is imperative and declarative code? Which does React use? What are the advantages?**
 
@@ -237,100 +239,67 @@ With React-2019, `state` is an array which is destructured to hold state informa
 
 Destructuring in React, as in JavaScript, is unpacking the `state` or `props` intrinsic properties as objects or arrays into single elements rather than key-value pairs so that they can be passed down in a shorted version to the child components.
 
-<!-- CHECK FOR DUPLICATE INFORMATION -->
 
-### React-fundamentals-to-Hooks
+15. **What  is conditional rendering and what are the React design patterns for conditional rendering?**
 
-This section covers the basic concepts in React. Prior knowledge of HTML, CSS and JavaScript is required. The readme follows the React documentation [https://reactjs.org/docs/getting-started.html] which is easy to follow.
+Conditional rendering is when a page element is only rendered based on boolean logic. If a statement is true then the element is either rendered or not rendered and the opposite will be true if the statement is false.
 
-I have also looked at some React tutorials for specific topics that were not easy to understand. These have been indicated in the appropriate sections and the Appendices section
+React uses JavaScript statements
 
-### Fundamental concepts from the Main Concepts Documentation in React
-
-## What is React?
-
-React is a front-end JavaScript library created by Facebook for user interfaces. It is maintained by Facebook and an open source developer community.
-
-It is used because it helps in scaling apps quickly and efficiently. React focuses on the developer experience. The key advantage of React is that it makes it easier for front-end developers to build rich user-interfaces without having to think about DOM manipulation, CSS-selectors, rendering and updating multiple pages as an application grows. As the underlying data that drives the pages change, the user interface is updated and changed automatically. This is done seamlessly under the hood with key React methods that have been written into the library.
-
-## What is the difference between a library and a framework
-
-The key difference between a library and a framework is the amount of control a developer has over features and functionality. With a framework all features, functionality and architecture are pre-determined with limited options to change the control-flow or logic of the framework. It is a skeleton within which you can work. A library is a loose collection of tools that you can pick and mix and offers more control for the developer. The technical term for this limitation of control is called the inversion of control - with a library the flow can be controlled by the developer with a framework the framework controls the developers work flow and coding options. More from Freecodecamp
-
-- [https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/]
-
-## How do you install React in a project?
-
-- Pre-requisites are node and a text editor
-- Run `npx create-react-app yourAppName`
-- node modules (all dependencies for the react app) - this is generated on npm install or the create-react-app CLI commands/ webpack and babel are preloaded with this command
-- public (holds the root HTML file that renders the index.js - react controls the ui) -manifest json(progessive-web-apps)
-- gitigonore (ignores files that need not be pushed to version control)
-- package-lock.json (insures consistent installion of dependencies)
-- package-json - scripts object run the app
-- readme
-- react-dom is for web based apps, react-native is for mobile apps
-- Main folder for front-end developers is the source folder - src
-- index.js (sends the app.js files to the HTML root DOM node) this is why it is called a Single Page App (SPA) as all files routed through a single route file and the `ReactDOM.render()`method which takes two arguements, the component page to be rendered and the where you want to render it - the particular node of the HTML file which is the `root` file.
+1) if-else &  switch statements 
 
 ```
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  if (isSubmitted) {
+      return  (<jsx />);
+    } else {
+       (<jsx/>) ;
+    }
 ```
+You can also use the ternery operator instead of a statement
+` isSubmitted ? (<>Success</>) : (<>Error Message</>) `
 
-- You can create React elements by removing App.js and manually creating each element and its children, this block of code demos
+2) To return something or null with the double amperestand - logical operator
+
+  ` {unreadMessages.length > 0 && <p>Inbox has {unreadMessage.length} uread messages</p>`
+
+
+4) Assiging the condition and elements to variables in the render method
 
 ```
-<!-- Syntax
+const loggedIn = this.state.loggedIn;
+    let button;
+    if (loggedIn) {
+      button = <LogOutButton onClick={this.handleLogOut} />;
+    } else {
+      button = <LogInButton onClick={this.handleLogIn} />;
+    }
+```    
+  Documentation: [https://reactjs.org/docs/conditional-rendering.html]
 
-ReactDOM.render(React.createElement(tagName, elementProperties, children),
-  document.getElementById('root')
-); -->
-
-ReactDOM.render(React.createElement("div", {style: {backgroundColor:red}}, React.createElement("h1", {style: {color:blue}}, "Hello World")),
-  document.getElementById('root')
-);
-```
-
-Note that the first arg is a string, the second which is props is an object and the the third is a nested element - a call back function.
-
-- App.js (the file responsible for the single page app's view in the browser)
-- App.css (styling)
-- index.css (body-styling)
-- serviceWorker (progressive web apps)
-- App.test.js (sample unit tests that can be run)
-
-## What is imperative and declarative code? Which does React use? What are the advantages?
-
-- Imperative code prescribes an exact sequence of steps in the alogrithm for the code to run.
-- Declarative code is when the outcome is described and the code takes care of the execution.
-
-React uses declarative code to build UI by the description of the actions required for the user-interface to be rendered. The advantage is that React under the hood complies and transpiles the changes you need for the UI and handles updating and rendering the components to the Virtual DOM first before it is rendered on the DOM. Therefore if you have an app that needs to display an updated price of a product when a user selects a product and proceeds to check out, React will only update the product selected, the addition to the cart and the new price for the additional item purchased. No changes are made to the other products in the inventory in the user interface or in the shopping cart.
-
-## What is the Virtual DOM and why is it important?
+16. __What is the Virtual DOM and why is it important?__
 
 The document object model or DOM is a visual representation of the state tree - or the underlying data of the app. The DOM is made up of nodes and each node holds some element of state in the node. In vanilla JavaScript, and libraries like J-Query, the developer needs to work on accessing each node via CSS-selectors. This is inefficient in run-time, costly and time-consuming. The Virtual DOM is a virtual copy of the DOM and is updated in the background via the inbuilt methods in the React library. This copy is stored in memory and everytime state needs to be changed, state is updated in the virtual DOM first before changes are made to the real DOM.
 
-## What is the meanining of uni-directional data flow in React?
+17. __What are the advantages and disadvantages of the React Component Library?__
 
-Data can only flow from a parent component to a child component. This top-down data-flow allows data to be passed down as properties of the original component to the nested child components. A child component can not pass data up to the parent component.
+See section in core-concepts
 
-15. What are the four React design patterns for conditional rendering?
+18. __How would you debug your React code, what tools do you use?__
 
-- using element variables - with imported components
-- using conditional statements - if/ if-else/ switch statements
-- using the ternery operator - shorter way of expressing if-else
-- using the double amperestand - return something or nothing
-  Documentation: [https://reactjs.org/docs/conditional-rendering.html]
+- The google console (by logging to the console or using the chrome debugger)
+- React dev tools - Chrome extension
+- Writing tests - using test-driven-development
 
-**Tutorials that are useful to follow**
-You Tube videos on React by Code Evolution - Vishwas
+19. __Why is React just JavaScript under the hood? Which ES6 features do you use most with React?__
 
-- [https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=1]
-- [https://api.github.com/users]
-  LevelUpTuts - Scott
-- [https://www.youtube.com/watch?v=0qqzUXdGGX4&list=PLLnpHn493BHGTMs2UmaPUG6Lu3dHrqryY]
+Unlike Angular and Vue, React uses JavaScript code. There are no private methods that are used only in React. With Angular and Vue there are private methods and syntax that is unique to these frameworks.
+
+20. __How would you style your React Component?__
+
+React does not ship with CSS therefore any CSS styling library compatible with React can be used as well as vanilla CSS3.
+
+Commonly used are MaterialUI, Bootstrap, ReactStrap, Tachyons, Bulma and Styled Components.
+
+While sepration of concerns is important when you use HTML/CSS and vanilla JavaScript when you style a React JSX component it is already JavaScript so in-line styling with libraries like Tachyons and Styled Components have also gained favour. 
+
+How you style a component is a matter of preference.

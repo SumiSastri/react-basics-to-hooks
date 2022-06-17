@@ -188,3 +188,12 @@ Cheat sheets from docs
 
 React Testing Library:
 [https://testing-library.com/docs/]
+
+
+**Tutorials that are useful to follow**
+You Tube videos on React by Code Evolution - Vishwas
+
+- [https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=1]
+- [https://api.github.com/users]
+  LevelUpTuts - Scott
+- [https://www.youtube.com/watch?v=0qqzUXdGGX4&list=PLLnpHn493BHGTMs2UmaPUG6Lu3dHrqryY]
