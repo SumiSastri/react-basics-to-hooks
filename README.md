@@ -41,7 +41,7 @@ __Work in Progress__
 
 - Augment with typescript and testing (work in progress - May 2022)
 - Manage with Lerna package manager to add to repo and react-learning 
-# Certifications
+# LI Certifications
 
 1. Learning React
 2. React Building Progressive Apps

@@ -4,7 +4,7 @@ Most developers don't put much thought into data-flow and front-end architecture
 
 Often data is one big tangled interdependant play of data shared via state and props across various components.
 
-The purpose of the documentation is to provide a quick cheat-sheet for state-management. 
+The purpose of the documentation is to provide the intermediate React developer with the 8 common ways that state can be stored in a React App
 
 __What is state?__
 
