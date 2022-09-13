@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 // destructured props as method passed to Btn2
 // onClickIncr is an attribute not an event handler
 // the event handler takes the two props as the call back func

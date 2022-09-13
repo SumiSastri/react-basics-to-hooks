@@ -16,13 +16,15 @@ export class ClassComponentWithProps extends Component {
   render() {
     return (
       <div>
+        <br/>
         <h4>
           Example 3: Rendering props with class components using the key word{" "}
           <em>this</em>
         </h4>
         <p>
           Props follow the same pattern where the child component renders the
-          props set by the parent component. DEMO:
+          props set by the parent component. Props are arguments of the constructor() method.
+          DEMO:
           <strong>{this.props.description}</strong>
         </p>
         <br />

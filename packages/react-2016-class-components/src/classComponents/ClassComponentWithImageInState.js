@@ -18,13 +18,19 @@ export class ClassComponentWithImageInState extends Component {
   render() {
     const { avatar_url, id, login } = this.state;
     return (
-      <div className="card text-center">
+      <div>
         <p>
+          <br/>
           In <strong>Example 2B</strong> state contains an image of GitHub user{" "}
           {""}
           {login}, with the id: {id}. These are rendered in this component
           without the requirement of the constructor and super methods.
+
+          Once again, the state object is rendered with a the call back in the render() method. The render method
+          calls on the state object and displays its contents. This is possible because JSX is JavaScript under
+          the hood.
         </p>
+        <br/>
         <div className="container">
           <img
             src={avatar_url}

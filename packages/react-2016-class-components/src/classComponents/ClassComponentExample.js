@@ -8,7 +8,8 @@ export class ClassComponent extends Component {
         <p>
           This is a class based component with no data in state. Class
           components do not have to have a state but they must have a render
-          method.
+          method. This component therefore will always render the same data without any
+          local state changes.
         </p>
       </div>
     );

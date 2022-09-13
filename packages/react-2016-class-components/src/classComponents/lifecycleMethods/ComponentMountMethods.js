@@ -46,9 +46,8 @@ export class ComponentMountMethods extends Component {
     console.log(`logs PARENT render 3`);
     return (
       <div>
-        <h4>Class Components LifeCycle Methods</h4>
+        <h2>Class Components LifeCycle Methods</h2>
         <h4>DEMO: Mounting</h4>
-
         <p>
           This is the list of life-cycle methods - open the console, as soon as
           the class component is called you will see the logs of these methods

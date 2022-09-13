@@ -3,11 +3,14 @@ import React from "react";
 function ChildOfClassWithPropMethods(props) {
   return (
     <div>
-      <h4>Example 5: Child component - component definition</h4>
+      <br/>
+      <h4>Example 5: Child component</h4>
       <p>
-        This is the child component. The calculate salary which multiples the
-        data in state by 12 is written in the parent component. In the onClick
-        method we pass the props from the class based component into the click
+        This is the child component. The displaySalary() method which is a call back function
+        of the calculateSalary() method is rendered in this child component as a renderProps() method. 
+        This is a React anti-pattern.
+         
+        In the onClick in the child component, method we pass the props from the class based component into the click
         event. The prop is rendered in the child component. The params are
         defined in the child component and passed to the parent where they are
         used (refer to the code).
@@ -15,10 +18,10 @@ function ChildOfClassWithPropMethods(props) {
       <button
         className="btn-pink"
         onClick={() =>
-          props.displaySalary("NOTE: TAX HAS NOT BEEN DEDUCTED", "Tax is 40%")
+          props.displaySalary()
         }
       >
-        Click prop in the child component to render the displaySalary method.
+        Click to demo the renderProps pattern
       </button>
     </div>
   );

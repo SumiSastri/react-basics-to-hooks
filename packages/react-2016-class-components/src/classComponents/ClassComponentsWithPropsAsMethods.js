@@ -12,24 +12,33 @@ export class ClassComponentsWithPropsAsMethods extends Component {
     };
   }
 
-  calculateSalary = (param1FromChild, param2FromChild) => {
+  calculateSalary = () => {
     alert(
-      ` This method is written in the parent class component and rendered as an alert. Your salary is ${
+      ` The calculateSalary() method is written in the parent component - caculating salary in a named currency. Your salary is ${
         this.state.salary * 12
       } ${
         this.state.currency
-      } per annum  ${param1FromChild} (The note on tax is the first param passed from child to parent) ${param2FromChild} (This is the second param passed from child to parent)`
+      } per annum. When the button is clicked the method is rendered in the child component`
     );
   };
 
   render() {
     return (
       <div>
+        <br/>
         <h4>Example 5: Props can also be methods.</h4>
         <p>
-          This is the parent component. The displaySalary() method is written in
-          this component and passed to the child using the <em>this</em> key
-          word.
+          This is the parent component. A function called calculateSalary() is written as
+          the function declaration in this component.
+          
+          In the child component, the property displaySalary() is a call back function
+          that calls the calculateSalary() method. As it is in a JavaScript class the
+          callback must use the <em>this</em> key word to invoke the calculateSalary()
+          function.
+
+          To display this function's result in the child component, props are passed from the parent
+          to the child component and the <em>props</em> key word is used to render the method in the
+          child component.
         </p>
         <ChildOfClassWithPropMethods displaySalary={this.calculateSalary} />
       </div>
