@@ -1,6 +1,7 @@
 import React from "react";
 
 import HelloWorld from "./HelloWorld";
+import { Welcome } from "./Welcome";
 
 export default function FunctionalComponent() {
   return (
@@ -25,8 +26,20 @@ export default function FunctionalComponent() {
         is a JavaScript assignment operator. You can assign strings, numbers and methods to props.
       </p>
       <br/>
-      Refer to the code in the repo:
+      Refer to the code in the repo: This is the parent of the Hello World component props are passed to the
+      child component.
       <HelloWorld documentation="This tutorial uses React.js documentation as a guide" />
+      In this second example,  the functional component gets its props which can be dynamically changed in each component.
+      The props name, title and petAnimal have different values in the class components demo where what is rendered is
+      Ms Priscilla and gorilla - as the key-value pairs in props - which are an object can be changed.
+<br/>
+        <div className="badge"> Props demo 2: 
+      <Welcome 
+      title="Professor"
+      name="Louella"
+      petAnimal="goat"
+      />
+     </div>
     </div>
   );
 }

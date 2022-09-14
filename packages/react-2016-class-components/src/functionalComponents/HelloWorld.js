@@ -7,7 +7,8 @@ export const HelloWorld = (props) => {
     <div>
       <hr></hr>
       <h4>
-        Hello World - this is an example of a functional component and a prop
+        Hello World - this is an example of a functional component and a prop. 
+        This component gets it props from the parent component which is the FunctionalComponent in this repo.
       </h4>
       <p className="badge">
         <strong>Prop demo: {props.documentation}</strong>

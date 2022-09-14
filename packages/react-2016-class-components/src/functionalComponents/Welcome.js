@@ -5,7 +5,7 @@ import React from "react";
 // const GreetName= ({props}) => {return(<div> </div>)}
 
 // NAMED EXPORT
-export const GreetName = (props) => {
+export const Welcome = (props) => {
   console.log(props);
   // the param of props is an object
   // (props = {title: title, name: name, petAnimal:petAnimal, children: children})
@@ -15,9 +15,9 @@ export const GreetName = (props) => {
   // the function call returns the object (props - which can be static or methods)
   return (
     <div>
-      <h1>
-        {title} {name} is my {petAnimal}
-      </h1>
+      <p>
+        Welcome {title} {name}. Is this your {petAnimal} ?
+      </p>
       {/* children is an inbuilt prop */}
       {children}
     </div>

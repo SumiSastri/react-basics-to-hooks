@@ -1,11 +1,21 @@
 import React, { Component } from "react";
-
+// in a stateful component, the return method returns the updated state of the component
+// the constructor is a JavaScript function that returns a protoype of a component
 export class Counter extends Component {
   constructor(props) {
     super(props);
 
     this.state = { count: 0 };
   }
+
+// state is set once in the constructor of the JavaScript class and mutated only with the setState() method
+// an abstraction of the React library 
+
+// INCORRECT MUTATION LEADS TO MUTATION IN THE CONSOLE NOT IN THE CALL BACK render() method
+// increment () {
+//   this.state.count = this.state.count + 1
+//   console.log(this.state.count)
+// }
 
   incrementVolume() {
     this.setState(

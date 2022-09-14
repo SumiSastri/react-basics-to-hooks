@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import Message from "./Message";
 export class UpdateState extends Component {
   constructor() {
     super();
@@ -42,6 +43,7 @@ export class UpdateState extends Component {
         <button className="btn-light" onClick={() => this.updateData()}>
           Click me
         </button>
+        <Message/>
       </div>
     );
   }
