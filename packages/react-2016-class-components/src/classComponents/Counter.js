@@ -22,10 +22,13 @@ export class Counter extends Component {
       {
         count: this.state.count + 1,
       },
+      // second param is the call back function of setState method
       () => {
         console.log(`Asynchronous callback log value, ${this.state.count}`);
       }
     );
+    // if the use case is to execute a function after state has been set then the call back to be used
+    // this merely logs the default setState method which runs synchronously
     console.log(`Synchronous log value, ${this.state.count}`);
   }
 
