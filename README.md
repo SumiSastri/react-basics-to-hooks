@@ -16,10 +16,10 @@ See the docs folder for guide-rails and further learning resources - You Tube vi
 
 ## Table of Contents
 
-1. [Pre-requisites](##Pre-requisites)
-2. [Repo access](##Repo-access)
-3. [Scripts](##Scripts)
-4. [Linked-in certifications](###Linked-in-certifications)
+1. [Pre-requisites](#Pre-requisites)
+2. [Repo access](#Repo-access)
+3. [Scripts](#Scripts)
+4. [Linked-in certifications](#Linked-in-certifications)
 
 ## Pre-requisites
 
