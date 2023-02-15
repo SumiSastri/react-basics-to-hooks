@@ -154,11 +154,25 @@ Blogs:
 Dev.io learning paths:[https://dev.to/digvijayjadhav98/roadmap-for-react-js-2022-4ccn]
 
 Tutorials:
-Plural Sight: React the Big Picture : Cory House
-Plural Sight: Designing React Components: Peter Kellner
+Plural Sight
+
+BEGINNER
+Cory House: React the Big Picture
+[https://app.pluralsight.com/library/courses/react-big-picture/table-of-contents]
+
+INTERMEDIATE
+Soham Kamani: Managing Large Data Sets (tables)
+[https://app.pluralsight.com/library/courses/react-managing-large-data-sets/table-of-contents]
+
+Cory House: Managing React State
+[https://app.pluralsight.com/library/courses/react-state-managing/table-of-contents]
+
+Peter Kellner: Designing React Components
 Code: [https://github.com/pkellner/pluralsight-designing-react-components-course-code]
 
-YouTube: React-2016 and React-Hooks examples come from this tutorial
+YouTube:
+
+React-2016 and React-Hooks examples come from this tutorial
 CodeEvolution: https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
 
 Testing:
@@ -169,6 +183,7 @@ Code [https://github.com/danielstern/isomorphic-react]
 
 NetNinja best YouTube tute for testing: https://www.youtube.com/watch?v=7dTTFW7yACQ
 GitHub Repo NetNinja Testing: [https://github.com/harblaith7/React-Testing-Library-Net-Ninja/tree/main/src]
+
 Traversy Media very high-level overview: [https://www.youtube.com/watch?v=OVNjsIto9xM]
 Academind - JavaScript testing(not specifically React): [https://www.youtube.com/watch?v=r9HdJ8P6GQI]
 MPJ - Fun-Fun Functions[https://www.youtube.com/watch?v=Eu35xM76kKY] Too long and waffly
@@ -188,7 +203,6 @@ Cheat sheets from docs
 
 React Testing Library:
 [https://testing-library.com/docs/]
-
 
 **Tutorials that are useful to follow**
 You Tube videos on React by Code Evolution - Vishwas

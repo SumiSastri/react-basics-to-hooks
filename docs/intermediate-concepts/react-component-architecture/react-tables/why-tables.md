@@ -1,6 +1,6 @@
 Tables in an app help to display large amounts of data in an easy-to-view format. Tables can be created in HTML and with markdown and vanilla JS (see `table-structure.md`).
 
-However tables, or grids as they are sometimes known as, are difficult to create. To deal with the complexity of building tables check the repo  [https://github.com/SumiSastri/react-tables] which uses React Tables a library of methods and custom hooks that make creating tables so much easier.
+However tables, or grids as they are sometimes known as, are difficult to create. To deal with the complexity of building tables check the repo [https://github.com/SumiSastri/react-tables] which uses React Tables a library of methods and custom hooks that make creating tables so much easier.
 
 React Tables is a data-grid library that simplifies the creation of tables in an app. The reasons we would use this rather than vanilla react is:
 
@@ -15,3 +15,5 @@ React Tables is a data-grid library that simplifies the creation of tables in an
 - Sorting/ Filtering/ Paginations
 - Select rows
 - Columns - ordering/ hiding/ sticky columns
+
+See React Tables Repo - for demos and more docs.[https://github.com/SumiSastri/react-tables]
