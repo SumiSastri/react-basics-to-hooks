@@ -16,10 +16,10 @@ See the docs folder for guide-rails and further learning resources - You Tube vi
 
 ## Table of Contents
 
-1. [Pre-requisites](##Pre-requisites)
-2. [Repo access](##Repo-access)
-3. [Scripts](##Scripts)
-4. [Certifications](###Linked-in Certifications)
+1. (Pre-requisites)[##Pre-requisites]
+2. (Repo access)[##Repo-access]
+3. (Scripts)[##Scripts]
+4. (Linked-in certifications)[###Linked-in-certifications]
 
 ## Pre-requisites
 
@@ -67,7 +67,7 @@ File extensions can now be changes to `.tsx` not `.ts` as required
 
 cd into `packages/folder-name` eg: cd `packages/videorama` and `npm run start` the front-end of that repo will run on `localhost:3000`
 
-### Linked-in Certifications
+### Linked-in certifications
 
 1. Learning React
 2. React Building Progressive Apps

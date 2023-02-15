@@ -181,11 +181,15 @@ Plural Sight: Test-driven Development Using React:Chris Minnick
 Plural Sight: Testing React Applications with Jest: Daniel Stern
 Code [https://github.com/danielstern/isomorphic-react]
 
-NetNinja best YouTube tute for testing: https://www.youtube.com/watch?v=7dTTFW7yACQ
+NetNinja
+best YouTube tute for testing
+[https://www.youtube.com/watch?v=7dTTFW7yACQ]
 GitHub Repo NetNinja Testing: [https://github.com/harblaith7/React-Testing-Library-Net-Ninja/tree/main/src]
 
 Traversy Media very high-level overview: [https://www.youtube.com/watch?v=OVNjsIto9xM]
+
 Academind - JavaScript testing(not specifically React): [https://www.youtube.com/watch?v=r9HdJ8P6GQI]
+
 MPJ - Fun-Fun Functions[https://www.youtube.com/watch?v=Eu35xM76kKY] Too long and waffly
 
 Documentation:
