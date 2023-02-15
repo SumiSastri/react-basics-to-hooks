@@ -1,7 +1,5 @@
 # React 16 & 17
 
-Breaking Bad Repo: Demo deployed on Netifly: [https://happy-brown-985f49.netlify.app]
-
 <img src="packages/breaking-bad/src/assets/breaking-bad-app-screenshot.png" alt="Breaking-Bad PWA with Hooks" height="350"/>
 
 This is a set of tutorials to augment knowledge of React from basic concepts to advanced concepts such as PWAs and Hooks.
