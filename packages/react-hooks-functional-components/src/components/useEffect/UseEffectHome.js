@@ -1,19 +1,19 @@
 import React from "react";
 
 import HooksComponentUpdateMethod from "./lifeCycle-methods/HooksComponentUpdateMethod";
-import HooksComponentDidMount from "./lifeCycle-methods/HooksComponentDidMount";
-import HooksComponentWillUnmountChild from "./lifeCycle-methods/HookComponentWillUnmountChild";
+// import HooksComponentDidMount from "./lifeCycle-methods/HooksComponentDidMount";
+// import HooksComponentWillUnmountChild from "./lifeCycle-methods/HookComponentWillUnmountChild";
 import HooksSetAndClearIntervals from "./lifeCycle-methods/HooksSetAndClearIntervals";
 import DataFetchingWithUseEffect from "./httpCalls/DataFetchingWithUseEffect";
 
 function HooksUseEffectComponent() {
   return (
     <div>
-      <div className="card">
+      <div className='card'>
         <h2>The useEffect Hook</h2>
         <HooksComponentUpdateMethod />
-        <HooksComponentDidMount />
-        <HooksComponentWillUnmountChild />
+        {/* <HooksComponentDidMount />
+        <HooksComponentWillUnmountChild /> */}
         <HooksSetAndClearIntervals />
         <DataFetchingWithUseEffect />
       </div>

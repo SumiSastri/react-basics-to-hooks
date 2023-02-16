@@ -2,20 +2,18 @@ import React, { useState } from "react";
 
 import HooksComponentWillUnmountMethod from "./HooksComponentWillUnmountMethod";
 
-function HooksComponentWillUnmountChild() {
+const HooksComponentWillUnmountChild = () => {
   const [display, setDisplay] = useState(true);
 
   return (
     <div>
-      <h4>Child component - toggle button</h4>
-      <button className="btn" onClick={() => setDisplay(!display)}>
-        Click to toggle display on and off
+      <h3>Demo 4 - simulate componentWillUnmount</h3>
+      <button className='btn' onClick={() => setDisplay(!display)}>
+        Click to toggle between opening and closing Demo 5
       </button>
-      {display && (
-        <HooksComponentWillUnmountMethod></HooksComponentWillUnmountMethod>
-      )}
+      {display && <HooksComponentWillUnmountMethod />}
     </div>
   );
-}
+};
 
 export default HooksComponentWillUnmountChild;

@@ -2,11 +2,12 @@ import React, { Fragment } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
-import HooksHome from "./components/common/HooksHome";
+
 import NavBar from "./components/common/NavBar";
 import HooksTableOfContents from "./components/common/HooksTableOfContents";
+import HooksHome from "./components/common/HooksHome";
 import UseStateHome from "./components/useState/UseStateHome";
-import HooksUseEffectComponent from "./components/useEffect/HooksUseEffectComponent";
+import UseEffectHome from "./components/useEffect/UseEffectHome";
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
             <Route path='/' component={HooksHome} />
             <Route path='/' component={HooksTableOfContents} />
             <Route path='/use-state' component={UseStateHome} />
-            <Route path='/use-effect' component={HooksUseEffectComponent} />
+            <Route path='/use-effect' component={UseEffectHome} />
           </div>
         </Fragment>
       </Switch>

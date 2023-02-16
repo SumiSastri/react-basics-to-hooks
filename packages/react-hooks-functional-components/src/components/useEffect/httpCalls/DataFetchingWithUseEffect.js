@@ -18,18 +18,21 @@ function DataFetchingWithUseEffect() {
       });
   }, []);
 
-  //   const showPosts = () => {
-  //     posts.map((post) => <li key={post.id}>{post.title}</li>);
-  //   };
+  // const showPosts = () => {
+  //   posts.map((post) => <li key={post.id}>{post.title}</li>);
+  // };
 
   return (
     <div>
-      <FetchDataByIdWithUseEffect />
-      <ul>
+      <h3>Demo 7: useEffect and API calls</h3>
+      <h4>Fetch all posts</h4>
+      <ol>
+        <FetchDataByIdWithUseEffect />
         {posts.map((post) => (
           <li key={post.id}>{post.title}</li>
         ))}
-      </ul>
+        {/* {showPosts} */}
+      </ol>
     </div>
   );
 }
