@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 
-import HooksCounter from "./HooksCounter";
-import HooksPreviousStateCounter from "./HooksPreviousStateCounter";
-import HooksWithArrays from "./HooksWithArrays";
-import HooksWithObjects from "./HooksWithObjects";
-
 export class ClassCounter extends Component {
   constructor(props) {
     super(props);
@@ -22,17 +17,13 @@ export class ClassCounter extends Component {
 
   render() {
     return (
-      <div className="card">
-        <h2>The useState Hook</h2>
-        <h4>I am a counter with a class component</h4>
+      <div className='card'>
+        <h2>Class Components</h2>
+        <h4>Class component counter</h4>
         <p>Counter set at: {this.state.count}</p>
-        <button className="btn-dark" onClick={this.increment}>
-          Click to increment - class component
+        <button className='btn-dark' onClick={this.increment}>
+          +
         </button>
-        <HooksCounter />
-        <HooksPreviousStateCounter />
-        <HooksWithArrays />
-        <HooksWithObjects />
       </div>
     );
   }

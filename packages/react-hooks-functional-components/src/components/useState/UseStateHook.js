@@ -3,37 +3,35 @@ import React, { useState } from "react";
 export default function UseStateHook() {
   // strings
   const [user, setUser] = useState("Admin");
-  const [status, setStatus] = useState("Open");
+  const [isOpen, setIsOpen] = useState(false);
   //   boolean and controlled input
   const [checkBoxStatus, setCheckBoxStatus] = useState(false);
-  handleClickToClose = (event) => {
+
+  const handleClickToClose = (event) => {
     event.setStatus("Closed");
   };
-  handleClickForBreaks = (event) => {
+  const handleClickForBreaks = (event) => {
     event.setStatus("Back in 5 minutes");
   };
-  handleClickForUserChange = (event) => {
+  const handleClickForUserChange = (event) => {
     event.setUser("NewUser");
   };
-  handleCheckBoxStatusChange = (event) => {
+  const handleCheckBoxStatusChange = (event) => {
     setCheckBoxStatus(event.target.value);
   };
   return (
-    <React.Fragment>
-      <div>
-        <h1>Status:{status}</h1>
-        <h2>User:{user}</h2>
-        <button onClick={handleClickToClose}>Closed</button>
-        {open ? "open" : "closed"}
-        <button onClick={handleClickForBreaks}>Taking a break</button>
-        {closed ? "closed" : "Taking a break-back in 5"}
-        <button onClick={handleClickForUserChange}>New User</button>
-        <input
-          type="checkbox"
-          value={checkBoxStatus}
-          onChange={handleCheckBoxStatusChange}
-        ></input>
-      </div>
-    </React.Fragment>
+    <div>
+      <h2>User:{user}</h2>
+      <button onClick={handleClickToClose}>Closed</button>
+      {isOpen ? "open" : "closed"}
+      <button onClick={handleClickForBreaks}>Taking a break</button>
+      {!isOpen ? "closed" : "Taking a break-back in 5"}
+      <button onClick={handleClickForUserChange}>New User</button>
+      <input
+        type='checkbox'
+        value={checkBoxStatus}
+        onChange={handleCheckBoxStatusChange}
+      ></input>
+    </div>
   );
 }

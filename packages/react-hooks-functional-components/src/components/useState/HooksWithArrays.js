@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-function HooksWithArrays() {
+const HooksWithArrays = () => {
   let initialState = [];
   const [randomNumbers, setRandomNumbers] = useState(initialState);
 
   const rollDice = () => {
+    // copy all the numbers then append the new value to the mapped list
     setRandomNumbers([
       ...randomNumbers,
       {
@@ -14,19 +15,31 @@ function HooksWithArrays() {
     ]);
   };
 
+  const resetDice = () => {
+    setRandomNumbers(initialState);
+  };
+
   return (
     <div>
-      <h4>Using the setState Hook Arrays, using the map method </h4>
+      <h3>Mapping through an array with hooks</h3>
+      <p>
+        In class components, updating state with an array merges and updates the
+        array state. With Hooks the method does not merge and update the array
+        state, you therefore need to use the spread operator.
+      </p>
       <div>
         {randomNumbers.map((randomNumber) => (
           <p key={randomNumber.id}>{randomNumber.value}</p>
         ))}
       </div>
-      <button className="btn" onClick={rollDice}>
+      <button className='btn-blue' onClick={rollDice}>
         Click to roll dice
+      </button>
+      <button className='btn' onClick={resetDice}>
+        Reset
       </button>
     </div>
   );
-}
+};
 
 export default HooksWithArrays;

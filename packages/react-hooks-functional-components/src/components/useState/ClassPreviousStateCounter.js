@@ -6,7 +6,7 @@ export class ClassPreviousStateCounter extends Component {
 
     this.state = { count: 0 };
   }
-
+  // updates state directly
   incrementVolume() {
     this.setState(
       {
@@ -18,13 +18,7 @@ export class ClassPreviousStateCounter extends Component {
     );
     console.log(`Synchronous log value, ${this.state.count}`);
   }
-
-  incrementbyThree() {
-    this.incrementVolume();
-    this.incrementVolume();
-    this.incrementVolume();
-  }
-
+  // uses previous state to update the count
   incrementByFive() {
     this.setState((previousState) => ({
       count: previousState.count + 5,
@@ -35,15 +29,17 @@ export class ClassPreviousStateCounter extends Component {
   render() {
     return (
       <div>
-        <h4>Volume level {this.state.count}</h4>
-        <button className="btn-blue" onClick={() => this.incrementVolume()}>
-          Increase volume by 1 decibal
+        <h4>Class component async calls</h4>
+        <p>
+          Open google console and see how the async and sync calls work - the
+          display value is 1 but the logged value should be 0
+        </p>
+        <p>Volume level {this.state.count}</p>
+        <button className='btn-blue' onClick={() => this.incrementVolume()}>
+          +1
         </button>
-        <button className="btn-danger" onClick={() => this.incrementbyThree()}>
-          Increase by 3 BUG!
-        </button>
-        <button className="btn-success" onClick={() => this.incrementByFive()}>
-          Increase volume by 5 decibals
+        <button className='btn-success' onClick={() => this.incrementByFive()}>
+          +5
         </button>
       </div>
     );
