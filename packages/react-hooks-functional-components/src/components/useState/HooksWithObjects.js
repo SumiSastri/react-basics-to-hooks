@@ -36,7 +36,7 @@ const HooksWithObjects = () => {
         />
         <h4>You typed</h4>
         <h5>{name.lastName}</h5>
-        <button className='btn' onClick={(event) => setName({ initialState })}>
+        <button className='btn' onClick={() => setName({ initialState })}>
           Click to clear form inputs
         </button>
       </form>

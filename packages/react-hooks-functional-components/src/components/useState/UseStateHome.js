@@ -6,6 +6,7 @@ import "../../App.css";
 import HooksCounter from "./HooksCounter";
 import HooksPreviousStateCounter from "./HooksPreviousStateCounter";
 import HooksWithArrays from "./HooksWithArrays";
+import HooksWithBooleans from "./HooksWithBooleans";
 import HooksWithObjects from "./HooksWithObjects";
 
 const UseStateHome = () => {
@@ -16,6 +17,7 @@ const UseStateHome = () => {
       {/* <ClassPreviousStateCounter /> */}
       <HooksCounter />
       <HooksPreviousStateCounter />
+      <HooksWithBooleans />
       <HooksWithArrays />
       <HooksWithObjects />
     </div>
