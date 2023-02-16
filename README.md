@@ -49,6 +49,9 @@ This project was bootstrapped with CRA [Create React App](https://github.com/fac
 
 `npx create-react-app <yourAppName>`
 
+CRA >= v16
+React router >= v5
+
 **TypeScript**
 
 `npx create-react-app my-nameofapp --typescript` (with CRA)

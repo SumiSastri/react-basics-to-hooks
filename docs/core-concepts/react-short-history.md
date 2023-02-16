@@ -13,15 +13,18 @@ React, Vue and other libraries/ frameworks take this level of data-abstraction i
 These applications are referred to as SPAs, or single-page-applications.
 
 **References** Plural Sight: React the Big Picture : Cory House
+[https://app.pluralsight.com/course-player?clipId=8e64e7d8-8498-40cd-95b6-040570522fe3]
 
 **TimeLine**
-2011 - Front-end JavaScript library created by Facebook for user interfaces
+2011 - Front-end JavaScript library created by Facebook for user interfaces (only class components)
+2012 - Flux flow ( for state management introduced)
 2012 - Used on Instagram
 2013 - Made open source to the developer community
 2014 - Rate of adoption increases by large companie because it helps in scaling apps quickly and efficiently.
-2015 - React Native released
+2015 - React Native released and Redux library can be used - stateless function components released
 2016 - React 15 released
-2019 - React Hooks React 16.8
+2018 - Context API introduced
+2019 - React Hooks React 16. - function components that can access state
 2022 - Continously maintained and updated see latest version `("react": "^17.0.2",)` in docs.
 
 Documentation: [https://reactjs.org/docs]
