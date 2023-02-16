@@ -36,7 +36,7 @@ Environment variables are also a form of data. However, this static data does no
   URL is a system of record - avoid redundantly storing it in your app
   React-Router handles URL related state as single-page-applications have only one page displayed.
 
-2. Web Storage in the browsers
+2. Web Storage in the browsers - one browser where data persists between sessions
 
    Via the browser to cache data make it easier for users to reload (or event reboot) a page quickly and for data to persist between sessions on one browser.
 
@@ -60,14 +60,16 @@ Web storage is tied to a specific browser, avoid storing sensitive data here.
 
 Data in the parent state then transferred to child components via props (which are immutable objects). This means if you declare a prop in a child component that has not been defined in the parent component the data will not render.
 
-4. Lifted State - moves local component to a parent component so that data can be reused in different components that need the same data
+4. Lifted State - used when a few related components need the same state
+
+Lifting state is the refactoring process of moving local component state to a parent component so that data can be reused in different components that need the same data
 
 - State is lifted to the top of the tree and the data is declared in the state object here
 - The data that is needed for the components that share this data is passed down via props
 - A parent-child relationship is created linking the child components with the props declared in the parent component
 - The child component receives the props either as static data or methods
 
-5. Derived State - derive state from existing state or props on each render instead of storing it.
+5. Derived State - derive state from existing state or props on each render instead of storing it. State is used and not defined explicitly.
 
    State that can be derived from an existing state through the object tree eg: The global window object has its own JavaScript methods
 
@@ -87,9 +89,13 @@ for state that does not need to be rendered - timers/uncontrolled components (fo
 
 - Check the `refs-directly-access-DOM.md` file as well for more information
 
-7. Context-API
+  7.Using a global or sub-tree state
 
-   In a bigger app, where the whole app or a significant portion may need all the data to function, a Context-API/ or the Context Hook can be used as it holds the whole state-tree. Context avoids prop-drilling as it offers a global state or a sub-tree state.
+With React, the Context-API can be used for larger apps instead of lifted state.
+
+Data is stored as a context object using the Context Hook made available to multiple child components.
+
+The Context Hook may store the whole state tree of the whole app or a significant portion of the data from the state-tree. Context avoids prop-drilling as it offers a global state or a sub-tree state.
 
 - Logged-in user
 - Authorisation settings
@@ -108,7 +114,7 @@ In app state
 Remote state - API calls can also be handled by 3rd party libraries
 
 - react-query
-- Swr
+- Swr (stale while refetching)
   With graphQL
 - Relay
 - Apollo
