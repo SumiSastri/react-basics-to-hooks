@@ -22,15 +22,13 @@ The`useState` method takes 2 params a getter and a setter `useState(initialState
 
 Rendering state now is easy pass the initialState param into the JSX as an expression.
 
-`<h4>I am a refactored counter using the useState hook {count}</h4>`
-
 The second param is nextState which is a call back function that updates the initialState. In a class-component these factory functions are written before the render method. With hooks there is no render method, only a return statement. Therefore the JSX element takes the event handler function (the second param of the `setState` method) as an expression. As there is no render method, the call-back function that updates state (previously the `this.setState` method) is written directly into the JSX element.
 
 ```
 <button onClick={() => setCount(count + 1)}>Click to increment</button>
 ```
 
-Like so - this now has the same functionality with less code written.
+Like so - this now has the same functionality with less code written as compared with a class component.
 
 ```
 import React, { useState } from "react";
@@ -181,3 +179,21 @@ export default HooksWithObjects;
 **Using Hooks where state is an array**
 
 Similar to objects, arrays need to be spread and returned with the updated state.
+
+**Tutorials**
+
+Code Evolution:
+Primitives
+
+Counters:
+
+Numbers
+[https://www.youtube.com/watch?v=lAW1Jmmr9hc&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A&index=2]
+
+[https://www.youtube.com/watch?v=d0plTCQgsXs&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A&index=3]
+
+Collections:
+
+Objects[https://www.youtube.com/watch?v=-3lL8oyev9w&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A&index=4]
+
+Arrays [https://www.youtube.com/watch?v=RZ5wKYbOM_I&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A&index=5]

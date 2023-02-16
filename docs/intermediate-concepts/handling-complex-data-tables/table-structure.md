@@ -11,6 +11,10 @@ They, by nature have a deeply nested structure to work within. At the top of the
 
 In terms of elements this is a representation of a basic table - table designs can get more complex with sorting/ filtering and searching as well as adding rows/ hiding columns/ making colums sticky and editing/ deleting rows.
 
+A library such as React Tables (Tanstack) makes it easier to write methods in this deeply nested DOM-tree.
+
+eg:
+
 ```
 <table> Parent ->  getTableProps=()=>{}
       <thead> Table Header -> headerGroups[]
@@ -33,4 +37,6 @@ In terms of elements this is a representation of a basic table - table designs c
 
 Each of the props are functions or arrays that are helper utilities that transfer the information from the `.json` and `.js` files into the table elements.
 
-See Headers/ Footers/ Body documents for details.
+If you had to do this manually it can get confusing and buggy - see repo on Tables.
+
+See React Tables Repo - for demos and more docs.[https://github.com/SumiSastri/react-tables]
