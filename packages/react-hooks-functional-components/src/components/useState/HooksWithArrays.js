@@ -21,7 +21,7 @@ const HooksWithArrays = () => {
 
   return (
     <div>
-      <h3>Mapping through an array with hooks</h3>
+      <h3>Demo 4 - Arrays</h3>
       <p>
         In class components, updating state with an array merges and updates the
         array state. With Hooks the method does not merge and update the array

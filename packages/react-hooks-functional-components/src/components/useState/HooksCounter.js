@@ -5,7 +5,7 @@ const HooksCounter = () => {
 
   return (
     <div>
-      <h3>React Hooks counter</h3>
+      <h3>Demo 1 - Numbers</h3>
       <p>Counter set at: {count}</p>
       <button className='btn-pink' onClick={() => setCount(count + 1)}>
         +

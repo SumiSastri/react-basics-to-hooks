@@ -7,7 +7,7 @@ export default function HooksWithBooleans() {
 
   return (
     <div>
-      <h3>Hooks with strings & booleans</h3>
+      <h3>Demo 3 - Strings and Booleans</h3>
       <div className='badge'>
         <p className='alert'>Click to close</p>
         <button onClick={() => setIsOpen("Closed")}>

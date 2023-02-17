@@ -6,7 +6,7 @@ const HooksWithObjects = () => {
 
   return (
     <div>
-      <h3>State as an object - setting state with Hooks</h3>
+      <h3>Demo 5 - Objects</h3>
       <p>
         Like arrays updating state with an object is not merged and updated you
         therefore need to use the spread operator.

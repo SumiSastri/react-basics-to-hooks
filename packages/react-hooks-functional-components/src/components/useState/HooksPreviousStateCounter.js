@@ -39,7 +39,7 @@ const HooksInitialStateCounter = () => {
 
   return (
     <div>
-      <h3>Refactored Hooks counter</h3>
+      <h3>Demo 2 - Numbers and using previousState</h3>
       <p>
         Open google console and see how the async and sync calls work - the
         display value is 3 but the logged value should be 0 - when you click the

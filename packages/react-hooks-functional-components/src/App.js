@@ -8,6 +8,7 @@ import HooksTableOfContents from "./components/common/HooksTableOfContents";
 import HooksHome from "./components/common/HooksHome";
 import UseStateHome from "./components/useState/UseStateHome";
 import UseEffectHome from "./components/useEffect/UseEffectHome";
+import UseContextHome from "./components/useContext/UseContextHome";
 
 const App = () => {
   return (
@@ -15,14 +16,12 @@ const App = () => {
       <Switch>
         <Fragment>
           <div className='App'>
-            <NavBar
-              title='React-Hooks Tutorial: Refactors Class Components'
-              icon
-            />
+            <NavBar title='React-Hooks Tutorial' icon />
             <Route path='/' component={HooksHome} />
             <Route path='/' component={HooksTableOfContents} />
             <Route path='/use-state' component={UseStateHome} />
             <Route path='/use-effect' component={UseEffectHome} />
+            <Route path='/use-context' component={UseContextHome} />
           </div>
         </Fragment>
       </Switch>

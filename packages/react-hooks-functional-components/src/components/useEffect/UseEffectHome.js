@@ -6,7 +6,7 @@ import HooksComponentUpdateMethod from "./lifeCycle-methods/HooksComponentUpdate
 import HooksSetAndClearIntervals from "./lifeCycle-methods/HooksSetAndClearIntervals";
 import DataFetchingWithUseEffect from "./httpCalls/DataFetchingWithUseEffect";
 
-function HooksUseEffectComponent() {
+const UseEffectHome = () => {
   return (
     <div>
       <div className='card'>
@@ -19,6 +19,6 @@ function HooksUseEffectComponent() {
       </div>
     </div>
   );
-}
+};
 
-export default HooksUseEffectComponent;
+export default UseEffectHome;
