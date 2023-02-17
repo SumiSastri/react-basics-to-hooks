@@ -1,4 +1,5 @@
 import React from "react";
+import "../../App.css";
 
 import HooksComponentUpdateMethod from "./lifeCycle-methods/HooksComponentUpdateMethod";
 // import HooksComponentDidMount from "./lifeCycle-methods/HooksComponentDidMount";

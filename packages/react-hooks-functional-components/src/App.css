@@ -24,28 +24,46 @@ body {
   margin: 35px;
   padding: 15px;
 }
+
 h1{
   color: navy;
+}
+
+h1:hover {
+  color: #666;
 }
 
 h2{
   color: darkgrey;
 }
 
+h2:hover {
+  color: crimson
+}
+
 h3{
   color: darkgreen;
 }
-
+h3:hover {
+  color: #666;
+}
 h4{
   color: darkgoldenrod;
 }
-
+h4:hover {
+  color: #666;
+}
 h5{
   color: crimson;
 }
-
+h5:hover {
+  color: #666;
+}
 h6{
   color: brown;
+}
+h6:hover {
+  color: #666;
 }
 
 a {

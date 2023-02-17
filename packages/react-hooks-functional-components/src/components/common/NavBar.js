@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 export class NavBar extends Component {
   static defaultProps = {
-    title: "React Tutorials",
+    title: "React Hooks Demos",
   };
   static propTypes = {
     title: PropTypes.string.isRequired,
@@ -15,7 +15,7 @@ export class NavBar extends Component {
     return (
       <IconContext.Provider value={{ color: "black", size: "2rem" }}>
         <nav>
-          <h1 className="navbar bg-primary">
+          <h1 className='navbar bg-primary'>
             <FaReact /> {this.props.title}
           </h1>
         </nav>
