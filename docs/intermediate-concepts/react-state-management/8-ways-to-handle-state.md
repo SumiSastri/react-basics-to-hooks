@@ -16,7 +16,7 @@ Environment variables are also a form of data. However, this static data does no
 
 **What are configs and utils?**
 
-Environment variables are also a form of data. However, this static data does not change over time and often is stored in a `.env` file.
+Some static configurations which could be functions that do not change are typically stored in config or util folders - they may change state but they do not intrinsically change over time.
 
 **What are the eight ways to store state?**
 
@@ -118,15 +118,5 @@ Remote state - API calls can also be handled by 3rd party libraries
   With graphQL
 - Relay
 - Apollo
-
-**What are React lifecycle-methods and why are they needed?**
-
-As a component's data changes, the state object is first rendered in its original state when the component mounts. Data is re-rendered everytime the `setState({})` method is called re-rendering only the props in this method, or when the `useState()` Hook is used to update state.
-
-As State determines how the component is updated and re-rendered. Class components must have a render method to display the information held in State. Without the render method, the function gets executed in the console but will not be rendered to the DOM.
-
-With Hooks, the lifecycle methods are handled by the React Library with the hook `useEffect()`
-
-**References**
 
 Managing React State- Cory House [https://app.pluralsight.com/course-player?clipId=6ca18055-acd6-4b1a-ae19-d4328fe49855]
