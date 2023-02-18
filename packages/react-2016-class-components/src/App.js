@@ -21,32 +21,29 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Fragment>
-          <div className="App">
-            <NavBar
-              title="Traditional React with Class and Functional Components"
-              icon
-            />
-            <Route exact path="/" component={Home} />
+          <div className='App'>
+            <NavBar title='React 2016 Class Components' icon />
+            <Route exact path='/' component={Home} />
             <TableOfContentsBar />
-            <Route path="/components" component={ReactComponents} />
+            <Route path='/components' component={ReactComponents} />
             <Route
-              path="/functional-components"
+              path='/functional-components'
               component={FunctionalComponent}
             />
-            <Route path="/class-components" component={ClassComponents} />
-            <Route path="/counter-demo" component={Counter} />
+            <Route path='/class-components' component={ClassComponents} />
+            <Route path='/counter-demo' component={Counter} />
             <Route
-              path="/event-handling"
+              path='/event-handling'
               component={FunctionalComponentClickEvents}
             />
             <Route
-              path="/conditional-rendering"
+              path='/conditional-rendering'
               component={FourWaysToConditionallyRender}
             />
-            <Route path="/map-and-render" component={ListOfLists} />
-            <Route path="/forms" component={Form} />
-            <Route path="/prop-drilling" component={PropDrilling} />
-            <Route path="/api-calls-with-axios" component={GetAndPostData} />
+            <Route path='/map-and-render' component={ListOfLists} />
+            <Route path='/forms' component={Form} />
+            <Route path='/prop-drilling' component={PropDrilling} />
+            <Route path='/api-calls-with-axios' component={GetAndPostData} />
           </div>
         </Fragment>
       </Switch>

@@ -2,7 +2,7 @@ import React from "react";
 
 const FunctionalComponentWithNamedExport = () => (
   <div>
-    <h2>This is a React Tutorial</h2>
+    <h1>React design patterns - core concepts</h1>
   </div>
 );
 export default FunctionalComponentWithNamedExport;
