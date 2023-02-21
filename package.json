@@ -7,7 +7,7 @@
   },
   "scripts": {
     "new-version": "lerna version --conventional-commits --yes",
-    "diff": "lerna diff", 
+    "diff": "lerna diff",
     "test": "lerna run test --scope={breaking-bad,videorama}"
   }
 }
