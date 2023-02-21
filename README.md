@@ -8,6 +8,8 @@ This is a set of tutorials to augment knowledge of React from basic concepts to 
 **React-Hooks** Looks at migration or co-existance of class components to/with hooks
 **PWAs** How PWAs work with continuous integration/build and deploy (Breaking Bad and Videorama)
 
+**React-Router -v5 & v6**
+
 **Work-in-Progress** This is a work in progress (Feb 2023) adding state-management concepts and demos to the repo
 
 See the docs folder for guide-rails and further learning resources - You Tube videos and all the other reading I have done to debug and compile this demo app.

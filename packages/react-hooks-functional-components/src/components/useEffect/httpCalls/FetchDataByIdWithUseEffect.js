@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { BTNCLICK_POSTID_URL, POSTID_URL } from "./baseURLVariables";
 
 const DataFetchingWithUseEffect = () => {
   const [post, setPost] = useState({});
@@ -9,7 +10,9 @@ const DataFetchingWithUseEffect = () => {
   useEffect(() => {
     axios
       //   .get(`https://jsonplaceholder.typicode.com/posts/${postId}`)
-      .get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
+      // .get(POSTID_URL)
+      // .get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
+      .get(BTNCLICK_POSTID_URL)
       .then((response) => {
         console.log(response);
         setPost(response.data);
