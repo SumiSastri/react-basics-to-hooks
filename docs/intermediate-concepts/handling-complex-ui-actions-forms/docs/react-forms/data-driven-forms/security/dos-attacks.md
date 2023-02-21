@@ -1,2 +1,0 @@
-Denial of service attacks - crash computers making sites/ apps inaccessible to users
-This is often followed up by ransom calls to unlock system. Or for political reasons these sites are shut down to citizens of the country under attack
