@@ -8,18 +8,11 @@ This is a set of tutorials to augment knowledge of React from basic concepts to 
 **React-Hooks** Looks at migration or co-existance of class components to/with hooks
 **PWAs** How PWAs work with continuous integration/build and deploy (Breaking Bad and Videorama)
 
-**React-Router -v5 & v6**
-
-**Work-in-Progress** This is a work in progress (Feb 2023) adding state-management concepts and demos to the repo
-
-See the docs folder for guide-rails and further learning resources - You Tube videos and all the other reading I have done to debug and compile this demo app.
-
 ## Table of Contents
 
 1. [Pre-requisites](#Pre-requisites)
 2. [Repo access](#Repo-access)
 3. [Scripts](#Scripts)
-4. [Linked-in certifications](#Linked-in-certifications)
 
 ## Pre-requisites
 
@@ -70,9 +63,3 @@ File extensions can now be changes to `.tsx` not `.ts` as required
 
 cd into `packages/folder-name` eg: cd `packages/videorama` and `npm run start` the front-end of that repo will run on `localhost:3000`
 
-### Linked-in certifications
-
-1. Learning React
-2. React Building Progressive Apps
-3. React Creating and Hosting a FullStack site
-4. React State Management
