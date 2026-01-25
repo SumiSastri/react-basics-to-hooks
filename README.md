@@ -8,11 +8,14 @@ This is a set of tutorials to augment knowledge of React from basic concepts to 
 **React-Hooks** Looks at migration or co-existance of class components to/with hooks
 **PWAs** How PWAs work with continuous integration/build and deploy (Breaking Bad and Videorama)
 
+The docs have been moved out of this repo Jan 2026 to the React-18/19 repo which compares REST-APIs and GraphQL.
+
 ## Table of Contents
 
 1. [Pre-requisites](#Pre-requisites)
 2. [Repo access](#Repo-access)
 3. [Scripts](#Scripts)
+4. [React 18 & React 19](https://github.com/SumiSastri/merng-stack-using-graphQL)
 
 ## Pre-requisites
 
@@ -62,4 +65,3 @@ File extensions can now be changes to `.tsx` not `.ts` as required
 ## Scripts
 
 cd into `packages/folder-name` eg: cd `packages/videorama` and `npm run start` the front-end of that repo will run on `localhost:3000`
-
